@@ -416,6 +416,3 @@ Review cache policy if HLS filenames become mutable instead of versioned.
 - Add an explicit offline-download experience if full-match replay availability
   is a product requirement.
 
-## Author
-
-CharanAdithya6505
