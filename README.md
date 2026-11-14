@@ -1,112 +1,266 @@
 # KeepAlive
 
-KeepAlive is a mobile-first demo for keeping a fan in the match when a video stream
-freezes. The local video and the match-event replay are independent: the video
-can stop while the compact event feed keeps moving, then a recap shows what
-happened before playback returns.
+**A match should not disappear when its video does.** KeepAlive is a mobile-first
+web demo for live sports viewing through a video interruption. When playback
+freezes, a compact event feed keeps the fan in the match. When the picture
+returns, a recap shows what happened and lets the viewer catch up to the replay
+or keep watching from the frozen moment.
 
-**Stack:** Vite, React, TypeScript, hls.js, CSS, Vitest, Playwright, and
-Lighthouse. The site builds to static files; the app makes no runtime API calls
-and requires no keys or paid services.
+This is a static, frontend-only prototype. The video is a local HLS loop and the
+events are deterministic replays generated from real historical match data.
+There is no backend, runtime sports-data API, paid service, or API key.
 
-## Architecture
+## Product brief
+
+### Problem
+
+When a live stream stalls, fans often leave the player to look up the score and
+key events elsewhere. That breaks the viewing experience and risks missing the
+moment the stream recovers.
+
+### Hypothesis
+
+Match events are small compared with video. A lightweight event channel can
+continue to explain the match while video is unavailable. A recovery recap can
+then account for the gap between the match and the picture.
+
+### Unique selling points
+
+- **Two independent timelines:** match replay time continues while video time
+  stops. KeepAlive can show both the live score and the score frozen into the
+  picture.
+- **Useful through an interruption:** a thresholded detector ignores brief
+  stutters; important events continue to arrive in the feed.
+- **A precise hand-back:** recap content is derived from events between the video
+  and live clocks. The viewer chooses whether to stay behind or jump to live.
+- **Visible bandwidth trade-off:** Two Lines contrasts video bitrate and event
+  feed bytes using measured values.
+- **Honest demo behavior:** historical event data is credited; the looped video
+  and injected network fault are identified as demo behavior.
+- **Multi-sport foundation:** Cricket, Football, and F1 share one event shape and
+  adapter contract.
+
+## What the demo does
+
+1. Plays a six-minute, 480p local HLS stadium loop.
+2. Confirms sustained stalls after three seconds to avoid popup flicker.
+3. Advances the match event replay independently from video playback.
+4. Shows a docked player sheet with the live score, latest event, recent feed,
+   stall timer, and bandwidth comparison. The frozen scorebug stays tied to the
+   video position.
+5. Confirms recovery only after two seconds of smooth playback.
+6. Builds a recap from missed key events, with counts and a compact timeline.
+7. Offers **Keep watching from here** and **Jump to live**.
+8. Handles browser-offline state while the replay clock continues.
+
+The Director’s panel includes manual break/restore, a 5/10/20-second auto-
+restore setting, playback speed, replay restart, sport selection, player
+following, event-feed detail mode, and EN/Hindi selection. On a first visit, one
+quiet scripted stall can start roughly 25 seconds after first interaction if
+the viewer has not used the controls.
+
+## Screenshots
+
+Before/after audit captures are in [`artifacts/ui-audit/`](artifacts/ui-audit/)
+for 390px, 768px, and 1280px widths and the idle, playing, suspect, stalled,
+offline, recovering, recap, and fullscreen states. See
+[`artifacts/ui-audit/audit.md`](artifacts/ui-audit/audit.md) for the defect
+notes and changes.
+
+## System architecture
 
 ```mermaid
 flowchart LR
-  subgraph Data[Static replay data]
-    Raw[Cricsheet / StatsBomb / OpenF1 snapshots] --> Builders[scripts/build-*.mjs]
-    Builders --> JSON[src/data/*-demo.json]
-    JSON --> Adapter[Sport adapters]
+  subgraph BuildTime[Build time: local source snapshots]
+    Raw[Cricsheet / StatsBomb / OpenF1 JSON] --> Builders[scripts/build-*.mjs]
+    Builders --> Data[src/data/*-demo.json]
   end
-
-  subgraph Engine[Playback and time engine]
-    HLS[Local HLS playlist] --> Player[usePlayer / Player]
-    Player --> Detector[FreezeDetector]
-    Detector --> State[playing · suspect · stalled · recovering · recovered]
-    Live[Live replay clock] --> Bus[Event bus]
-    Video[Video currentTime clock] --> Score[On-video scorebug]
+  subgraph Browser[Browser: static app]
+    Data --> Adapters[Sport adapters]
+    Adapters --> Bus[Subscribe-based event bus]
+    Bus --> Feed[Live event feed]
+    Bus --> Clock[Live replay clock]
+    HLS[Local HLS playlist and segments] --> Hook[usePlayer / hls.js]
+    Hook --> VideoClock[Video currentTime clock]
+    Hook --> Detector[Framework-free freeze detector]
+    VideoClock --> Scorebug[Video scorebug]
+    VideoClock --> Delta[Missed-event calculation]
+    Clock --> Delta
+    Clock --> Feed
+    Detector --> State[Playback state machine]
+    Delta --> Recap[Stall sheet and recovery recap]
+    State --> Recap
   end
-
-  Adapter --> Bus
-  Bus --> Feed[Live event feed]
-  State --> Experience[Stall sheet / recovery recap]
-  Live --> Experience
-  Video --> Experience
-  Player --> Score
 ```
 
-### Responsibilities
+### Runtime layers
 
-- `src/ui/App.tsx` selects a sport, publishes its local events on the event bus,
-  advances the live replay clock, and connects the player, feed, and Director’s
-  panel.
-- `src/ui/Player.tsx` owns the player wrapper and chrome. `src/engine/usePlayer.ts`
-  attaches hls.js to the local VOD playlist, reports playback metrics, and
-  injects a real network interruption by stopping HLS loading. Native HLS uses
-  a clearly labeled simulated fault path.
-- `src/engine/freezeDetector.ts` is framework-free. Video events, a 500 ms
-  playback watchdog, HLS stall errors, and online/offline events feed its state
-  machine. It debounces short stalls and confirms recovery only after playback
-  progress.
-- `src/engine/clocks.ts` keeps the live replay clock independent from
-  `video.currentTime`. The scorebug follows the video clock; the event feed
-  follows the live clock; their difference determines the missed-event recap.
-- `src/data/adapters.ts` gives Cricket, Football, and F1 the same `Event[]`
-  interface and renderer contract. Each sport imports generated JSON, never a
-  runtime service.
-- `src/ui/MatchExperience.tsx` renders the shared stall sheet and recap. It
-  shows the frozen score alongside the live score, feed activity, missed key
-  events, follow controls, offline state, and recovery actions.
+| Layer | Location | Responsibility |
+| --- | --- | --- |
+| App shell | `src/ui/App.tsx` | Selects sport, advances the demo clock, and connects player, feed, recap, and Director’s panel. |
+| Player | `src/ui/Player.tsx`, `src/engine/usePlayer.ts` | Loads local HLS, owns controls and metrics, and exposes break/restore/jump controls. |
+| Freeze detection | `src/engine/freezeDetector.ts` | Framework-free state machine driven by media events, a 500ms watchdog, HLS stall errors, and online/offline events. |
+| Clocks and event bus | `src/engine/clocks.ts`, `src/engine/eventBus.ts` | Keeps live and video time separate, publishes replay events, and selects missed events. |
+| Adapters and data | `src/data/adapters.ts`, `src/data/*-demo.json` | Normalizes each sport to one event contract and renders sport-specific text and icons. |
+| Match experience | `src/ui/MatchExperience.tsx` | Renders stall sheet, offline card, followed-player markers, language choice, and recovery recap. |
+| Visual system | `src/style.css` | Design tokens, typography, responsive layout, player states, and reduced-motion behavior. |
 
-### Project map
+### Playback and freeze state
+
+The player uses hls.js where supported, with a small playback buffer. A network
+break stops HLS loading; the decoded buffer drains and the media element stalls
+naturally. Restore resumes loading from the saved video position. If hls.js is
+not supported but native HLS is available, fault injection is labeled
+**simulated**. Unsupported and playback-error states have visible messaging.
 
 ```text
-src/
-  data/       shared event types, adapters, generated replays, source snapshots
-  engine/     clocks, event bus, freeze detector, player hook, unit tests
-  ui/         app shell, video player, event glyphs, stall sheet and recap
-  style.css   design tokens, responsive layout, player and state styling
-scripts/      data builders, one-time OpenF1 downloader, HLS and bundle tools
-public/media/ local HLS playlist/segments, poster, and credited StatsBomb mark
-tests/e2e/    Chromium mobile-viewport product flows
+playing -> suspect -> stalled -> recovering -> recovered -> playing
+              |           ^          |
+              +-> playing +----------+
 ```
 
-## Run locally
+A suspect stall must last 3 seconds before the sheet appears. Playback must
+advance smoothly for 2 seconds before recovery is confirmed. Repeated stall
+signals are debounced into one record with timestamps, cause, and clock
+snapshots. Pausing or seeking is not treated as a stream failure.
+
+### Clock and recap model
+
+- `liveClock` is elapsed demo match time and continues regardless of video.
+- `videoClock` is the media element’s `currentTime`.
+- `lag = liveClock - videoClock`.
+- The scorebug is built from events at or before `videoClock`.
+- The feed is built from events at or before `liveClock`.
+- `missed` is the difference between those sets, filtered to importance 2 or 3.
+- `jumpToLive()` seeks to the live replay position, wrapping at local video
+  duration when needed.
+
+## Event data and sport adapters
+
+Built-in replays use a shared `MatchEvent` shape:
+
+```ts
+type MatchEvent = {
+  id: string;
+  t: number; // seconds on the compressed demo timeline
+  sport: 'cricket' | 'football' | 'f1';
+  type: string; // sport-specific event type
+  importance: 1 | 2 | 3;
+  score: {
+    runs: number;
+    wkts: number;
+    overs: string;
+    display?: { label: string; value: string; context: string };
+  };
+  players: string[];
+  text: { en: string; hi: string };
+  bytes: number; // serialized event length estimate
+};
+```
+
+The adapter contract is `Adapter { load(): Event[]; render(event): { text,
+icon, importance } }`. Build scripts turn saved source snapshots into compact,
+deterministic replays on an approximately six-minute timeline. Event text is
+template-driven; there are no runtime LLM or network calls. Hindi template
+strings are marked for proofreading.
+
+| Sport | Checked-in source | Event focus | Builder |
+| --- | --- | --- | --- |
+| Cricket | Cricsheet India–South Africa 2024 T20 World Cup final, `src/data/raw/1415755.json` | Wickets, boundaries, milestones, over summaries, and selected ball events. Dot balls and singles are flood-controlled. | `npm run build:cricket` |
+| Football | StatsBomb Argentina–France 2022 World Cup final, `src/data/raw/statsbomb-3869685.json` | Goals, saved shots, cards, substitutions, penalties, and VAR events when present. | `npm run build:football` |
+| F1 | OpenF1 2023 British Grand Prix session 9126, `src/data/raw/f1-9126/` | Race control and flags, pit stops, top-five position changes, fastest lap, and retirements. | `npm run build:f1` |
+
+The OpenF1 downloader is an **optional one-time snapshot refresh**. The
+browser loads generated static JSON only; it never calls Cricsheet, StatsBomb,
+or OpenF1.
+
+### Data and media credits
+
+- **Cricket:** [Cricsheet](https://cricsheet.org/), under the
+  [Open Data Commons Attribution License](https://cricsheet.org/licensing/).
+- **Football:** [StatsBomb Open Data](https://github.com/hudl/open-data).
+  StatsBomb is credited in the UI and its supplied mark is in
+  `public/media/credits/`. See the
+  [logo use guide and media pack](https://statsbomb.com/wp-content/uploads/2023/03/StatsBomb_LogoUseGuide_MediaPack-min.pdf).
+- **F1:** [OpenF1](https://openf1.org/docs/), saved as local JSON snapshots.
+- **Video:** Hindustani Lens’ royalty-free stadium clip from
+  [Pexels](https://www.pexels.com/video/aerial-view-of-live-cricket-match-in-a-stadium-18148072/).
+  Source media and credits are recorded in `scripts/assets/CREDITS.md`; see
+  the [Pexels license](https://www.pexels.com/license/).
+
+## Quick start
+
+Requirements: Node.js 18 or newer and npm. Install Playwright Chromium only to
+run browser tests. ffmpeg is needed only to regenerate the HLS video.
 
 ```sh
-npm install
+git clone https://github.com/cax6505/KeepAlive.git
+cd KeepAlive
+npm ci
 npm run dev
 ```
 
-Open the local Vite URL. The stadium loop and replay data are served from the
-project. If the browser blocks muted autoplay, press **Tap to start**.
+Open the Vite URL printed in the terminal. If browser autoplay is blocked, press
+**Tap to start**. No API keys or environment variables are required.
 
-## How to test the freeze yourself
+## How to use the demo
 
-1. Open the app in Chromium and press **Tap to start** if autoplay is blocked.
-2. Wait for the player controls, then scroll to the Director’s panel.
-3. Press **Break the network**; the video stops while the event feed continues.
-4. Press **Restore** and check the recap chips against the missed event list.
-5. Press **Jump to live** to return to the current replay position.
+1. Start playback. On desktop, the Director’s panel is beside the player; on a
+   phone, open the **Director’s panel** below the match.
+2. Optionally set auto-restore to 5s, 10s, or 20s.
+3. Press **Break the network**. The buffer drains; then the stall sheet appears
+   while the event feed advances.
+4. Read the latest event, recent feed, live score, and Video/Feed traces. Choose
+   **Tell me everything** or **Tell me when it’s back** for the sheet detail.
+5. Press **Restore** if auto-restore is disabled. Review the recap once smooth
+   playback is confirmed.
+6. Choose **Keep watching from here** to remain behind or **Jump to live** to
+   seek to the current replay time.
 
-## Checks
+To see the offline card, start a stall and choose **Network > Offline** in
+browser DevTools. Restore the connection to let the player recover. The local
+replay clock continues while offline, and the UI identifies its events as a
+replay demo.
+
+### Five-line freeze test
+
+1. Open KeepAlive in Chromium; press **Tap to start** if needed.
+2. On a phone, expand the Director’s panel and set auto-restore to 20s.
+3. Press **Break the network** and wait for the buffered picture to freeze.
+4. Confirm the event feed advances; press **Restore**.
+5. Review the recap, then choose **Jump to live** or **Keep watching from here**.
+
+## Development and checks
+
+| Command | Purpose |
+| --- | --- |
+| `npm run dev` | Start Vite development server. |
+| `npm run build` | Type-check and build the static site into `dist/`. |
+| `npm test` | Run Vitest engine unit tests. |
+| `npm run test:e2e` | Build and run the Chromium Playwright suite. |
+| `npm run check:bundle` | Report gzipped app JS size, excluding the separate hls.js chunk. |
+| `npm run audit:lighthouse` | Audit preview at `http://127.0.0.1:4173`. |
+| `npm run build:cricket` | Rebuild Cricket data from checked-in Cricsheet JSON. |
+| `npm run build:football` | Rebuild Football data from checked-in StatsBomb JSON. |
+| `npm run download:f1` | Optional one-time OpenF1 snapshot download. |
+| `npm run build:f1` | Rebuild F1 data from the local snapshot. |
+
+Run the test suites with:
 
 ```sh
-npm run build
-npm test
 npx playwright install chromium
+npm test
 npm run test:e2e
 npm run check:bundle
 ```
 
-The Playwright suite uses Chromium at a 390 × 844 viewport and covers video
-start, a real HLS network break, event delivery during the stall, recap counts,
-a 1.5-second stutter, offline state, and fullscreen overlay visibility. Vitest
-covers clocks, missed-event selection, the event bus, and detector timelines.
-The bundle check reports gzip JavaScript size excluding the separate hls.js
-chunk.
+Vitest covers clock selection, missed-event calculation, event-bus subscriptions,
+and freeze-detector timelines (micro-stutter, sustained stall, flapping, offline
+cause, and recovery). Playwright runs Chromium at 390 × 844 and covers video
+start, a real HLS break, events during a stall, recap counts, 1.5-second
+stutter, offline card, and fullscreen overlay.
 
-For a mobile Lighthouse run, start the production preview first:
+For Lighthouse, run the production preview in one terminal:
 
 ```sh
 npm run build
@@ -114,75 +268,121 @@ npm run preview -- --host 127.0.0.1 --port 4173
 ```
 
 Then, in another terminal, run `npm run audit:lighthouse`. The report is written
-to `artifacts/lighthouse-mobile.json`.
+to `artifacts/lighthouse-mobile.json`. The latest local audit recorded 96
+Performance and 100 Accessibility. The bundle check recorded 100.86 KiB gzip
+for application JavaScript, with hls.js reported separately.
 
-## Replay data and credits
+## Repository map
 
-### Cricket
-
-The Cricket replay is normalized from the Cricsheet India–South Africa 2024 T20
-World Cup final JSON at `src/data/raw/1415755.json`:
-
-```sh
-npm run build:cricket
+```text
+src/
+  data/
+    raw/               Checked-in source snapshots and license files
+    *-demo.json        Generated normalized sports replays
+    adapters.ts        Shared sport adapter contract and implementations
+    types.ts           Shared sports/event types
+  engine/
+    clocks.ts          Live/video clocks and event selection
+    eventBus.ts        Subscribe-based event publisher
+    freezeDetector.ts  Framework-free stall state machine
+    usePlayer.ts       HLS lifecycle, metrics, and fault controls
+    *.test.ts          Vitest unit tests
+  ui/
+    App.tsx            App shell and state coordination
+    Player.tsx         Video wrapper, chrome, and scorebug
+    MatchExperience.tsx Stall sheet and recovery recap
+  style.css            CSS tokens and responsive design system
+scripts/
+  build-*.mjs          Static event-data builders
+  download-f1.mjs      Optional one-time OpenF1 downloader
+  build-hls.sh          Local video-to-HLS generation
+  check-bundle.mjs      Compressed application bundle budget
+public/
+  media/               HLS playlist, segments, poster, attribution mark
+  fonts/               Self-hosted UI, display, and mono fonts
+  sw.js                Same-origin shell/resource cache
+tests/e2e/              Playwright product flows
+artifacts/              UI audit screenshots and Lighthouse report
 ```
 
-Cricsheet data is available under the
-[Open Data Commons Attribution License](https://cricsheet.org/licensing/).
+## Regenerating the video
 
-### Football
-
-The Football replay uses StatsBomb’s open-data Argentina–France 2022 World Cup
-final match file. StatsBomb is credited in the UI and its mark is included in
-the source panel. The source match JSON and license are in `src/data/raw/`; the
-mark is in `public/media/credits/`.
+The HLS playlist and segments are checked in under `public/media/`. To
+regenerate them, install ffmpeg and run:
 
 ```sh
-npm run build:football
+bash scripts/build-hls.sh
 ```
 
-See [StatsBomb Open Data](https://github.com/hudl/open-data) and the
-[StatsBomb logo-use guide](https://statsbomb.com/wp-content/uploads/2023/03/StatsBomb_LogoUseGuide_MediaPack-min.pdf).
+By default, the script reads `scripts/assets/pexels-cricket-18148072.mp4` and
+outputs a six-minute, 480p HLS VOD loop with two-second segments. Pass another
+source file as the first argument to use a different clip. The clip is a visual
+stand-in; it is not synchronized to the historical match events.
 
-### F1
+## Deployment and offline behavior
 
-The F1 replay is a static snapshot of OpenF1’s 2023 British Grand Prix race
-session. The four downloaded datasets—race control, pit stops, laps, and
-positions—are saved under `src/data/raw/f1-9126/`. The app reads the generated
-JSON only; it does not call OpenF1 at runtime.
+KeepAlive is a static Vite site. Vercel builds with `npm run build` and publishes
+`dist/`. [`vercel.json`](vercel.json) sets explicit MIME types and cache headers
+for the HLS playlist, MPEG-TS segments, and WOFF2 fonts. The service worker
+caches same-origin resources as requested, so resources already visited may be
+available on a later offline visit. It does not guarantee that every video
+segment has been cached in advance.
 
-```sh
-npm run download:f1 # optional one-time snapshot refresh
-npm run build:f1
-```
+Another static host can serve the site if it preserves the Vite SPA fallback and
+serves `.m3u8` as `application/vnd.apple.mpegurl` and `.ts` as `video/mp2t`.
+Review cache policy if HLS filenames become mutable instead of versioned.
 
-Source: [OpenF1 documentation](https://openf1.org/docs/).
+## Current scope and limitations
 
-### Video
+- This demonstrates replay behavior, not production live-stream integration.
+  The player uses a local VOD loop and historical event timelines.
+- The match clock is deterministic replay time; it is not synchronized to a
+  real fixture or event provider.
+- On hls.js browsers, the break stops segment loading and lets the small buffer
+  drain. Native HLS platforms use a labeled simulated fault path.
+- Offline behavior depends on the service worker being installed and requested
+  same-origin resources being cached; full-match video is not pre-cached by
+  guarantee.
+- Hindi strings are template drafts and need fluent proofreading before wider
+  use.
+- Event byte counts estimate serialized event size. They exclude transport,
+  protocol, compression, and connection overhead of a production channel.
+- The demo has no authentication, profiles, cross-device settings, real-time
+  messaging, or analytics collection.
 
-The local six-minute HLS loop uses a royalty-free stadium clip from
-[Pexels](https://www.pexels.com/video/aerial-view-of-live-cricket-match-in-a-stadium-18148072/)
-by Hindustani Lens. The source clip and its credit are in `scripts/assets/`.
-Regenerate the HLS files with `scripts/build-hls.sh` and ffmpeg. See the
-[Pexels license](https://www.pexels.com/license/).
+## Future scope
 
-## Deployment
+### Product and playback
 
-Vercel builds `npm run build` and serves the static `dist/` directory.
-`vercel.json` sets the HLS playlist MIME type (`application/vnd.apple.mpegurl`),
-MPEG-TS segment MIME type (`video/mp2t`), and explicit cache headers for HLS
-media and self-hosted fonts.
+- Replace the local loop with an authorized live stream and reconcile video and
+  event clocks against the platform timeline or program date-time.
+- Connect a production lightweight event channel with replay/reconnect,
+  sequencing, deduplication, and an explicit stale-data state.
+- Test interruption and recovery across buffer depths, browsers, networks, and
+  native HLS implementations.
+- Validate screen-reader announcements, keyboard use, reduced motion, and
+  contrast in every state with moderated mobile usability sessions.
 
-## Future improvements
+### Data and personalization
 
-- Add visual regression screenshots for 390 px, tablet, and desktop layouts,
-  including each playback state and reduced-motion mode.
-- Run a deployment smoke check against a Vercel preview URL to verify playlist
-  and segment MIME types and cache headers at the CDN edge.
-- Expand adapter fixtures for rare event cases and proofread the marked Hindi
-  templates with a fluent speaker before presenting them as finished copy.
-- Exercise network interruption at multiple buffer depths and across native HLS
-  browsers, alongside the existing Chromium flow.
+- Add schema/version validation and builder fixtures for abandoned matches,
+  extra innings, VAR reversals, and incomplete timing data.
+- Have a fluent Hindi reviewer proofread templates; add locales only with
+  maintained translations.
+- Persist followed players and preferred feed mode in an explicit profile or
+  local settings layer.
+- Tune event importance and feed filters based on what fans need during stalls.
+
+### Reliability and delivery
+
+- Add visual-regression coverage for mobile, tablet, desktop, fullscreen, and
+  reduced-motion states.
+- Add CI checks for deterministic data builds, bundle size, accessibility, and
+  HLS MIME/cache headers on a deployed preview.
+- Measure real payload and transport overhead before making production
+  bandwidth claims.
+- Add an explicit offline-download experience if full-match replay availability
+  is a product requirement.
 
 ## Author
 
