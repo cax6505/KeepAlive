@@ -52,15 +52,24 @@ then account for the gap between the match and the picture.
    stall timer, and bandwidth comparison. The frozen scorebug stays tied to the
    video position.
 5. Confirms recovery only after two seconds of smooth playback.
-6. Builds a recap from missed key events, with counts and a compact timeline.
+6. Builds a recap from missed key events, with counts, a key-moment highlight,
+   and a compact timeline.
 7. Offers **Keep watching from here** and **Jump to live**.
 8. Handles browser-offline state while the replay clock continues.
 
-The Director’s panel includes manual break/restore, a 5/10/20-second auto-
-restore setting, playback speed, replay restart, sport selection, player
-following, event-feed detail mode, and EN/Hindi selection. On a first visit, one
-quiet scripted stall can start roughly 25 seconds after first interaction if
-the viewer has not used the controls.
+The sport switcher sits directly above the player on every viewport. A
+player-adjacent **Break the network** action makes the primary demo interaction
+available on mobile without opening the Director’s panel. The panel holds the
+5/10/20-second auto-restore setting, playback speed, replay restart, player
+following, event-feed detail mode, and EN/Hindi selection. On a first visit, a
+visible 25-second countdown offers **Skip auto stall**; if the viewer takes no
+action, one scripted stall starts automatically.
+
+The event feed is generated from local historical match data and does not
+connect to a live event channel. The UI labels it **LOCAL REPLAY** and reports
+the local replay clock instead of implying a network connection. Video clips
+are illustrative and not synchronized with match events. The offline card also
+explains that local replay continues while live delivery is not connected.
 
 ## Screenshots
 
@@ -214,11 +223,13 @@ Open the Vite URL printed in the terminal. If browser autoplay is blocked, press
 
 ## How to use the demo
 
-1. Start playback. On desktop, the Director’s panel is beside the player; on a
-   phone, open the **Director’s panel** below the match.
+1. Start playback. The sport switcher and controls sit directly above and
+   below the video; the Director’s panel is beside it on desktop and below the
+   match on a phone.
 2. Optionally set auto-restore to 5s, 10s, or 20s.
-3. Press **Break the network**. The buffer drains; then the stall sheet appears
-   while the event feed advances.
+3. Press the player-adjacent **Break the network** action (or the same control
+   in the Director’s panel). The buffer drains; then the stall sheet appears
+   while the local event replay advances.
 4. Read the latest event, recent feed, live score, and Video/Feed traces. Choose
    **Tell me everything** or **Tell me when it’s back** for the sheet detail.
 5. Press **Restore** if auto-restore is disabled. Review the recap once smooth
@@ -228,14 +239,14 @@ Open the Vite URL printed in the terminal. If browser autoplay is blocked, press
 
 To see the offline card, start a stall and choose **Network > Offline** in
 browser DevTools. Restore the connection to let the player recover. The local
-replay clock continues while offline, and the UI identifies its events as a
-replay demo.
+replay clock and events continue offline; this demo has no live event delivery.
 
 ### Five-line freeze test
 
 1. Open KeepAlive in Chromium; press **Tap to start** if needed.
-2. On a phone, expand the Director’s panel and set auto-restore to 20s.
-3. Press **Break the network** and wait for the buffered picture to freeze.
+2. Optionally set auto-restore to 20s in the Director’s panel.
+3. Press the in-player **Break the network** action and wait for the picture to
+   freeze.
 4. Confirm the event feed advances; press **Restore**.
 5. Review the recap, then choose **Jump to live** or **Keep watching from here**.
 
@@ -277,9 +288,10 @@ npm run preview -- --host 127.0.0.1 --port 4173
 ```
 
 Then, in another terminal, run `npm run audit:lighthouse`. The report is written
-to `artifacts/lighthouse-mobile.json`. The latest local audit recorded 96
-Performance and 100 Accessibility. The bundle check recorded 100.86 KiB gzip
-for application JavaScript, with hls.js reported separately.
+to `artifacts/lighthouse-mobile.json`. The checked-in Lighthouse artifact is a
+point-in-time report; rerun the audit after changes to measure the current
+build. The latest bundle check recorded 101.63 KiB gzip for application
+JavaScript, with hls.js reported separately.
 
 ## Repository map
 
