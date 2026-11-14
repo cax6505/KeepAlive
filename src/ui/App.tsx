@@ -75,7 +75,7 @@ export default function App() {
   const [autoRestoreSeconds, setAutoRestoreSeconds] = useState(5);
   const [offline, setOffline] = useState(typeof navigator !== 'undefined' && !navigator.onLine);
   const [language, setLanguage] = useState<Language>(() => {
-    try { return localStorage.getItem('tether-language') === 'hi' ? 'hi' : 'en'; } catch { return 'en'; }
+    try { return localStorage.getItem('keepalive-language') === 'hi' ? 'hi' : 'en'; } catch { return 'en'; }
   });
   const [followed, setFollowed] = useState<string[]>([]);
   const [sport, setSport] = useState<'cricket' | 'football' | 'f1'>('cricket');
@@ -267,7 +267,7 @@ export default function App() {
     : current.length < 3 ? [...current, player] : current);
   const changeLanguage = (next: Language) => {
     setLanguage(next);
-    try { localStorage.setItem('tether-language', next); } catch { /* storage can be disabled */ }
+    try { localStorage.setItem('keepalive-language', next); } catch { /* storage can be disabled */ }
   };
 
   const feedBytes10s = feedAtLive.filter(event => event.t > clocks.liveClock - 10).reduce((sum, event) => sum + event.bytes, 0);
@@ -305,9 +305,9 @@ export default function App() {
   };
 
   return <main className="workspace" data-sport={sport} data-live-clock={livePosition.toFixed(2)} data-video-clock={videoPosition.toFixed(2)}>
-    <section className="phone" aria-label="Tether match player">
+    <section className="phone" aria-label="KeepAlive match player">
       <header className="appbar">
-        <div className="brand"><span className="brand-mark"><i/><i/></span><span>TETHER</span></div>
+        <div className="brand"><span className="brand-mark"><i/><i/></span><span>KEEPALIVE</span></div>
         <div className="replay-tag"><span className="replay-dot"/> REPLAY DEMO</div>
         <span className="connection"><Icon name="wifi" size={16}/></span>
       </header>

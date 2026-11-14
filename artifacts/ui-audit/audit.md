@@ -1,4 +1,4 @@
-# Tether UI audit
+# KeepAlive UI audit
 
 Audited the app at 390px, 768px, and 1280px. The screenshot sets are in `before/` and `after/` (24 captures each: eight states × three widths). Captures use 390×844 or 390×900, and 768×900 / 1280×900 viewports. “Before” files for suspect, stalled, offline, recovery, and recap often show `LIVE` or another phase; the capture did not wait for the requested state. That state mismatch is recorded as a defect rather than presented as a real stalled-state UI.
 

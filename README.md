@@ -1,6 +1,6 @@
-# Tether
+# KeepAlive
 
-Tether is a mobile-first demo for keeping a fan in the match when a video stream
+KeepAlive is a mobile-first demo for keeping a fan in the match when a video stream
 freezes. The local video and the match-event replay are independent: the video
 can stop while the compact event feed keeps moving, then a recap shows what
 happened before playback returns.
