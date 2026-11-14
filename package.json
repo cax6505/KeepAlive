@@ -1,0 +1,36 @@
+{
+  "name": "tether-match-demo",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "build:cricket": "node scripts/build-cricket.mjs",
+    "build:football": "node scripts/build-football.mjs",
+    "download:f1": "node scripts/download-f1.mjs",
+    "build:f1": "node scripts/build-f1.mjs",
+    "preview": "vite preview",
+    "test": "vitest run src/engine",
+    "test:e2e": "npm run build && playwright test",
+    "check:bundle": "node scripts/check-bundle.mjs",
+    "audit:lighthouse": "lighthouse http://127.0.0.1:4173 --only-categories=performance,accessibility --output=json --output-path=artifacts/lighthouse-mobile.json --chrome-flags='--headless --no-sandbox' --quiet"
+  },
+  "dependencies": {
+    "@fontsource/barlow-condensed": "^5.2.6",
+    "@fontsource/instrument-sans": "^5.2.6",
+    "@fontsource/jetbrains-mono": "^5.2.6",
+    "hls.js": "^1.6.15",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.65.1",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "lighthouse": "^13.6.0",
+    "typescript": "~5.8.0",
+    "vite": "^6.3.0",
+    "vitest": "^5.1.0"
+  }
+}

@@ -1,0 +1,6599 @@
+{
+  "source": {
+    "provider": "Cricsheet",
+    "id": "1415755",
+    "dataVersion": "1.3.0",
+    "attribution": "Cricsheet (ODC Attribution License)"
+  },
+  "match": {
+    "teams": [
+      "India",
+      "South Africa"
+    ],
+    "date": "2024-06-29",
+    "venue": "Kensington Oval",
+    "event": "ICC Men's T20 World Cup",
+    "outcome": {
+      "winner": "India",
+      "by": {
+        "runs": 7
+      }
+    }
+  },
+  "events": [
+    {
+      "id": "01-01-01-ball",
+      "t": 1.2,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 1,
+        "wkts": 0,
+        "overs": "0.1"
+      },
+      "players": [
+        "RG Sharma",
+        "V Kohli",
+        "M Jansen"
+      ],
+      "text": {
+        "en": "IND · 0.1 · +1 RUN · RG Sharma · 1/0 · 0.1",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 0.1 · 1 रन · RG Sharma · 1/0 · 0.1"
+      },
+      "bytes": 303
+    },
+    {
+      "id": "01-01-02-four",
+      "t": 2.5,
+      "sport": "cricket",
+      "type": "four",
+      "importance": 2,
+      "score": {
+        "runs": 5,
+        "wkts": 0,
+        "overs": "0.2"
+      },
+      "players": [
+        "V Kohli",
+        "RG Sharma",
+        "M Jansen"
+      ],
+      "text": {
+        "en": "IND · FOUR · V Kohli · 5/0 · 0.2",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · चौका · V Kohli · 5/0 · 0.2"
+      },
+      "bytes": 285
+    },
+    {
+      "id": "01-01-03-four",
+      "t": 3.9,
+      "sport": "cricket",
+      "type": "four",
+      "importance": 2,
+      "score": {
+        "runs": 9,
+        "wkts": 0,
+        "overs": "0.3"
+      },
+      "players": [
+        "V Kohli",
+        "RG Sharma",
+        "M Jansen"
+      ],
+      "text": {
+        "en": "IND · FOUR · V Kohli · 9/0 · 0.3",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · चौका · V Kohli · 9/0 · 0.3"
+      },
+      "bytes": 285
+    },
+    {
+      "id": "01-01-04-ball",
+      "t": 5.4,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 11,
+        "wkts": 0,
+        "overs": "0.4"
+      },
+      "players": [
+        "V Kohli",
+        "RG Sharma",
+        "M Jansen"
+      ],
+      "text": {
+        "en": "IND · 0.4 · +2 RUNS · V Kohli · 11/0 · 0.4",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 0.4 · 2 रन · V Kohli · 11/0 · 0.4"
+      },
+      "bytes": 303
+    },
+    {
+      "id": "01-01-05-ball",
+      "t": 7,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 11,
+        "wkts": 0,
+        "overs": "0.5"
+      },
+      "players": [
+        "V Kohli",
+        "RG Sharma",
+        "M Jansen"
+      ],
+      "text": {
+        "en": "IND · 0.5 · DOT · V Kohli · 11/0 · 0.5",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 0.5 · खाली गेंद · V Kohli · 11/0 · 0.5"
+      },
+      "bytes": 302
+    },
+    {
+      "id": "01-01-06-four",
+      "t": 8.2,
+      "sport": "cricket",
+      "type": "four",
+      "importance": 2,
+      "score": {
+        "runs": 15,
+        "wkts": 0,
+        "overs": "0.6"
+      },
+      "players": [
+        "V Kohli",
+        "RG Sharma",
+        "M Jansen"
+      ],
+      "text": {
+        "en": "IND · FOUR · V Kohli · 15/0 · 0.6",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · चौका · V Kohli · 15/0 · 0.6"
+      },
+      "bytes": 288
+    },
+    {
+      "id": "01-01-06-over_end",
+      "t": 8.55,
+      "sport": "cricket",
+      "type": "over_end",
+      "importance": 2,
+      "score": {
+        "runs": 15,
+        "wkts": 0,
+        "overs": "1.0"
+      },
+      "players": [
+        "V Kohli",
+        "RG Sharma",
+        "M Jansen"
+      ],
+      "text": {
+        "en": "IND · OVER END · 1.0 · FINAL BALL 0.6 · 15/0 · 1.0",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · ओवर समाप्त · 1.0 · अंतिम गेंद 0.6 · 15/0 · 1.0"
+      },
+      "bytes": 333
+    },
+    {
+      "id": "01-02-01-four",
+      "t": 9.85,
+      "sport": "cricket",
+      "type": "four",
+      "importance": 2,
+      "score": {
+        "runs": 19,
+        "wkts": 0,
+        "overs": "1.1"
+      },
+      "players": [
+        "RG Sharma",
+        "V Kohli",
+        "KA Maharaj"
+      ],
+      "text": {
+        "en": "IND · FOUR · RG Sharma · 19/0 · 1.1",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · चौका · RG Sharma · 19/0 · 1.1"
+      },
+      "bytes": 295
+    },
+    {
+      "id": "01-02-02-four",
+      "t": 11.25,
+      "sport": "cricket",
+      "type": "four",
+      "importance": 2,
+      "score": {
+        "runs": 23,
+        "wkts": 0,
+        "overs": "1.2"
+      },
+      "players": [
+        "RG Sharma",
+        "V Kohli",
+        "KA Maharaj"
+      ],
+      "text": {
+        "en": "IND · FOUR · RG Sharma · 23/0 · 1.2",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · चौका · RG Sharma · 23/0 · 1.2"
+      },
+      "bytes": 296
+    },
+    {
+      "id": "01-02-03-ball",
+      "t": 12.75,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 23,
+        "wkts": 0,
+        "overs": "1.3"
+      },
+      "players": [
+        "RG Sharma",
+        "V Kohli",
+        "KA Maharaj"
+      ],
+      "text": {
+        "en": "IND · 1.3 · DOT · RG Sharma · 23/0 · 1.3",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 1.3 · खाली गेंद · RG Sharma · 23/0 · 1.3"
+      },
+      "bytes": 312
+    },
+    {
+      "id": "01-02-04-wicket",
+      "t": 14.35,
+      "sport": "cricket",
+      "type": "wicket",
+      "importance": 3,
+      "score": {
+        "runs": 23,
+        "wkts": 1,
+        "overs": "1.4"
+      },
+      "players": [
+        "RG Sharma",
+        "V Kohli",
+        "KA Maharaj",
+        "H Klaasen"
+      ],
+      "text": {
+        "en": "IND · WICKET · RG Sharma · caught · 23/1 · 1.4",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · विकेट · RG Sharma आउट · caught · 23/1 · 1.4"
+      },
+      "bytes": 337
+    },
+    {
+      "id": "01-02-05-ball",
+      "t": 15.9,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 23,
+        "wkts": 1,
+        "overs": "1.5"
+      },
+      "players": [
+        "RR Pant",
+        "V Kohli",
+        "KA Maharaj"
+      ],
+      "text": {
+        "en": "IND · 1.5 · DOT · RR Pant · 23/1 · 1.5",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 1.5 · खाली गेंद · RR Pant · 23/1 · 1.5"
+      },
+      "bytes": 305
+    },
+    {
+      "id": "01-02-06-wicket",
+      "t": 17.2,
+      "sport": "cricket",
+      "type": "wicket",
+      "importance": 3,
+      "score": {
+        "runs": 23,
+        "wkts": 2,
+        "overs": "1.6"
+      },
+      "players": [
+        "RR Pant",
+        "V Kohli",
+        "KA Maharaj",
+        "Q de Kock"
+      ],
+      "text": {
+        "en": "IND · WICKET · RR Pant · caught · 23/2 · 1.6",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · विकेट · RR Pant आउट · caught · 23/2 · 1.6"
+      },
+      "bytes": 330
+    },
+    {
+      "id": "01-02-06-over_end",
+      "t": 17.9,
+      "sport": "cricket",
+      "type": "over_end",
+      "importance": 2,
+      "score": {
+        "runs": 23,
+        "wkts": 2,
+        "overs": "2.0"
+      },
+      "players": [
+        "RR Pant",
+        "V Kohli",
+        "KA Maharaj"
+      ],
+      "text": {
+        "en": "IND · OVER END · 2.0 · FINAL BALL 1.6 · 23/2 · 2.0",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · ओवर समाप्त · 2.0 · अंतिम गेंद 1.6 · 23/2 · 2.0"
+      },
+      "bytes": 333
+    },
+    {
+      "id": "01-03-01-ball",
+      "t": 19.3,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 23,
+        "wkts": 2,
+        "overs": "2.1"
+      },
+      "players": [
+        "V Kohli",
+        "SA Yadav",
+        "K Rabada"
+      ],
+      "text": {
+        "en": "IND · 2.1 · DOT · V Kohli · 23/2 · 2.1",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 2.1 · खाली गेंद · V Kohli · 23/2 · 2.1"
+      },
+      "bytes": 304
+    },
+    {
+      "id": "01-03-02-ball",
+      "t": 20.8,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 23,
+        "wkts": 2,
+        "overs": "2.2"
+      },
+      "players": [
+        "V Kohli",
+        "SA Yadav",
+        "K Rabada"
+      ],
+      "text": {
+        "en": "IND · 2.2 · DOT · V Kohli · 23/2 · 2.2",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 2.2 · खाली गेंद · V Kohli · 23/2 · 2.2"
+      },
+      "bytes": 304
+    },
+    {
+      "id": "01-03-03-ball",
+      "t": 22.4,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 23,
+        "wkts": 2,
+        "overs": "2.3"
+      },
+      "players": [
+        "V Kohli",
+        "SA Yadav",
+        "K Rabada"
+      ],
+      "text": {
+        "en": "IND · 2.3 · DOT · V Kohli · 23/2 · 2.3",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 2.3 · खाली गेंद · V Kohli · 23/2 · 2.3"
+      },
+      "bytes": 304
+    },
+    {
+      "id": "01-03-04-ball",
+      "t": 23.6,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 24,
+        "wkts": 2,
+        "overs": "2.4"
+      },
+      "players": [
+        "V Kohli",
+        "SA Yadav",
+        "K Rabada"
+      ],
+      "text": {
+        "en": "IND · 2.4 · +1 RUN · V Kohli · 24/2 · 2.4",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 2.4 · 1 रन · V Kohli · 24/2 · 2.4"
+      },
+      "bytes": 302
+    },
+    {
+      "id": "01-03-05-ball",
+      "t": 24.9,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 24,
+        "wkts": 2,
+        "overs": "2.5"
+      },
+      "players": [
+        "SA Yadav",
+        "V Kohli",
+        "K Rabada"
+      ],
+      "text": {
+        "en": "IND · 2.5 · DOT · SA Yadav · 24/2 · 2.5",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 2.5 · खाली गेंद · SA Yadav · 24/2 · 2.5"
+      },
+      "bytes": 306
+    },
+    {
+      "id": "01-03-06-ball",
+      "t": 26.3,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 26,
+        "wkts": 2,
+        "overs": "2.6"
+      },
+      "players": [
+        "SA Yadav",
+        "V Kohli",
+        "K Rabada"
+      ],
+      "text": {
+        "en": "IND · 2.6 · +2 RUNS · SA Yadav · 26/2 · 2.6",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 2.6 · 2 रन · SA Yadav · 26/2 · 2.6"
+      },
+      "bytes": 305
+    },
+    {
+      "id": "01-03-06-over_end",
+      "t": 26.65,
+      "sport": "cricket",
+      "type": "over_end",
+      "importance": 2,
+      "score": {
+        "runs": 26,
+        "wkts": 2,
+        "overs": "3.0"
+      },
+      "players": [
+        "SA Yadav",
+        "V Kohli",
+        "K Rabada"
+      ],
+      "text": {
+        "en": "IND · OVER END · 3.0 · FINAL BALL 2.6 · 26/2 · 3.0",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · ओवर समाप्त · 3.0 · अंतिम गेंद 2.6 · 26/2 · 3.0"
+      },
+      "bytes": 333
+    },
+    {
+      "id": "01-04-01-ball",
+      "t": 28.15,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 28,
+        "wkts": 2,
+        "overs": "3.1"
+      },
+      "players": [
+        "V Kohli",
+        "SA Yadav",
+        "KA Maharaj"
+      ],
+      "text": {
+        "en": "IND · 3.1 · +2 RUNS · V Kohli · 28/2 · 3.1",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 3.1 · 2 रन · V Kohli · 28/2 · 3.1"
+      },
+      "bytes": 306
+    },
+    {
+      "id": "01-04-02-ball",
+      "t": 29.75,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 28,
+        "wkts": 2,
+        "overs": "3.2"
+      },
+      "players": [
+        "V Kohli",
+        "SA Yadav",
+        "KA Maharaj"
+      ],
+      "text": {
+        "en": "IND · 3.2 · DOT · V Kohli · 28/2 · 3.2",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 3.2 · खाली गेंद · V Kohli · 28/2 · 3.2"
+      },
+      "bytes": 307
+    },
+    {
+      "id": "01-04-03-ball",
+      "t": 30.95,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 28,
+        "wkts": 2,
+        "overs": "3.3"
+      },
+      "players": [
+        "V Kohli",
+        "SA Yadav",
+        "KA Maharaj"
+      ],
+      "text": {
+        "en": "IND · 3.3 · DOT · V Kohli · 28/2 · 3.3",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 3.3 · खाली गेंद · V Kohli · 28/2 · 3.3"
+      },
+      "bytes": 307
+    },
+    {
+      "id": "01-04-04-four",
+      "t": 32.25,
+      "sport": "cricket",
+      "type": "four",
+      "importance": 2,
+      "score": {
+        "runs": 32,
+        "wkts": 2,
+        "overs": "3.4"
+      },
+      "players": [
+        "V Kohli",
+        "SA Yadav",
+        "KA Maharaj"
+      ],
+      "text": {
+        "en": "IND · FOUR · V Kohli · 32/2 · 3.4",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · चौका · V Kohli · 32/2 · 3.4"
+      },
+      "bytes": 291
+    },
+    {
+      "id": "01-04-05-ball",
+      "t": 33.65,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 32,
+        "wkts": 2,
+        "overs": "3.5"
+      },
+      "players": [
+        "V Kohli",
+        "SA Yadav",
+        "KA Maharaj"
+      ],
+      "text": {
+        "en": "IND · 3.5 · DOT · V Kohli · 32/2 · 3.5",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 3.5 · खाली गेंद · V Kohli · 32/2 · 3.5"
+      },
+      "bytes": 307
+    },
+    {
+      "id": "01-04-06-ball",
+      "t": 35.15,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 32,
+        "wkts": 2,
+        "overs": "3.6"
+      },
+      "players": [
+        "V Kohli",
+        "SA Yadav",
+        "KA Maharaj"
+      ],
+      "text": {
+        "en": "IND · 3.6 · DOT · V Kohli · 32/2 · 3.6",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 3.6 · खाली गेंद · V Kohli · 32/2 · 3.6"
+      },
+      "bytes": 307
+    },
+    {
+      "id": "01-04-06-over_end",
+      "t": 35.5,
+      "sport": "cricket",
+      "type": "over_end",
+      "importance": 2,
+      "score": {
+        "runs": 32,
+        "wkts": 2,
+        "overs": "4.0"
+      },
+      "players": [
+        "V Kohli",
+        "SA Yadav",
+        "KA Maharaj"
+      ],
+      "text": {
+        "en": "IND · OVER END · 4.0 · FINAL BALL 3.6 · 32/2 · 4.0",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · ओवर समाप्त · 4.0 · अंतिम गेंद 3.6 · 32/2 · 4.0"
+      },
+      "bytes": 334
+    },
+    {
+      "id": "01-05-01-ball",
+      "t": 37.1,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 33,
+        "wkts": 2,
+        "overs": "4.1"
+      },
+      "players": [
+        "SA Yadav",
+        "V Kohli",
+        "K Rabada"
+      ],
+      "text": {
+        "en": "IND · 4.1 · +1 RUN · SA Yadav · 33/2 · 4.1",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 4.1 · 1 रन · SA Yadav · 33/2 · 4.1"
+      },
+      "bytes": 304
+    },
+    {
+      "id": "01-05-02-ball",
+      "t": 38.3,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 34,
+        "wkts": 2,
+        "overs": "4.2"
+      },
+      "players": [
+        "V Kohli",
+        "SA Yadav",
+        "K Rabada"
+      ],
+      "text": {
+        "en": "IND · 4.2 · +1 RUN · V Kohli · 34/2 · 4.2",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 4.2 · 1 रन · V Kohli · 34/2 · 4.2"
+      },
+      "bytes": 302
+    },
+    {
+      "id": "01-05-03-wicket",
+      "t": 39.6,
+      "sport": "cricket",
+      "type": "wicket",
+      "importance": 3,
+      "score": {
+        "runs": 34,
+        "wkts": 3,
+        "overs": "4.3"
+      },
+      "players": [
+        "SA Yadav",
+        "V Kohli",
+        "K Rabada",
+        "H Klaasen"
+      ],
+      "text": {
+        "en": "IND · WICKET · SA Yadav · caught · 34/3 · 4.3",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · विकेट · SA Yadav आउट · caught · 34/3 · 4.3"
+      },
+      "bytes": 331
+    },
+    {
+      "id": "01-05-04-four",
+      "t": 41.35,
+      "sport": "cricket",
+      "type": "four",
+      "importance": 2,
+      "score": {
+        "runs": 38,
+        "wkts": 3,
+        "overs": "4.4"
+      },
+      "players": [
+        "AR Patel",
+        "V Kohli",
+        "K Rabada"
+      ],
+      "text": {
+        "en": "IND · FOUR · AR Patel · 38/3 · 4.4",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · चौका · AR Patel · 38/3 · 4.4"
+      },
+      "bytes": 291
+    },
+    {
+      "id": "01-05-05-ball",
+      "t": 42.85,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 38,
+        "wkts": 3,
+        "overs": "4.5"
+      },
+      "players": [
+        "AR Patel",
+        "V Kohli",
+        "K Rabada"
+      ],
+      "text": {
+        "en": "IND · 4.5 · DOT · AR Patel · 38/3 · 4.5",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 4.5 · खाली गेंद · AR Patel · 38/3 · 4.5"
+      },
+      "bytes": 307
+    },
+    {
+      "id": "01-05-06-ball",
+      "t": 44.45,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 39,
+        "wkts": 3,
+        "overs": "4.6"
+      },
+      "players": [
+        "AR Patel",
+        "V Kohli",
+        "K Rabada"
+      ],
+      "text": {
+        "en": "IND · 4.6 · +1 RUN · AR Patel · 39/3 · 4.6",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 4.6 · 1 रन · AR Patel · 39/3 · 4.6"
+      },
+      "bytes": 305
+    },
+    {
+      "id": "01-05-06-over_end",
+      "t": 44.8,
+      "sport": "cricket",
+      "type": "over_end",
+      "importance": 2,
+      "score": {
+        "runs": 39,
+        "wkts": 3,
+        "overs": "5.0"
+      },
+      "players": [
+        "AR Patel",
+        "V Kohli",
+        "K Rabada"
+      ],
+      "text": {
+        "en": "IND · OVER END · 5.0 · FINAL BALL 4.6 · 39/3 · 5.0",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · ओवर समाप्त · 5.0 · अंतिम गेंद 4.6 · 39/3 · 5.0"
+      },
+      "bytes": 332
+    },
+    {
+      "id": "01-06-01-ball",
+      "t": 46,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 40,
+        "wkts": 3,
+        "overs": "5.1"
+      },
+      "players": [
+        "AR Patel",
+        "V Kohli",
+        "AK Markram"
+      ],
+      "text": {
+        "en": "IND · 5.1 · +1 RUN · AR Patel · 40/3 · 5.1",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 5.1 · 1 रन · AR Patel · 40/3 · 5.1"
+      },
+      "bytes": 304
+    },
+    {
+      "id": "01-06-02-ball",
+      "t": 47.3,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 41,
+        "wkts": 3,
+        "overs": "5.2"
+      },
+      "players": [
+        "V Kohli",
+        "AR Patel",
+        "AK Markram"
+      ],
+      "text": {
+        "en": "IND · 5.2 · +1 RUN · V Kohli · 41/3 · 5.2",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 5.2 · 1 रन · V Kohli · 41/3 · 5.2"
+      },
+      "bytes": 304
+    },
+    {
+      "id": "01-06-03-ball",
+      "t": 48.7,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 42,
+        "wkts": 3,
+        "overs": "5.3"
+      },
+      "players": [
+        "AR Patel",
+        "V Kohli",
+        "AK Markram"
+      ],
+      "text": {
+        "en": "IND · 5.3 · +1 RUN · AR Patel · 42/3 · 5.3",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 5.3 · 1 रन · AR Patel · 42/3 · 5.3"
+      },
+      "bytes": 306
+    },
+    {
+      "id": "01-06-04-ball",
+      "t": 50.2,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 43,
+        "wkts": 3,
+        "overs": "5.4"
+      },
+      "players": [
+        "V Kohli",
+        "AR Patel",
+        "AK Markram"
+      ],
+      "text": {
+        "en": "IND · 5.4 · +1 RUN · V Kohli · 43/3 · 5.4",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 5.4 · 1 रन · V Kohli · 43/3 · 5.4"
+      },
+      "bytes": 304
+    },
+    {
+      "id": "01-06-05-ball",
+      "t": 51.8,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 44,
+        "wkts": 3,
+        "overs": "5.5"
+      },
+      "players": [
+        "AR Patel",
+        "V Kohli",
+        "AK Markram"
+      ],
+      "text": {
+        "en": "IND · 5.5 · +1 RUN · AR Patel · 44/3 · 5.5",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 5.5 · 1 रन · AR Patel · 44/3 · 5.5"
+      },
+      "bytes": 306
+    },
+    {
+      "id": "01-06-06-ball",
+      "t": 53,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 45,
+        "wkts": 3,
+        "overs": "5.6"
+      },
+      "players": [
+        "V Kohli",
+        "AR Patel",
+        "AK Markram"
+      ],
+      "text": {
+        "en": "IND · 5.6 · +1 RUN · V Kohli · 45/3 · 5.6",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 5.6 · 1 रन · V Kohli · 45/3 · 5.6"
+      },
+      "bytes": 302
+    },
+    {
+      "id": "01-06-06-over_end",
+      "t": 53.35,
+      "sport": "cricket",
+      "type": "over_end",
+      "importance": 2,
+      "score": {
+        "runs": 45,
+        "wkts": 3,
+        "overs": "6.0"
+      },
+      "players": [
+        "V Kohli",
+        "AR Patel",
+        "AK Markram"
+      ],
+      "text": {
+        "en": "IND · OVER END · 6.0 · FINAL BALL 5.6 · 45/3 · 6.0",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · ओवर समाप्त · 6.0 · अंतिम गेंद 5.6 · 45/3 · 6.0"
+      },
+      "bytes": 335
+    },
+    {
+      "id": "01-07-01-ball",
+      "t": 54.65,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 46,
+        "wkts": 3,
+        "overs": "6.1"
+      },
+      "players": [
+        "V Kohli",
+        "AR Patel",
+        "A Nortje"
+      ],
+      "text": {
+        "en": "IND · 6.1 · +1 RUN · V Kohli · 46/3 · 6.1",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 6.1 · 1 रन · V Kohli · 46/3 · 6.1"
+      },
+      "bytes": 303
+    },
+    {
+      "id": "01-07-02-ball",
+      "t": 56.05,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 46,
+        "wkts": 3,
+        "overs": "6.2"
+      },
+      "players": [
+        "AR Patel",
+        "V Kohli",
+        "A Nortje"
+      ],
+      "text": {
+        "en": "IND · 6.2 · DOT · AR Patel · 46/3 · 6.2",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 6.2 · खाली गेंद · AR Patel · 46/3 · 6.2"
+      },
+      "bytes": 307
+    },
+    {
+      "id": "01-07-03-ball",
+      "t": 57.55,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 47,
+        "wkts": 3,
+        "overs": "6.3"
+      },
+      "players": [
+        "AR Patel",
+        "V Kohli",
+        "A Nortje"
+      ],
+      "text": {
+        "en": "IND · 6.3 · +1 RUN · AR Patel · 47/3 · 6.3",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 6.3 · 1 रन · AR Patel · 47/3 · 6.3"
+      },
+      "bytes": 305
+    },
+    {
+      "id": "01-07-04-ball",
+      "t": 59.15,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 47,
+        "wkts": 3,
+        "overs": "6.4"
+      },
+      "players": [
+        "V Kohli",
+        "AR Patel",
+        "A Nortje"
+      ],
+      "text": {
+        "en": "IND · 6.4 · DOT · V Kohli · 47/3 · 6.4",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 6.4 · खाली गेंद · V Kohli · 47/3 · 6.4"
+      },
+      "bytes": 305
+    },
+    {
+      "id": "01-07-05-ball",
+      "t": 60.35,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 48,
+        "wkts": 3,
+        "overs": "6.5"
+      },
+      "players": [
+        "V Kohli",
+        "AR Patel",
+        "A Nortje"
+      ],
+      "text": {
+        "en": "IND · 6.5 · +1 RUN · V Kohli · 48/3 · 6.5",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 6.5 · 1 रन · V Kohli · 48/3 · 6.5"
+      },
+      "bytes": 303
+    },
+    {
+      "id": "01-07-06-ball",
+      "t": 61.65,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 49,
+        "wkts": 3,
+        "overs": "6.6"
+      },
+      "players": [
+        "AR Patel",
+        "V Kohli",
+        "A Nortje"
+      ],
+      "text": {
+        "en": "IND · 6.6 · +1 RUN · AR Patel · 49/3 · 6.6",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 6.6 · 1 रन · AR Patel · 49/3 · 6.6"
+      },
+      "bytes": 305
+    },
+    {
+      "id": "01-07-06-over_end",
+      "t": 62,
+      "sport": "cricket",
+      "type": "over_end",
+      "importance": 2,
+      "score": {
+        "runs": 49,
+        "wkts": 3,
+        "overs": "7.0"
+      },
+      "players": [
+        "AR Patel",
+        "V Kohli",
+        "A Nortje"
+      ],
+      "text": {
+        "en": "IND · OVER END · 7.0 · FINAL BALL 6.6 · 49/3 · 7.0",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · ओवर समाप्त · 7.0 · अंतिम गेंद 6.6 · 49/3 · 7.0"
+      },
+      "bytes": 330
+    },
+    {
+      "id": "01-08-01-ball",
+      "t": 63.4,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 50,
+        "wkts": 3,
+        "overs": "7.1"
+      },
+      "players": [
+        "AR Patel",
+        "V Kohli",
+        "AK Markram"
+      ],
+      "text": {
+        "en": "IND · 7.1 · +1 RUN · AR Patel · 50/3 · 7.1",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 7.1 · 1 रन · AR Patel · 50/3 · 7.1"
+      },
+      "bytes": 306
+    },
+    {
+      "id": "01-08-01-milestone-team-50",
+      "t": 63.4,
+      "sport": "cricket",
+      "type": "milestone",
+      "importance": 2,
+      "score": {
+        "runs": 50,
+        "wkts": 3,
+        "overs": "7.1"
+      },
+      "players": [
+        "AR Patel"
+      ],
+      "text": {
+        "en": "IND · MILESTONE · 50 UP · 50/3 · 7.1",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · उपलब्धि · 50 रन पूरे · 50/3 · 7.1"
+      },
+      "bytes": 294
+    },
+    {
+      "id": "01-08-02-ball",
+      "t": 64.9,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 51,
+        "wkts": 3,
+        "overs": "7.2"
+      },
+      "players": [
+        "V Kohli",
+        "AR Patel",
+        "AK Markram"
+      ],
+      "text": {
+        "en": "IND · 7.2 · +1 RUN · V Kohli · 51/3 · 7.2",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 7.2 · 1 रन · V Kohli · 51/3 · 7.2"
+      },
+      "bytes": 304
+    },
+    {
+      "id": "01-08-03-six",
+      "t": 66.5,
+      "sport": "cricket",
+      "type": "six",
+      "importance": 3,
+      "score": {
+        "runs": 57,
+        "wkts": 3,
+        "overs": "7.3"
+      },
+      "players": [
+        "AR Patel",
+        "V Kohli",
+        "AK Markram"
+      ],
+      "text": {
+        "en": "IND · SIX · AR Patel · 57/3 · 7.3",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · छक्का · AR Patel · 57/3 · 7.3"
+      },
+      "bytes": 290
+    },
+    {
+      "id": "01-08-04-ball",
+      "t": 67.7,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 57,
+        "wkts": 3,
+        "overs": "7.4"
+      },
+      "players": [
+        "AR Patel",
+        "V Kohli",
+        "AK Markram"
+      ],
+      "text": {
+        "en": "IND · 7.4 · DOT · AR Patel · 57/3 · 7.4",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 7.4 · खाली गेंद · AR Patel · 57/3 · 7.4"
+      },
+      "bytes": 308
+    },
+    {
+      "id": "01-08-05-ball",
+      "t": 69,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 58,
+        "wkts": 3,
+        "overs": "7.5"
+      },
+      "players": [
+        "AR Patel",
+        "V Kohli",
+        "AK Markram"
+      ],
+      "text": {
+        "en": "IND · 7.5 · +1 RUN · AR Patel · 58/3 · 7.5",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 7.5 · 1 रन · AR Patel · 58/3 · 7.5"
+      },
+      "bytes": 304
+    },
+    {
+      "id": "01-08-06-ball",
+      "t": 70.4,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 59,
+        "wkts": 3,
+        "overs": "7.6"
+      },
+      "players": [
+        "V Kohli",
+        "AR Patel",
+        "AK Markram"
+      ],
+      "text": {
+        "en": "IND · 7.6 · +1 RUN · V Kohli · 59/3 · 7.6",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 7.6 · 1 रन · V Kohli · 59/3 · 7.6"
+      },
+      "bytes": 304
+    },
+    {
+      "id": "01-08-06-over_end",
+      "t": 70.75,
+      "sport": "cricket",
+      "type": "over_end",
+      "importance": 2,
+      "score": {
+        "runs": 59,
+        "wkts": 3,
+        "overs": "8.0"
+      },
+      "players": [
+        "V Kohli",
+        "AR Patel",
+        "AK Markram"
+      ],
+      "text": {
+        "en": "IND · OVER END · 8.0 · FINAL BALL 7.6 · 59/3 · 8.0",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · ओवर समाप्त · 8.0 · अंतिम गेंद 7.6 · 59/3 · 8.0"
+      },
+      "bytes": 335
+    },
+    {
+      "id": "01-09-01-ball",
+      "t": 72.25,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 60,
+        "wkts": 3,
+        "overs": "8.1"
+      },
+      "players": [
+        "V Kohli",
+        "AR Patel",
+        "KA Maharaj"
+      ],
+      "text": {
+        "en": "IND · 8.1 · +1 RUN · V Kohli · 60/3 · 8.1",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 8.1 · 1 रन · V Kohli · 60/3 · 8.1"
+      },
+      "bytes": 305
+    },
+    {
+      "id": "01-09-02-ball",
+      "t": 73.85,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 61,
+        "wkts": 3,
+        "overs": "8.2"
+      },
+      "players": [
+        "AR Patel",
+        "V Kohli",
+        "KA Maharaj"
+      ],
+      "text": {
+        "en": "IND · 8.2 · +1 RUN · AR Patel · 61/3 · 8.2",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 8.2 · 1 रन · AR Patel · 61/3 · 8.2"
+      },
+      "bytes": 307
+    },
+    {
+      "id": "01-09-03-ball",
+      "t": 75.05,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 62,
+        "wkts": 3,
+        "overs": "8.3"
+      },
+      "players": [
+        "V Kohli",
+        "AR Patel",
+        "KA Maharaj"
+      ],
+      "text": {
+        "en": "IND · 8.3 · +1 RUN · V Kohli · 62/3 · 8.3",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 8.3 · 1 रन · V Kohli · 62/3 · 8.3"
+      },
+      "bytes": 305
+    },
+    {
+      "id": "01-09-04-six",
+      "t": 76.35,
+      "sport": "cricket",
+      "type": "six",
+      "importance": 3,
+      "score": {
+        "runs": 68,
+        "wkts": 3,
+        "overs": "8.4"
+      },
+      "players": [
+        "AR Patel",
+        "V Kohli",
+        "KA Maharaj"
+      ],
+      "text": {
+        "en": "IND · SIX · AR Patel · 68/3 · 8.4",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · छक्का · AR Patel · 68/3 · 8.4"
+      },
+      "bytes": 291
+    },
+    {
+      "id": "01-09-05-ball",
+      "t": 77.75,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 68,
+        "wkts": 3,
+        "overs": "8.5"
+      },
+      "players": [
+        "AR Patel",
+        "V Kohli",
+        "KA Maharaj"
+      ],
+      "text": {
+        "en": "IND · 8.5 · DOT · AR Patel · 68/3 · 8.5",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 8.5 · खाली गेंद · AR Patel · 68/3 · 8.5"
+      },
+      "bytes": 309
+    },
+    {
+      "id": "01-09-06-ball",
+      "t": 79.25,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 68,
+        "wkts": 3,
+        "overs": "8.6"
+      },
+      "players": [
+        "AR Patel",
+        "V Kohli",
+        "KA Maharaj"
+      ],
+      "text": {
+        "en": "IND · 8.6 · DOT · AR Patel · 68/3 · 8.6",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 8.6 · खाली गेंद · AR Patel · 68/3 · 8.6"
+      },
+      "bytes": 309
+    },
+    {
+      "id": "01-09-06-over_end",
+      "t": 79.6,
+      "sport": "cricket",
+      "type": "over_end",
+      "importance": 2,
+      "score": {
+        "runs": 68,
+        "wkts": 3,
+        "overs": "9.0"
+      },
+      "players": [
+        "AR Patel",
+        "V Kohli",
+        "KA Maharaj"
+      ],
+      "text": {
+        "en": "IND · OVER END · 9.0 · FINAL BALL 8.6 · 68/3 · 9.0",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · ओवर समाप्त · 9.0 · अंतिम गेंद 8.6 · 68/3 · 9.0"
+      },
+      "bytes": 334
+    },
+    {
+      "id": "01-10-01-ball",
+      "t": 81.2,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 69,
+        "wkts": 3,
+        "overs": "9.1"
+      },
+      "players": [
+        "V Kohli",
+        "AR Patel",
+        "T Shamsi"
+      ],
+      "text": {
+        "en": "IND · 9.1 · +1 RUN · V Kohli · 69/3 · 9.1",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 9.1 · 1 रन · V Kohli · 69/3 · 9.1"
+      },
+      "bytes": 302
+    },
+    {
+      "id": "01-10-02-ball",
+      "t": 82.4,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 70,
+        "wkts": 3,
+        "overs": "9.1"
+      },
+      "players": [
+        "V Kohli",
+        "AR Patel",
+        "T Shamsi"
+      ],
+      "text": {
+        "en": "IND · 9.1 · +1 RUN · V Kohli · 70/3 · 9.1",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 9.1 · 1 रन · V Kohli · 70/3 · 9.1"
+      },
+      "bytes": 302
+    },
+    {
+      "id": "01-10-03-ball",
+      "t": 83.7,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 70,
+        "wkts": 3,
+        "overs": "9.2"
+      },
+      "players": [
+        "AR Patel",
+        "V Kohli",
+        "T Shamsi"
+      ],
+      "text": {
+        "en": "IND · 9.2 · DOT · AR Patel · 70/3 · 9.2",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 9.2 · खाली गेंद · AR Patel · 70/3 · 9.2"
+      },
+      "bytes": 306
+    },
+    {
+      "id": "01-10-04-ball",
+      "t": 85.1,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 70,
+        "wkts": 3,
+        "overs": "9.3"
+      },
+      "players": [
+        "AR Patel",
+        "V Kohli",
+        "T Shamsi"
+      ],
+      "text": {
+        "en": "IND · 9.3 · DOT · AR Patel · 70/3 · 9.3",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 9.3 · खाली गेंद · AR Patel · 70/3 · 9.3"
+      },
+      "bytes": 306
+    },
+    {
+      "id": "01-10-05-ball",
+      "t": 86.6,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 71,
+        "wkts": 3,
+        "overs": "9.4"
+      },
+      "players": [
+        "AR Patel",
+        "V Kohli",
+        "T Shamsi"
+      ],
+      "text": {
+        "en": "IND · 9.4 · +1 RUN · AR Patel · 71/3 · 9.4",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 9.4 · 1 रन · AR Patel · 71/3 · 9.4"
+      },
+      "bytes": 304
+    },
+    {
+      "id": "01-10-06-ball",
+      "t": 88.2,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 73,
+        "wkts": 3,
+        "overs": "9.5"
+      },
+      "players": [
+        "V Kohli",
+        "AR Patel",
+        "T Shamsi"
+      ],
+      "text": {
+        "en": "IND · 9.5 · +2 RUNS · V Kohli · 73/3 · 9.5",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 9.5 · 2 रन · V Kohli · 73/3 · 9.5"
+      },
+      "bytes": 303
+    },
+    {
+      "id": "01-10-07-ball",
+      "t": 89.4,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 75,
+        "wkts": 3,
+        "overs": "9.6"
+      },
+      "players": [
+        "V Kohli",
+        "AR Patel",
+        "T Shamsi"
+      ],
+      "text": {
+        "en": "IND · 9.6 · +2 RUNS · V Kohli · 75/3 · 9.6",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 9.6 · 2 रन · V Kohli · 75/3 · 9.6"
+      },
+      "bytes": 303
+    },
+    {
+      "id": "01-10-07-over_end",
+      "t": 89.75,
+      "sport": "cricket",
+      "type": "over_end",
+      "importance": 2,
+      "score": {
+        "runs": 75,
+        "wkts": 3,
+        "overs": "10.0"
+      },
+      "players": [
+        "V Kohli",
+        "AR Patel",
+        "T Shamsi"
+      ],
+      "text": {
+        "en": "IND · OVER END · 10.0 · FINAL BALL 9.6 · 75/3 · 10.0",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · ओवर समाप्त · 10.0 · अंतिम गेंद 9.6 · 75/3 · 10.0"
+      },
+      "bytes": 338
+    },
+    {
+      "id": "01-11-01-ball",
+      "t": 91.05,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 76,
+        "wkts": 3,
+        "overs": "10.1"
+      },
+      "players": [
+        "AR Patel",
+        "V Kohli",
+        "M Jansen"
+      ],
+      "text": {
+        "en": "IND · 10.1 · +1 RUN · AR Patel · 76/3 · 10.1",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 10.1 · 1 रन · AR Patel · 76/3 · 10.1"
+      },
+      "bytes": 310
+    },
+    {
+      "id": "01-11-02-ball",
+      "t": 92.45,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 77,
+        "wkts": 3,
+        "overs": "10.2"
+      },
+      "players": [
+        "V Kohli",
+        "AR Patel",
+        "M Jansen"
+      ],
+      "text": {
+        "en": "IND · 10.2 · +1 RUN · V Kohli · 77/3 · 10.2",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 10.2 · 1 रन · V Kohli · 77/3 · 10.2"
+      },
+      "bytes": 308
+    },
+    {
+      "id": "01-11-03-ball",
+      "t": 93.95,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 78,
+        "wkts": 3,
+        "overs": "10.3"
+      },
+      "players": [
+        "AR Patel",
+        "V Kohli",
+        "M Jansen"
+      ],
+      "text": {
+        "en": "IND · 10.3 · +1 RUN · AR Patel · 78/3 · 10.3",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 10.3 · 1 रन · AR Patel · 78/3 · 10.3"
+      },
+      "bytes": 310
+    },
+    {
+      "id": "01-11-04-ball",
+      "t": 95.55,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 79,
+        "wkts": 3,
+        "overs": "10.4"
+      },
+      "players": [
+        "V Kohli",
+        "AR Patel",
+        "M Jansen"
+      ],
+      "text": {
+        "en": "IND · 10.4 · +1 RUN · V Kohli · 79/3 · 10.4",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 10.4 · 1 रन · V Kohli · 79/3 · 10.4"
+      },
+      "bytes": 308
+    },
+    {
+      "id": "01-11-05-ball",
+      "t": 96.75,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 80,
+        "wkts": 3,
+        "overs": "10.5"
+      },
+      "players": [
+        "AR Patel",
+        "V Kohli",
+        "M Jansen"
+      ],
+      "text": {
+        "en": "IND · 10.5 · +1 RUN · AR Patel · 80/3 · 10.5",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 10.5 · 1 रन · AR Patel · 80/3 · 10.5"
+      },
+      "bytes": 310
+    },
+    {
+      "id": "01-11-06-ball",
+      "t": 98.05,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 81,
+        "wkts": 3,
+        "overs": "10.6"
+      },
+      "players": [
+        "V Kohli",
+        "AR Patel",
+        "M Jansen"
+      ],
+      "text": {
+        "en": "IND · 10.6 · +1 RUN · V Kohli · 81/3 · 10.6",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 10.6 · 1 रन · V Kohli · 81/3 · 10.6"
+      },
+      "bytes": 308
+    },
+    {
+      "id": "01-11-07-ball",
+      "t": 99.45,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 82,
+        "wkts": 3,
+        "overs": "10.6"
+      },
+      "players": [
+        "V Kohli",
+        "AR Patel",
+        "M Jansen"
+      ],
+      "text": {
+        "en": "IND · 10.6 · +1 RUN · V Kohli · 82/3 · 10.6",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 10.6 · 1 रन · V Kohli · 82/3 · 10.6"
+      },
+      "bytes": 308
+    },
+    {
+      "id": "01-11-07-over_end",
+      "t": 99.8,
+      "sport": "cricket",
+      "type": "over_end",
+      "importance": 2,
+      "score": {
+        "runs": 82,
+        "wkts": 3,
+        "overs": "11.0"
+      },
+      "players": [
+        "V Kohli",
+        "AR Patel",
+        "M Jansen"
+      ],
+      "text": {
+        "en": "IND · OVER END · 11.0 · FINAL BALL 10.6 · 82/3 · 11.0",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · ओवर समाप्त · 11.0 · अंतिम गेंद 10.6 · 82/3 · 11.0"
+      },
+      "bytes": 339
+    },
+    {
+      "id": "01-12-01-ball",
+      "t": 101.3,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 82,
+        "wkts": 3,
+        "overs": "11.1"
+      },
+      "players": [
+        "V Kohli",
+        "AR Patel",
+        "T Shamsi"
+      ],
+      "text": {
+        "en": "IND · 11.1 · DOT · V Kohli · 82/3 · 11.1",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 11.1 · खाली गेंद · V Kohli · 82/3 · 11.1"
+      },
+      "bytes": 310
+    },
+    {
+      "id": "01-12-02-ball",
+      "t": 102.9,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 83,
+        "wkts": 3,
+        "overs": "11.2"
+      },
+      "players": [
+        "V Kohli",
+        "AR Patel",
+        "T Shamsi"
+      ],
+      "text": {
+        "en": "IND · 11.2 · +1 RUN · V Kohli · 83/3 · 11.2",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 11.2 · 1 रन · V Kohli · 83/3 · 11.2"
+      },
+      "bytes": 308
+    },
+    {
+      "id": "01-12-03-ball",
+      "t": 104.1,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 84,
+        "wkts": 3,
+        "overs": "11.3"
+      },
+      "players": [
+        "AR Patel",
+        "V Kohli",
+        "T Shamsi"
+      ],
+      "text": {
+        "en": "IND · 11.3 · +1 RUN · AR Patel · 84/3 · 11.3",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 11.3 · 1 रन · AR Patel · 84/3 · 11.3"
+      },
+      "bytes": 310
+    },
+    {
+      "id": "01-12-04-ball",
+      "t": 105.4,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 85,
+        "wkts": 3,
+        "overs": "11.4"
+      },
+      "players": [
+        "V Kohli",
+        "AR Patel",
+        "T Shamsi"
+      ],
+      "text": {
+        "en": "IND · 11.4 · +1 RUN · V Kohli · 85/3 · 11.4",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 11.4 · 1 रन · V Kohli · 85/3 · 11.4"
+      },
+      "bytes": 308
+    },
+    {
+      "id": "01-12-05-six",
+      "t": 106.8,
+      "sport": "cricket",
+      "type": "six",
+      "importance": 3,
+      "score": {
+        "runs": 91,
+        "wkts": 3,
+        "overs": "11.5"
+      },
+      "players": [
+        "AR Patel",
+        "V Kohli",
+        "T Shamsi"
+      ],
+      "text": {
+        "en": "IND · SIX · AR Patel · 91/3 · 11.5",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · छक्का · AR Patel · 91/3 · 11.5"
+      },
+      "bytes": 292
+    },
+    {
+      "id": "01-12-06-ball",
+      "t": 108.3,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 93,
+        "wkts": 3,
+        "overs": "11.6"
+      },
+      "players": [
+        "AR Patel",
+        "V Kohli",
+        "T Shamsi"
+      ],
+      "text": {
+        "en": "IND · 11.6 · +2 RUNS · AR Patel · 93/3 · 11.6",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 11.6 · 2 रन · AR Patel · 93/3 · 11.6"
+      },
+      "bytes": 311
+    },
+    {
+      "id": "01-12-06-over_end",
+      "t": 108.65,
+      "sport": "cricket",
+      "type": "over_end",
+      "importance": 2,
+      "score": {
+        "runs": 93,
+        "wkts": 3,
+        "overs": "12.0"
+      },
+      "players": [
+        "AR Patel",
+        "V Kohli",
+        "T Shamsi"
+      ],
+      "text": {
+        "en": "IND · OVER END · 12.0 · FINAL BALL 11.6 · 93/3 · 12.0",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · ओवर समाप्त · 12.0 · अंतिम गेंद 11.6 · 93/3 · 12.0"
+      },
+      "bytes": 341
+    },
+    {
+      "id": "01-13-01-ball",
+      "t": 110.25,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 94,
+        "wkts": 3,
+        "overs": "12.1"
+      },
+      "players": [
+        "V Kohli",
+        "AR Patel",
+        "A Nortje"
+      ],
+      "text": {
+        "en": "IND · 12.1 · +1 RUN · V Kohli · 94/3 · 12.1",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 12.1 · 1 रन · V Kohli · 94/3 · 12.1"
+      },
+      "bytes": 309
+    },
+    {
+      "id": "01-13-02-ball",
+      "t": 111.45,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 95,
+        "wkts": 3,
+        "overs": "12.2"
+      },
+      "players": [
+        "AR Patel",
+        "V Kohli",
+        "A Nortje"
+      ],
+      "text": {
+        "en": "IND · 12.2 · +1 RUN · AR Patel · 95/3 · 12.2",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 12.2 · 1 रन · AR Patel · 95/3 · 12.2"
+      },
+      "bytes": 311
+    },
+    {
+      "id": "01-13-03-ball",
+      "t": 112.75,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 95,
+        "wkts": 3,
+        "overs": "12.3"
+      },
+      "players": [
+        "V Kohli",
+        "AR Patel",
+        "A Nortje"
+      ],
+      "text": {
+        "en": "IND · 12.3 · DOT · V Kohli · 95/3 · 12.3",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 12.3 · खाली गेंद · V Kohli · 95/3 · 12.3"
+      },
+      "bytes": 311
+    },
+    {
+      "id": "01-13-04-ball",
+      "t": 114.15,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 96,
+        "wkts": 3,
+        "overs": "12.4"
+      },
+      "players": [
+        "V Kohli",
+        "AR Patel",
+        "A Nortje"
+      ],
+      "text": {
+        "en": "IND · 12.4 · +1 RUN · V Kohli · 96/3 · 12.4",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 12.4 · 1 रन · V Kohli · 96/3 · 12.4"
+      },
+      "bytes": 309
+    },
+    {
+      "id": "01-13-05-ball",
+      "t": 115.65,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 97,
+        "wkts": 3,
+        "overs": "12.5"
+      },
+      "players": [
+        "AR Patel",
+        "V Kohli",
+        "A Nortje"
+      ],
+      "text": {
+        "en": "IND · 12.5 · +1 RUN · AR Patel · 97/3 · 12.5",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 12.5 · 1 रन · AR Patel · 97/3 · 12.5"
+      },
+      "bytes": 311
+    },
+    {
+      "id": "01-13-06-ball",
+      "t": 117.25,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 97,
+        "wkts": 3,
+        "overs": "12.5"
+      },
+      "players": [
+        "AR Patel",
+        "V Kohli",
+        "A Nortje"
+      ],
+      "text": {
+        "en": "IND · 12.5 · DOT · AR Patel · 97/3 · 12.5",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 12.5 · खाली गेंद · AR Patel · 97/3 · 12.5"
+      },
+      "bytes": 313
+    },
+    {
+      "id": "01-13-07-ball",
+      "t": 118.45,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 98,
+        "wkts": 3,
+        "overs": "12.6"
+      },
+      "players": [
+        "AR Patel",
+        "V Kohli",
+        "A Nortje"
+      ],
+      "text": {
+        "en": "IND · 12.6 · +1 RUN · AR Patel · 98/3 · 12.6",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 12.6 · 1 रन · AR Patel · 98/3 · 12.6"
+      },
+      "bytes": 311
+    },
+    {
+      "id": "01-13-07-over_end",
+      "t": 118.8,
+      "sport": "cricket",
+      "type": "over_end",
+      "importance": 2,
+      "score": {
+        "runs": 98,
+        "wkts": 3,
+        "overs": "13.0"
+      },
+      "players": [
+        "AR Patel",
+        "V Kohli",
+        "A Nortje"
+      ],
+      "text": {
+        "en": "IND · OVER END · 13.0 · FINAL BALL 12.6 · 98/3 · 13.0",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · ओवर समाप्त · 13.0 · अंतिम गेंद 12.6 · 98/3 · 13.0"
+      },
+      "bytes": 340
+    },
+    {
+      "id": "01-14-01-six",
+      "t": 120.1,
+      "sport": "cricket",
+      "type": "six",
+      "importance": 3,
+      "score": {
+        "runs": 104,
+        "wkts": 3,
+        "overs": "13.1"
+      },
+      "players": [
+        "AR Patel",
+        "V Kohli",
+        "K Rabada"
+      ],
+      "text": {
+        "en": "IND · SIX · AR Patel · 104/3 · 13.1",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · छक्का · AR Patel · 104/3 · 13.1"
+      },
+      "bytes": 295
+    },
+    {
+      "id": "01-14-01-milestone-team-100",
+      "t": 120.1,
+      "sport": "cricket",
+      "type": "milestone",
+      "importance": 2,
+      "score": {
+        "runs": 104,
+        "wkts": 3,
+        "overs": "13.1"
+      },
+      "players": [
+        "AR Patel"
+      ],
+      "text": {
+        "en": "IND · MILESTONE · 100 UP · 104/3 · 13.1",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · उपलब्धि · 100 रन पूरे · 104/3 · 13.1"
+      },
+      "bytes": 304
+    },
+    {
+      "id": "01-14-02-ball",
+      "t": 121.5,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 105,
+        "wkts": 3,
+        "overs": "13.2"
+      },
+      "players": [
+        "AR Patel",
+        "V Kohli",
+        "K Rabada"
+      ],
+      "text": {
+        "en": "IND · 13.2 · +1 RUN · AR Patel · 105/3 · 13.2",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 13.2 · 1 रन · AR Patel · 105/3 · 13.2"
+      },
+      "bytes": 313
+    },
+    {
+      "id": "01-14-03-ball",
+      "t": 123,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 106,
+        "wkts": 3,
+        "overs": "13.3"
+      },
+      "players": [
+        "V Kohli",
+        "AR Patel",
+        "K Rabada"
+      ],
+      "text": {
+        "en": "IND · 13.3 · +1 RUN · V Kohli · 106/3 · 13.3",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 13.3 · 1 रन · V Kohli · 106/3 · 13.3"
+      },
+      "bytes": 309
+    },
+    {
+      "id": "01-14-04-wicket",
+      "t": 124.6,
+      "sport": "cricket",
+      "type": "wicket",
+      "importance": 3,
+      "score": {
+        "runs": 106,
+        "wkts": 4,
+        "overs": "13.3"
+      },
+      "players": [
+        "V Kohli",
+        "AR Patel",
+        "K Rabada",
+        "Q de Kock"
+      ],
+      "text": {
+        "en": "IND · WICKET · AR Patel · run out · 106/4 · 13.3",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · विकेट · AR Patel आउट · run out · 106/4 · 13.3"
+      },
+      "bytes": 340
+    },
+    {
+      "id": "01-14-05-ball",
+      "t": 126.15,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 107,
+        "wkts": 4,
+        "overs": "13.4"
+      },
+      "players": [
+        "V Kohli",
+        "S Dube",
+        "K Rabada"
+      ],
+      "text": {
+        "en": "IND · 13.4 · +1 RUN · V Kohli · 107/4 · 13.4",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 13.4 · 1 रन · V Kohli · 107/4 · 13.4"
+      },
+      "bytes": 310
+    },
+    {
+      "id": "01-14-06-ball",
+      "t": 127.45,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 107,
+        "wkts": 4,
+        "overs": "13.5"
+      },
+      "players": [
+        "S Dube",
+        "V Kohli",
+        "K Rabada"
+      ],
+      "text": {
+        "en": "IND · 13.5 · DOT · S Dube · 107/4 · 13.5",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 13.5 · खाली गेंद · S Dube · 107/4 · 13.5"
+      },
+      "bytes": 310
+    },
+    {
+      "id": "01-14-07-ball",
+      "t": 128.85,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 108,
+        "wkts": 4,
+        "overs": "13.6"
+      },
+      "players": [
+        "S Dube",
+        "V Kohli",
+        "K Rabada"
+      ],
+      "text": {
+        "en": "IND · 13.6 · +1 RUN · S Dube · 108/4 · 13.6",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 13.6 · 1 रन · S Dube · 108/4 · 13.6"
+      },
+      "bytes": 308
+    },
+    {
+      "id": "01-14-07-over_end",
+      "t": 129.2,
+      "sport": "cricket",
+      "type": "over_end",
+      "importance": 2,
+      "score": {
+        "runs": 108,
+        "wkts": 4,
+        "overs": "14.0"
+      },
+      "players": [
+        "S Dube",
+        "V Kohli",
+        "K Rabada"
+      ],
+      "text": {
+        "en": "IND · OVER END · 14.0 · FINAL BALL 13.6 · 108/4 · 14.0",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · ओवर समाप्त · 14.0 · अंतिम गेंद 13.6 · 108/4 · 14.0"
+      },
+      "bytes": 341
+    },
+    {
+      "id": "01-15-01-six",
+      "t": 130.7,
+      "sport": "cricket",
+      "type": "six",
+      "importance": 3,
+      "score": {
+        "runs": 114,
+        "wkts": 4,
+        "overs": "14.1"
+      },
+      "players": [
+        "S Dube",
+        "V Kohli",
+        "M Jansen"
+      ],
+      "text": {
+        "en": "IND · SIX · S Dube · 114/4 · 14.1",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · छक्का · S Dube · 114/4 · 14.1"
+      },
+      "bytes": 289
+    },
+    {
+      "id": "01-15-02-ball",
+      "t": 132.3,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 115,
+        "wkts": 4,
+        "overs": "14.2"
+      },
+      "players": [
+        "S Dube",
+        "V Kohli",
+        "M Jansen"
+      ],
+      "text": {
+        "en": "IND · 14.2 · +1 RUN · S Dube · 115/4 · 14.2",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 14.2 · 1 रन · S Dube · 115/4 · 14.2"
+      },
+      "bytes": 307
+    },
+    {
+      "id": "01-15-03-ball",
+      "t": 133.5,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 115,
+        "wkts": 4,
+        "overs": "14.3"
+      },
+      "players": [
+        "V Kohli",
+        "S Dube",
+        "M Jansen"
+      ],
+      "text": {
+        "en": "IND · 14.3 · DOT · V Kohli · 115/4 · 14.3",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 14.3 · खाली गेंद · V Kohli · 115/4 · 14.3"
+      },
+      "bytes": 311
+    },
+    {
+      "id": "01-15-04-ball",
+      "t": 134.8,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 116,
+        "wkts": 4,
+        "overs": "14.4"
+      },
+      "players": [
+        "V Kohli",
+        "S Dube",
+        "M Jansen"
+      ],
+      "text": {
+        "en": "IND · 14.4 · +1 RUN · V Kohli · 116/4 · 14.4",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 14.4 · 1 रन · V Kohli · 116/4 · 14.4"
+      },
+      "bytes": 309
+    },
+    {
+      "id": "01-15-05-ball",
+      "t": 136.2,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 117,
+        "wkts": 4,
+        "overs": "14.5"
+      },
+      "players": [
+        "S Dube",
+        "V Kohli",
+        "M Jansen"
+      ],
+      "text": {
+        "en": "IND · 14.5 · +1 RUN · S Dube · 117/4 · 14.5",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 14.5 · 1 रन · S Dube · 117/4 · 14.5"
+      },
+      "bytes": 307
+    },
+    {
+      "id": "01-15-06-ball",
+      "t": 137.7,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 118,
+        "wkts": 4,
+        "overs": "14.6"
+      },
+      "players": [
+        "V Kohli",
+        "S Dube",
+        "M Jansen"
+      ],
+      "text": {
+        "en": "IND · 14.6 · +1 RUN · V Kohli · 118/4 · 14.6",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 14.6 · 1 रन · V Kohli · 118/4 · 14.6"
+      },
+      "bytes": 309
+    },
+    {
+      "id": "01-15-06-over_end",
+      "t": 138.05,
+      "sport": "cricket",
+      "type": "over_end",
+      "importance": 2,
+      "score": {
+        "runs": 118,
+        "wkts": 4,
+        "overs": "15.0"
+      },
+      "players": [
+        "V Kohli",
+        "S Dube",
+        "M Jansen"
+      ],
+      "text": {
+        "en": "IND · OVER END · 15.0 · FINAL BALL 14.6 · 118/4 · 15.0",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · ओवर समाप्त · 15.0 · अंतिम गेंद 14.6 · 118/4 · 15.0"
+      },
+      "bytes": 342
+    },
+    {
+      "id": "01-16-01-ball",
+      "t": 139.65,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 119,
+        "wkts": 4,
+        "overs": "15.1"
+      },
+      "players": [
+        "V Kohli",
+        "S Dube",
+        "T Shamsi"
+      ],
+      "text": {
+        "en": "IND · 15.1 · +1 RUN · V Kohli · 119/4 · 15.1",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 15.1 · 1 रन · V Kohli · 119/4 · 15.1"
+      },
+      "bytes": 310
+    },
+    {
+      "id": "01-16-02-ball",
+      "t": 140.85,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 119,
+        "wkts": 4,
+        "overs": "15.2"
+      },
+      "players": [
+        "S Dube",
+        "V Kohli",
+        "T Shamsi"
+      ],
+      "text": {
+        "en": "IND · 15.2 · DOT · S Dube · 119/4 · 15.2",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 15.2 · खाली गेंद · S Dube · 119/4 · 15.2"
+      },
+      "bytes": 310
+    },
+    {
+      "id": "01-16-03-ball",
+      "t": 142.15,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 120,
+        "wkts": 4,
+        "overs": "15.3"
+      },
+      "players": [
+        "S Dube",
+        "V Kohli",
+        "T Shamsi"
+      ],
+      "text": {
+        "en": "IND · 15.3 · +1 RUN · S Dube · 120/4 · 15.3",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 15.3 · 1 रन · S Dube · 120/4 · 15.3"
+      },
+      "bytes": 308
+    },
+    {
+      "id": "01-16-04-ball",
+      "t": 143.55,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 121,
+        "wkts": 4,
+        "overs": "15.4"
+      },
+      "players": [
+        "V Kohli",
+        "S Dube",
+        "T Shamsi"
+      ],
+      "text": {
+        "en": "IND · 15.4 · +1 RUN · V Kohli · 121/4 · 15.4",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 15.4 · 1 रन · V Kohli · 121/4 · 15.4"
+      },
+      "bytes": 310
+    },
+    {
+      "id": "01-16-05-four",
+      "t": 145.05,
+      "sport": "cricket",
+      "type": "four",
+      "importance": 2,
+      "score": {
+        "runs": 125,
+        "wkts": 4,
+        "overs": "15.5"
+      },
+      "players": [
+        "S Dube",
+        "V Kohli",
+        "T Shamsi"
+      ],
+      "text": {
+        "en": "IND · FOUR · S Dube · 125/4 · 15.5",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · चौका · S Dube · 125/4 · 15.5"
+      },
+      "bytes": 292
+    },
+    {
+      "id": "01-16-06-ball",
+      "t": 146.65,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 126,
+        "wkts": 4,
+        "overs": "15.6"
+      },
+      "players": [
+        "S Dube",
+        "V Kohli",
+        "T Shamsi"
+      ],
+      "text": {
+        "en": "IND · 15.6 · +1 RUN · S Dube · 126/4 · 15.6",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 15.6 · 1 रन · S Dube · 126/4 · 15.6"
+      },
+      "bytes": 308
+    },
+    {
+      "id": "01-16-06-over_end",
+      "t": 147,
+      "sport": "cricket",
+      "type": "over_end",
+      "importance": 2,
+      "score": {
+        "runs": 126,
+        "wkts": 4,
+        "overs": "16.0"
+      },
+      "players": [
+        "S Dube",
+        "V Kohli",
+        "T Shamsi"
+      ],
+      "text": {
+        "en": "IND · OVER END · 16.0 · FINAL BALL 15.6 · 126/4 · 16.0",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · ओवर समाप्त · 16.0 · अंतिम गेंद 15.6 · 126/4 · 16.0"
+      },
+      "bytes": 339
+    },
+    {
+      "id": "01-17-01-ball",
+      "t": 148.2,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 127,
+        "wkts": 4,
+        "overs": "16.1"
+      },
+      "players": [
+        "S Dube",
+        "V Kohli",
+        "A Nortje"
+      ],
+      "text": {
+        "en": "IND · 16.1 · +1 RUN · S Dube · 127/4 · 16.1",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 16.1 · 1 रन · S Dube · 127/4 · 16.1"
+      },
+      "bytes": 307
+    },
+    {
+      "id": "01-17-02-ball",
+      "t": 149.5,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 128,
+        "wkts": 4,
+        "overs": "16.2"
+      },
+      "players": [
+        "V Kohli",
+        "S Dube",
+        "A Nortje"
+      ],
+      "text": {
+        "en": "IND · 16.2 · +1 RUN · V Kohli · 128/4 · 16.2",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 16.2 · 1 रन · V Kohli · 128/4 · 16.2"
+      },
+      "bytes": 309
+    },
+    {
+      "id": "01-17-03-ball",
+      "t": 150.9,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 129,
+        "wkts": 4,
+        "overs": "16.3"
+      },
+      "players": [
+        "S Dube",
+        "V Kohli",
+        "A Nortje"
+      ],
+      "text": {
+        "en": "IND · 16.3 · +1 RUN · S Dube · 129/4 · 16.3",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 16.3 · 1 रन · S Dube · 129/4 · 16.3"
+      },
+      "bytes": 307
+    },
+    {
+      "id": "01-17-04-ball",
+      "t": 152.4,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 129,
+        "wkts": 4,
+        "overs": "16.4"
+      },
+      "players": [
+        "V Kohli",
+        "S Dube",
+        "A Nortje"
+      ],
+      "text": {
+        "en": "IND · 16.4 · DOT · V Kohli · 129/4 · 16.4",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 16.4 · खाली गेंद · V Kohli · 129/4 · 16.4"
+      },
+      "bytes": 311
+    },
+    {
+      "id": "01-17-05-ball",
+      "t": 154,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 130,
+        "wkts": 4,
+        "overs": "16.5"
+      },
+      "players": [
+        "V Kohli",
+        "S Dube",
+        "A Nortje"
+      ],
+      "text": {
+        "en": "IND · 16.5 · +1 RUN · V Kohli · 130/4 · 16.5",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 16.5 · 1 रन · V Kohli · 130/4 · 16.5"
+      },
+      "bytes": 307
+    },
+    {
+      "id": "01-17-05-milestone-batter-50",
+      "t": 154,
+      "sport": "cricket",
+      "type": "milestone",
+      "importance": 2,
+      "score": {
+        "runs": 130,
+        "wkts": 4,
+        "overs": "16.5"
+      },
+      "players": [
+        "V Kohli"
+      ],
+      "text": {
+        "en": "IND · MILESTONE · V Kohli 50 · 130/4 · 16.5",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · उपलब्धि · V Kohli 50 · 130/4 · 16.5"
+      },
+      "bytes": 305
+    },
+    {
+      "id": "01-17-06-four",
+      "t": 155.2,
+      "sport": "cricket",
+      "type": "four",
+      "importance": 2,
+      "score": {
+        "runs": 134,
+        "wkts": 4,
+        "overs": "16.6"
+      },
+      "players": [
+        "S Dube",
+        "V Kohli",
+        "A Nortje"
+      ],
+      "text": {
+        "en": "IND · FOUR · S Dube · 134/4 · 16.6",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · चौका · S Dube · 134/4 · 16.6"
+      },
+      "bytes": 291
+    },
+    {
+      "id": "01-17-06-over_end",
+      "t": 155.55,
+      "sport": "cricket",
+      "type": "over_end",
+      "importance": 2,
+      "score": {
+        "runs": 134,
+        "wkts": 4,
+        "overs": "17.0"
+      },
+      "players": [
+        "S Dube",
+        "V Kohli",
+        "A Nortje"
+      ],
+      "text": {
+        "en": "IND · OVER END · 17.0 · FINAL BALL 16.6 · 134/4 · 17.0",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · ओवर समाप्त · 17.0 · अंतिम गेंद 16.6 · 134/4 · 17.0"
+      },
+      "bytes": 342
+    },
+    {
+      "id": "01-18-01-six",
+      "t": 156.85,
+      "sport": "cricket",
+      "type": "six",
+      "importance": 3,
+      "score": {
+        "runs": 140,
+        "wkts": 4,
+        "overs": "17.1"
+      },
+      "players": [
+        "V Kohli",
+        "S Dube",
+        "K Rabada"
+      ],
+      "text": {
+        "en": "IND · SIX · V Kohli · 140/4 · 17.1",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · छक्का · V Kohli · 140/4 · 17.1"
+      },
+      "bytes": 292
+    },
+    {
+      "id": "01-18-02-ball",
+      "t": 158.25,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 142,
+        "wkts": 4,
+        "overs": "17.2"
+      },
+      "players": [
+        "V Kohli",
+        "S Dube",
+        "K Rabada"
+      ],
+      "text": {
+        "en": "IND · 17.2 · +2 RUNS · V Kohli · 142/4 · 17.2",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 17.2 · 2 रन · V Kohli · 142/4 · 17.2"
+      },
+      "bytes": 311
+    },
+    {
+      "id": "01-18-03-four",
+      "t": 159.75,
+      "sport": "cricket",
+      "type": "four",
+      "importance": 2,
+      "score": {
+        "runs": 146,
+        "wkts": 4,
+        "overs": "17.3"
+      },
+      "players": [
+        "V Kohli",
+        "S Dube",
+        "K Rabada"
+      ],
+      "text": {
+        "en": "IND · FOUR · V Kohli · 146/4 · 17.3",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · चौका · V Kohli · 146/4 · 17.3"
+      },
+      "bytes": 294
+    },
+    {
+      "id": "01-18-04-ball",
+      "t": 161.35,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 147,
+        "wkts": 4,
+        "overs": "17.4"
+      },
+      "players": [
+        "V Kohli",
+        "S Dube",
+        "K Rabada"
+      ],
+      "text": {
+        "en": "IND · 17.4 · +1 RUN · V Kohli · 147/4 · 17.4",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 17.4 · 1 रन · V Kohli · 147/4 · 17.4"
+      },
+      "bytes": 310
+    },
+    {
+      "id": "01-18-05-ball",
+      "t": 162.55,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 148,
+        "wkts": 4,
+        "overs": "17.5"
+      },
+      "players": [
+        "S Dube",
+        "V Kohli",
+        "K Rabada"
+      ],
+      "text": {
+        "en": "IND · 17.5 · +1 RUN · S Dube · 148/4 · 17.5",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 17.5 · 1 रन · S Dube · 148/4 · 17.5"
+      },
+      "bytes": 308
+    },
+    {
+      "id": "01-18-06-ball",
+      "t": 163.85,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 149,
+        "wkts": 4,
+        "overs": "17.5"
+      },
+      "players": [
+        "S Dube",
+        "V Kohli",
+        "K Rabada"
+      ],
+      "text": {
+        "en": "IND · 17.5 · +1 RUN · S Dube · 149/4 · 17.5",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 17.5 · 1 रन · S Dube · 149/4 · 17.5"
+      },
+      "bytes": 308
+    },
+    {
+      "id": "01-18-07-ball",
+      "t": 165.25,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 150,
+        "wkts": 4,
+        "overs": "17.6"
+      },
+      "players": [
+        "V Kohli",
+        "S Dube",
+        "K Rabada"
+      ],
+      "text": {
+        "en": "IND · 17.6 · +1 RUN · V Kohli · 150/4 · 17.6",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 17.6 · 1 रन · V Kohli · 150/4 · 17.6"
+      },
+      "bytes": 310
+    },
+    {
+      "id": "01-18-07-milestone-team-150",
+      "t": 165.25,
+      "sport": "cricket",
+      "type": "milestone",
+      "importance": 2,
+      "score": {
+        "runs": 150,
+        "wkts": 4,
+        "overs": "17.6"
+      },
+      "players": [
+        "V Kohli"
+      ],
+      "text": {
+        "en": "IND · MILESTONE · 150 UP · 150/4 · 17.6",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · उपलब्धि · 150 रन पूरे · 150/4 · 17.6"
+      },
+      "bytes": 304
+    },
+    {
+      "id": "01-18-07-over_end",
+      "t": 165.6,
+      "sport": "cricket",
+      "type": "over_end",
+      "importance": 2,
+      "score": {
+        "runs": 150,
+        "wkts": 4,
+        "overs": "18.0"
+      },
+      "players": [
+        "V Kohli",
+        "S Dube",
+        "K Rabada"
+      ],
+      "text": {
+        "en": "IND · OVER END · 18.0 · FINAL BALL 17.6 · 150/4 · 18.0",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · ओवर समाप्त · 18.0 · अंतिम गेंद 17.6 · 150/4 · 18.0"
+      },
+      "bytes": 341
+    },
+    {
+      "id": "01-19-01-ball",
+      "t": 167.1,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 151,
+        "wkts": 4,
+        "overs": "18.1"
+      },
+      "players": [
+        "V Kohli",
+        "S Dube",
+        "M Jansen"
+      ],
+      "text": {
+        "en": "IND · 18.1 · +1 RUN · V Kohli · 151/4 · 18.1",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 18.1 · 1 रन · V Kohli · 151/4 · 18.1"
+      },
+      "bytes": 309
+    },
+    {
+      "id": "01-19-02-ball",
+      "t": 168.7,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 151,
+        "wkts": 4,
+        "overs": "18.1"
+      },
+      "players": [
+        "V Kohli",
+        "S Dube",
+        "M Jansen"
+      ],
+      "text": {
+        "en": "IND · 18.1 · DOT · V Kohli · 151/4 · 18.1",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 18.1 · खाली गेंद · V Kohli · 151/4 · 18.1"
+      },
+      "bytes": 311
+    },
+    {
+      "id": "01-19-03-four",
+      "t": 169.9,
+      "sport": "cricket",
+      "type": "four",
+      "importance": 2,
+      "score": {
+        "runs": 155,
+        "wkts": 4,
+        "overs": "18.2"
+      },
+      "players": [
+        "V Kohli",
+        "S Dube",
+        "M Jansen"
+      ],
+      "text": {
+        "en": "IND · FOUR · V Kohli · 155/4 · 18.2",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · चौका · V Kohli · 155/4 · 18.2"
+      },
+      "bytes": 293
+    },
+    {
+      "id": "01-19-04-ball",
+      "t": 171.2,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 157,
+        "wkts": 4,
+        "overs": "18.3"
+      },
+      "players": [
+        "V Kohli",
+        "S Dube",
+        "M Jansen"
+      ],
+      "text": {
+        "en": "IND · 18.3 · +2 RUNS · V Kohli · 157/4 · 18.3",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 18.3 · 2 रन · V Kohli · 157/4 · 18.3"
+      },
+      "bytes": 310
+    },
+    {
+      "id": "01-19-05-six",
+      "t": 172.6,
+      "sport": "cricket",
+      "type": "six",
+      "importance": 3,
+      "score": {
+        "runs": 163,
+        "wkts": 4,
+        "overs": "18.4"
+      },
+      "players": [
+        "V Kohli",
+        "S Dube",
+        "M Jansen"
+      ],
+      "text": {
+        "en": "IND · SIX · V Kohli · 163/4 · 18.4",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · छक्का · V Kohli · 163/4 · 18.4"
+      },
+      "bytes": 291
+    },
+    {
+      "id": "01-19-06-wicket",
+      "t": 174.1,
+      "sport": "cricket",
+      "type": "wicket",
+      "importance": 3,
+      "score": {
+        "runs": 163,
+        "wkts": 5,
+        "overs": "18.5"
+      },
+      "players": [
+        "V Kohli",
+        "S Dube",
+        "M Jansen",
+        "K Rabada"
+      ],
+      "text": {
+        "en": "IND · WICKET · V Kohli · caught · 163/5 · 18.5",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · विकेट · V Kohli आउट · caught · 163/5 · 18.5"
+      },
+      "bytes": 333
+    },
+    {
+      "id": "01-19-07-four",
+      "t": 176.05,
+      "sport": "cricket",
+      "type": "four",
+      "importance": 2,
+      "score": {
+        "runs": 167,
+        "wkts": 5,
+        "overs": "18.6"
+      },
+      "players": [
+        "HH Pandya",
+        "S Dube",
+        "M Jansen"
+      ],
+      "text": {
+        "en": "IND · FOUR · HH Pandya · 167/5 · 18.6",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · चौका · HH Pandya · 167/5 · 18.6"
+      },
+      "bytes": 300
+    },
+    {
+      "id": "01-19-07-over_end",
+      "t": 176.4,
+      "sport": "cricket",
+      "type": "over_end",
+      "importance": 2,
+      "score": {
+        "runs": 167,
+        "wkts": 5,
+        "overs": "19.0"
+      },
+      "players": [
+        "HH Pandya",
+        "S Dube",
+        "M Jansen"
+      ],
+      "text": {
+        "en": "IND · OVER END · 19.0 · FINAL BALL 18.6 · 167/5 · 19.0",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · ओवर समाप्त · 19.0 · अंतिम गेंद 18.6 · 167/5 · 19.0"
+      },
+      "bytes": 343
+    },
+    {
+      "id": "01-20-01-ball",
+      "t": 177.6,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 168,
+        "wkts": 5,
+        "overs": "19.1"
+      },
+      "players": [
+        "S Dube",
+        "HH Pandya",
+        "A Nortje"
+      ],
+      "text": {
+        "en": "IND · 19.1 · +1 RUN · S Dube · 168/5 · 19.1",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 19.1 · 1 रन · S Dube · 168/5 · 19.1"
+      },
+      "bytes": 309
+    },
+    {
+      "id": "01-20-02-ball",
+      "t": 178.9,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 169,
+        "wkts": 5,
+        "overs": "19.1"
+      },
+      "players": [
+        "S Dube",
+        "HH Pandya",
+        "A Nortje"
+      ],
+      "text": {
+        "en": "IND · 19.1 · +1 RUN · S Dube · 169/5 · 19.1",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 19.1 · 1 रन · S Dube · 169/5 · 19.1"
+      },
+      "bytes": 309
+    },
+    {
+      "id": "01-20-03-ball",
+      "t": 180.3,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 170,
+        "wkts": 5,
+        "overs": "19.2"
+      },
+      "players": [
+        "HH Pandya",
+        "S Dube",
+        "A Nortje"
+      ],
+      "text": {
+        "en": "IND · 19.2 · +1 RUN · HH Pandya · 170/5 · 19.2",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 19.2 · 1 रन · HH Pandya · 170/5 · 19.2"
+      },
+      "bytes": 315
+    },
+    {
+      "id": "01-20-04-four",
+      "t": 181.8,
+      "sport": "cricket",
+      "type": "four",
+      "importance": 2,
+      "score": {
+        "runs": 174,
+        "wkts": 5,
+        "overs": "19.3"
+      },
+      "players": [
+        "S Dube",
+        "HH Pandya",
+        "A Nortje"
+      ],
+      "text": {
+        "en": "IND · FOUR · S Dube · 174/5 · 19.3",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · चौका · S Dube · 174/5 · 19.3"
+      },
+      "bytes": 293
+    },
+    {
+      "id": "01-20-05-wicket",
+      "t": 183.4,
+      "sport": "cricket",
+      "type": "wicket",
+      "importance": 3,
+      "score": {
+        "runs": 174,
+        "wkts": 6,
+        "overs": "19.4"
+      },
+      "players": [
+        "S Dube",
+        "HH Pandya",
+        "A Nortje",
+        "DA Miller"
+      ],
+      "text": {
+        "en": "IND · WICKET · S Dube · caught · 174/6 · 19.4",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · विकेट · S Dube आउट · caught · 174/6 · 19.4"
+      },
+      "bytes": 334
+    },
+    {
+      "id": "01-20-06-ball",
+      "t": 184.95,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 176,
+        "wkts": 6,
+        "overs": "19.5"
+      },
+      "players": [
+        "RA Jadeja",
+        "HH Pandya",
+        "A Nortje"
+      ],
+      "text": {
+        "en": "IND · 19.5 · +2 RUNS · RA Jadeja · 176/6 · 19.5",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · 19.5 · 2 रन · RA Jadeja · 176/6 · 19.5"
+      },
+      "bytes": 320
+    },
+    {
+      "id": "01-20-07-wicket",
+      "t": 186.25,
+      "sport": "cricket",
+      "type": "wicket",
+      "importance": 3,
+      "score": {
+        "runs": 176,
+        "wkts": 7,
+        "overs": "19.6"
+      },
+      "players": [
+        "RA Jadeja",
+        "HH Pandya",
+        "A Nortje",
+        "KA Maharaj"
+      ],
+      "text": {
+        "en": "IND · WICKET · RA Jadeja · caught · 176/7 · 19.6",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · विकेट · RA Jadeja आउट · caught · 176/7 · 19.6"
+      },
+      "bytes": 345
+    },
+    {
+      "id": "01-20-07-over_end",
+      "t": 186.95,
+      "sport": "cricket",
+      "type": "over_end",
+      "importance": 2,
+      "score": {
+        "runs": 176,
+        "wkts": 7,
+        "overs": "20.0"
+      },
+      "players": [
+        "RA Jadeja",
+        "HH Pandya",
+        "A Nortje"
+      ],
+      "text": {
+        "en": "IND · OVER END · 20.0 · FINAL BALL 19.6 · 176/7 · 20.0",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ IND · ओवर समाप्त · 20.0 · अंतिम गेंद 19.6 · 176/7 · 20.0"
+      },
+      "bytes": 347
+    },
+    {
+      "id": "02-01-01-ball",
+      "t": 188.35,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 0,
+        "wkts": 0,
+        "overs": "0.1"
+      },
+      "players": [
+        "RR Hendricks",
+        "Q de Kock",
+        "Arshdeep Singh"
+      ],
+      "text": {
+        "en": "SA · 0.1 · DOT · RR Hendricks · 0/0 · 0.1",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 0.1 · खाली गेंद · RR Hendricks · 0/0 · 0.1"
+      },
+      "bytes": 323
+    },
+    {
+      "id": "02-01-02-ball",
+      "t": 189.85,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 0,
+        "wkts": 0,
+        "overs": "0.2"
+      },
+      "players": [
+        "RR Hendricks",
+        "Q de Kock",
+        "Arshdeep Singh"
+      ],
+      "text": {
+        "en": "SA · 0.2 · DOT · RR Hendricks · 0/0 · 0.2",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 0.2 · खाली गेंद · RR Hendricks · 0/0 · 0.2"
+      },
+      "bytes": 323
+    },
+    {
+      "id": "02-01-03-ball",
+      "t": 191.45,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 1,
+        "wkts": 0,
+        "overs": "0.3"
+      },
+      "players": [
+        "RR Hendricks",
+        "Q de Kock",
+        "Arshdeep Singh"
+      ],
+      "text": {
+        "en": "SA · 0.3 · +1 RUN · RR Hendricks · 1/0 · 0.3",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 0.3 · 1 रन · RR Hendricks · 1/0 · 0.3"
+      },
+      "bytes": 321
+    },
+    {
+      "id": "02-01-04-ball",
+      "t": 192.65,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 1,
+        "wkts": 0,
+        "overs": "0.4"
+      },
+      "players": [
+        "Q de Kock",
+        "RR Hendricks",
+        "Arshdeep Singh"
+      ],
+      "text": {
+        "en": "SA · 0.4 · DOT · Q de Kock · 1/0 · 0.4",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 0.4 · खाली गेंद · Q de Kock · 1/0 · 0.4"
+      },
+      "bytes": 317
+    },
+    {
+      "id": "02-01-05-ball",
+      "t": 193.95,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 2,
+        "wkts": 0,
+        "overs": "0.5"
+      },
+      "players": [
+        "Q de Kock",
+        "RR Hendricks",
+        "Arshdeep Singh"
+      ],
+      "text": {
+        "en": "SA · 0.5 · +1 RUN · Q de Kock · 2/0 · 0.5",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 0.5 · 1 रन · Q de Kock · 2/0 · 0.5"
+      },
+      "bytes": 315
+    },
+    {
+      "id": "02-01-06-four",
+      "t": 195.35,
+      "sport": "cricket",
+      "type": "four",
+      "importance": 2,
+      "score": {
+        "runs": 6,
+        "wkts": 0,
+        "overs": "0.6"
+      },
+      "players": [
+        "RR Hendricks",
+        "Q de Kock",
+        "Arshdeep Singh"
+      ],
+      "text": {
+        "en": "SA · FOUR · RR Hendricks · 6/0 · 0.6",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · चौका · RR Hendricks · 6/0 · 0.6"
+      },
+      "bytes": 307
+    },
+    {
+      "id": "02-01-06-over_end",
+      "t": 195.7,
+      "sport": "cricket",
+      "type": "over_end",
+      "importance": 2,
+      "score": {
+        "runs": 6,
+        "wkts": 0,
+        "overs": "1.0"
+      },
+      "players": [
+        "RR Hendricks",
+        "Q de Kock",
+        "Arshdeep Singh"
+      ],
+      "text": {
+        "en": "SA · OVER END · 1.0 · FINAL BALL 0.6 · 6/0 · 1.0",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · ओवर समाप्त · 1.0 · अंतिम गेंद 0.6 · 6/0 · 1.0"
+      },
+      "bytes": 340
+    },
+    {
+      "id": "02-02-01-ball",
+      "t": 197.2,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 6,
+        "wkts": 0,
+        "overs": "1.1"
+      },
+      "players": [
+        "Q de Kock",
+        "RR Hendricks",
+        "JJ Bumrah"
+      ],
+      "text": {
+        "en": "SA · 1.1 · DOT · Q de Kock · 6/0 · 1.1",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 1.1 · खाली गेंद · Q de Kock · 6/0 · 1.1"
+      },
+      "bytes": 311
+    },
+    {
+      "id": "02-02-02-ball",
+      "t": 198.8,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 7,
+        "wkts": 0,
+        "overs": "1.2"
+      },
+      "players": [
+        "Q de Kock",
+        "RR Hendricks",
+        "JJ Bumrah"
+      ],
+      "text": {
+        "en": "SA · 1.2 · +1 RUN · Q de Kock · 7/0 · 1.2",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 1.2 · 1 रन · Q de Kock · 7/0 · 1.2"
+      },
+      "bytes": 309
+    },
+    {
+      "id": "02-02-03-wicket",
+      "t": 200,
+      "sport": "cricket",
+      "type": "wicket",
+      "importance": 3,
+      "score": {
+        "runs": 7,
+        "wkts": 1,
+        "overs": "1.3"
+      },
+      "players": [
+        "RR Hendricks",
+        "Q de Kock",
+        "JJ Bumrah"
+      ],
+      "text": {
+        "en": "SA · WICKET · RR Hendricks · bowled · 7/1 · 1.3",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · विकेट · RR Hendricks आउट · bowled · 7/1 · 1.3"
+      },
+      "bytes": 328
+    },
+    {
+      "id": "02-02-04-four",
+      "t": 201.65,
+      "sport": "cricket",
+      "type": "four",
+      "importance": 2,
+      "score": {
+        "runs": 11,
+        "wkts": 1,
+        "overs": "1.4"
+      },
+      "players": [
+        "AK Markram",
+        "Q de Kock",
+        "JJ Bumrah"
+      ],
+      "text": {
+        "en": "SA · FOUR · AK Markram · 11/1 · 1.4",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · चौका · AK Markram · 11/1 · 1.4"
+      },
+      "bytes": 299
+    },
+    {
+      "id": "02-02-05-ball",
+      "t": 203.05,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 11,
+        "wkts": 1,
+        "overs": "1.5"
+      },
+      "players": [
+        "AK Markram",
+        "Q de Kock",
+        "JJ Bumrah"
+      ],
+      "text": {
+        "en": "SA · 1.5 · DOT · AK Markram · 11/1 · 1.5",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 1.5 · खाली गेंद · AK Markram · 11/1 · 1.5"
+      },
+      "bytes": 315
+    },
+    {
+      "id": "02-02-06-ball",
+      "t": 204.55,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 11,
+        "wkts": 1,
+        "overs": "1.6"
+      },
+      "players": [
+        "AK Markram",
+        "Q de Kock",
+        "JJ Bumrah"
+      ],
+      "text": {
+        "en": "SA · 1.6 · DOT · AK Markram · 11/1 · 1.6",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 1.6 · खाली गेंद · AK Markram · 11/1 · 1.6"
+      },
+      "bytes": 315
+    },
+    {
+      "id": "02-02-06-over_end",
+      "t": 204.9,
+      "sport": "cricket",
+      "type": "over_end",
+      "importance": 2,
+      "score": {
+        "runs": 11,
+        "wkts": 1,
+        "overs": "2.0"
+      },
+      "players": [
+        "AK Markram",
+        "Q de Kock",
+        "JJ Bumrah"
+      ],
+      "text": {
+        "en": "SA · OVER END · 2.0 · FINAL BALL 1.6 · 11/1 · 2.0",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · ओवर समाप्त · 2.0 · अंतिम गेंद 1.6 · 11/1 · 2.0"
+      },
+      "bytes": 336
+    },
+    {
+      "id": "02-03-01-ball",
+      "t": 206.5,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 12,
+        "wkts": 1,
+        "overs": "2.1"
+      },
+      "players": [
+        "Q de Kock",
+        "AK Markram",
+        "Arshdeep Singh"
+      ],
+      "text": {
+        "en": "SA · 2.1 · +1 RUN · Q de Kock · 12/1 · 2.1",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 2.1 · 1 रन · Q de Kock · 12/1 · 2.1"
+      },
+      "bytes": 315
+    },
+    {
+      "id": "02-03-02-ball",
+      "t": 207.7,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 12,
+        "wkts": 1,
+        "overs": "2.2"
+      },
+      "players": [
+        "AK Markram",
+        "Q de Kock",
+        "Arshdeep Singh"
+      ],
+      "text": {
+        "en": "SA · 2.2 · DOT · AK Markram · 12/1 · 2.2",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 2.2 · खाली गेंद · AK Markram · 12/1 · 2.2"
+      },
+      "bytes": 319
+    },
+    {
+      "id": "02-03-03-wicket",
+      "t": 209,
+      "sport": "cricket",
+      "type": "wicket",
+      "importance": 3,
+      "score": {
+        "runs": 12,
+        "wkts": 2,
+        "overs": "2.3"
+      },
+      "players": [
+        "AK Markram",
+        "Q de Kock",
+        "Arshdeep Singh",
+        "RR Pant"
+      ],
+      "text": {
+        "en": "SA · WICKET · AK Markram · caught · 12/2 · 2.3",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · विकेट · AK Markram आउट · caught · 12/2 · 2.3"
+      },
+      "bytes": 340
+    },
+    {
+      "id": "02-03-04-ball",
+      "t": 210.75,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 13,
+        "wkts": 2,
+        "overs": "2.4"
+      },
+      "players": [
+        "T Stubbs",
+        "Q de Kock",
+        "Arshdeep Singh"
+      ],
+      "text": {
+        "en": "SA · 2.4 · +1 RUN · T Stubbs · 13/2 · 2.4",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 2.4 · 1 रन · T Stubbs · 13/2 · 2.4"
+      },
+      "bytes": 312
+    },
+    {
+      "id": "02-03-05-ball",
+      "t": 212.25,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 13,
+        "wkts": 2,
+        "overs": "2.5"
+      },
+      "players": [
+        "Q de Kock",
+        "T Stubbs",
+        "Arshdeep Singh"
+      ],
+      "text": {
+        "en": "SA · 2.5 · DOT · Q de Kock · 13/2 · 2.5",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 2.5 · खाली गेंद · Q de Kock · 13/2 · 2.5"
+      },
+      "bytes": 316
+    },
+    {
+      "id": "02-03-06-ball",
+      "t": 213.85,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 14,
+        "wkts": 2,
+        "overs": "2.6"
+      },
+      "players": [
+        "Q de Kock",
+        "T Stubbs",
+        "Arshdeep Singh"
+      ],
+      "text": {
+        "en": "SA · 2.6 · +1 RUN · Q de Kock · 14/2 · 2.6",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 2.6 · 1 रन · Q de Kock · 14/2 · 2.6"
+      },
+      "bytes": 314
+    },
+    {
+      "id": "02-03-06-over_end",
+      "t": 214.2,
+      "sport": "cricket",
+      "type": "over_end",
+      "importance": 2,
+      "score": {
+        "runs": 14,
+        "wkts": 2,
+        "overs": "3.0"
+      },
+      "players": [
+        "Q de Kock",
+        "T Stubbs",
+        "Arshdeep Singh"
+      ],
+      "text": {
+        "en": "SA · OVER END · 3.0 · FINAL BALL 2.6 · 14/2 · 3.0",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · ओवर समाप्त · 3.0 · अंतिम गेंद 2.6 · 14/2 · 3.0"
+      },
+      "bytes": 339
+    },
+    {
+      "id": "02-04-01-four",
+      "t": 215.4,
+      "sport": "cricket",
+      "type": "four",
+      "importance": 2,
+      "score": {
+        "runs": 18,
+        "wkts": 2,
+        "overs": "3.1"
+      },
+      "players": [
+        "Q de Kock",
+        "T Stubbs",
+        "JJ Bumrah"
+      ],
+      "text": {
+        "en": "SA · FOUR · Q de Kock · 18/2 · 3.1",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · चौका · Q de Kock · 18/2 · 3.1"
+      },
+      "bytes": 294
+    },
+    {
+      "id": "02-04-02-ball",
+      "t": 216.7,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 20,
+        "wkts": 2,
+        "overs": "3.2"
+      },
+      "players": [
+        "Q de Kock",
+        "T Stubbs",
+        "JJ Bumrah"
+      ],
+      "text": {
+        "en": "SA · 3.2 · +2 RUNS · Q de Kock · 20/2 · 3.2",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 3.2 · 2 रन · Q de Kock · 20/2 · 3.2"
+      },
+      "bytes": 309
+    },
+    {
+      "id": "02-04-03-ball",
+      "t": 218.1,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 21,
+        "wkts": 2,
+        "overs": "3.3"
+      },
+      "players": [
+        "Q de Kock",
+        "T Stubbs",
+        "JJ Bumrah"
+      ],
+      "text": {
+        "en": "SA · 3.3 · +1 RUN · Q de Kock · 21/2 · 3.3",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 3.3 · 1 रन · Q de Kock · 21/2 · 3.3"
+      },
+      "bytes": 308
+    },
+    {
+      "id": "02-04-04-ball",
+      "t": 219.6,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 21,
+        "wkts": 2,
+        "overs": "3.4"
+      },
+      "players": [
+        "T Stubbs",
+        "Q de Kock",
+        "JJ Bumrah"
+      ],
+      "text": {
+        "en": "SA · 3.4 · DOT · T Stubbs · 21/2 · 3.4",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 3.4 · खाली गेंद · T Stubbs · 21/2 · 3.4"
+      },
+      "bytes": 308
+    },
+    {
+      "id": "02-04-05-ball",
+      "t": 221.2,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 21,
+        "wkts": 2,
+        "overs": "3.5"
+      },
+      "players": [
+        "T Stubbs",
+        "Q de Kock",
+        "JJ Bumrah"
+      ],
+      "text": {
+        "en": "SA · 3.5 · DOT · T Stubbs · 21/2 · 3.5",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 3.5 · खाली गेंद · T Stubbs · 21/2 · 3.5"
+      },
+      "bytes": 308
+    },
+    {
+      "id": "02-04-06-ball",
+      "t": 222.4,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 22,
+        "wkts": 2,
+        "overs": "3.6"
+      },
+      "players": [
+        "T Stubbs",
+        "Q de Kock",
+        "JJ Bumrah"
+      ],
+      "text": {
+        "en": "SA · 3.6 · +1 RUN · T Stubbs · 22/2 · 3.6",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 3.6 · 1 रन · T Stubbs · 22/2 · 3.6"
+      },
+      "bytes": 306
+    },
+    {
+      "id": "02-04-06-over_end",
+      "t": 222.75,
+      "sport": "cricket",
+      "type": "over_end",
+      "importance": 2,
+      "score": {
+        "runs": 22,
+        "wkts": 2,
+        "overs": "4.0"
+      },
+      "players": [
+        "T Stubbs",
+        "Q de Kock",
+        "JJ Bumrah"
+      ],
+      "text": {
+        "en": "SA · OVER END · 4.0 · FINAL BALL 3.6 · 22/2 · 4.0",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · ओवर समाप्त · 4.0 · अंतिम गेंद 3.6 · 22/2 · 4.0"
+      },
+      "bytes": 335
+    },
+    {
+      "id": "02-05-01-ball",
+      "t": 224.05,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 22,
+        "wkts": 2,
+        "overs": "4.1"
+      },
+      "players": [
+        "T Stubbs",
+        "Q de Kock",
+        "AR Patel"
+      ],
+      "text": {
+        "en": "SA · 4.1 · DOT · T Stubbs · 22/2 · 4.1",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 4.1 · खाली गेंद · T Stubbs · 22/2 · 4.1"
+      },
+      "bytes": 308
+    },
+    {
+      "id": "02-05-02-four",
+      "t": 225.45,
+      "sport": "cricket",
+      "type": "four",
+      "importance": 2,
+      "score": {
+        "runs": 26,
+        "wkts": 2,
+        "overs": "4.2"
+      },
+      "players": [
+        "T Stubbs",
+        "Q de Kock",
+        "AR Patel"
+      ],
+      "text": {
+        "en": "SA · FOUR · T Stubbs · 26/2 · 4.2",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · चौका · T Stubbs · 26/2 · 4.2"
+      },
+      "bytes": 292
+    },
+    {
+      "id": "02-05-03-ball",
+      "t": 226.95,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 26,
+        "wkts": 2,
+        "overs": "4.3"
+      },
+      "players": [
+        "T Stubbs",
+        "Q de Kock",
+        "AR Patel"
+      ],
+      "text": {
+        "en": "SA · 4.3 · DOT · T Stubbs · 26/2 · 4.3",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 4.3 · खाली गेंद · T Stubbs · 26/2 · 4.3"
+      },
+      "bytes": 308
+    },
+    {
+      "id": "02-05-04-ball",
+      "t": 228.55,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 27,
+        "wkts": 2,
+        "overs": "4.4"
+      },
+      "players": [
+        "T Stubbs",
+        "Q de Kock",
+        "AR Patel"
+      ],
+      "text": {
+        "en": "SA · 4.4 · +1 RUN · T Stubbs · 27/2 · 4.4",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 4.4 · 1 रन · T Stubbs · 27/2 · 4.4"
+      },
+      "bytes": 306
+    },
+    {
+      "id": "02-05-05-four",
+      "t": 229.75,
+      "sport": "cricket",
+      "type": "four",
+      "importance": 2,
+      "score": {
+        "runs": 31,
+        "wkts": 2,
+        "overs": "4.5"
+      },
+      "players": [
+        "Q de Kock",
+        "T Stubbs",
+        "AR Patel"
+      ],
+      "text": {
+        "en": "SA · FOUR · Q de Kock · 31/2 · 4.5",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · चौका · Q de Kock · 31/2 · 4.5"
+      },
+      "bytes": 294
+    },
+    {
+      "id": "02-05-06-ball",
+      "t": 231.05,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 32,
+        "wkts": 2,
+        "overs": "4.6"
+      },
+      "players": [
+        "Q de Kock",
+        "T Stubbs",
+        "AR Patel"
+      ],
+      "text": {
+        "en": "SA · 4.6 · +1 RUN · Q de Kock · 32/2 · 4.6",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 4.6 · 1 रन · Q de Kock · 32/2 · 4.6"
+      },
+      "bytes": 308
+    },
+    {
+      "id": "02-05-06-over_end",
+      "t": 231.4,
+      "sport": "cricket",
+      "type": "over_end",
+      "importance": 2,
+      "score": {
+        "runs": 32,
+        "wkts": 2,
+        "overs": "5.0"
+      },
+      "players": [
+        "Q de Kock",
+        "T Stubbs",
+        "AR Patel"
+      ],
+      "text": {
+        "en": "SA · OVER END · 5.0 · FINAL BALL 4.6 · 32/2 · 5.0",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · ओवर समाप्त · 5.0 · अंतिम गेंद 4.6 · 32/2 · 5.0"
+      },
+      "bytes": 333
+    },
+    {
+      "id": "02-06-01-ball",
+      "t": 232.8,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 33,
+        "wkts": 2,
+        "overs": "5.1"
+      },
+      "players": [
+        "Q de Kock",
+        "T Stubbs",
+        "Kuldeep Yadav"
+      ],
+      "text": {
+        "en": "SA · 5.1 · +1 RUN · Q de Kock · 33/2 · 5.1",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 5.1 · 1 रन · Q de Kock · 33/2 · 5.1"
+      },
+      "bytes": 312
+    },
+    {
+      "id": "02-06-02-ball",
+      "t": 234.3,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 35,
+        "wkts": 2,
+        "overs": "5.2"
+      },
+      "players": [
+        "T Stubbs",
+        "Q de Kock",
+        "Kuldeep Yadav"
+      ],
+      "text": {
+        "en": "SA · 5.2 · +2 RUNS · T Stubbs · 35/2 · 5.2",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 5.2 · 2 रन · T Stubbs · 35/2 · 5.2"
+      },
+      "bytes": 311
+    },
+    {
+      "id": "02-06-03-ball",
+      "t": 235.9,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 37,
+        "wkts": 2,
+        "overs": "5.3"
+      },
+      "players": [
+        "T Stubbs",
+        "Q de Kock",
+        "Kuldeep Yadav"
+      ],
+      "text": {
+        "en": "SA · 5.3 · +2 RUNS · T Stubbs · 37/2 · 5.3",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 5.3 · 2 रन · T Stubbs · 37/2 · 5.3"
+      },
+      "bytes": 311
+    },
+    {
+      "id": "02-06-04-ball",
+      "t": 237.1,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 38,
+        "wkts": 2,
+        "overs": "5.4"
+      },
+      "players": [
+        "T Stubbs",
+        "Q de Kock",
+        "Kuldeep Yadav"
+      ],
+      "text": {
+        "en": "SA · 5.4 · +1 RUN · T Stubbs · 38/2 · 5.4",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 5.4 · 1 रन · T Stubbs · 38/2 · 5.4"
+      },
+      "bytes": 310
+    },
+    {
+      "id": "02-06-05-ball",
+      "t": 238.4,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 38,
+        "wkts": 2,
+        "overs": "5.5"
+      },
+      "players": [
+        "Q de Kock",
+        "T Stubbs",
+        "Kuldeep Yadav"
+      ],
+      "text": {
+        "en": "SA · 5.5 · DOT · Q de Kock · 38/2 · 5.5",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 5.5 · खाली गेंद · Q de Kock · 38/2 · 5.5"
+      },
+      "bytes": 314
+    },
+    {
+      "id": "02-06-06-four",
+      "t": 239.8,
+      "sport": "cricket",
+      "type": "four",
+      "importance": 2,
+      "score": {
+        "runs": 42,
+        "wkts": 2,
+        "overs": "5.6"
+      },
+      "players": [
+        "Q de Kock",
+        "T Stubbs",
+        "Kuldeep Yadav"
+      ],
+      "text": {
+        "en": "SA · FOUR · Q de Kock · 42/2 · 5.6",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · चौका · Q de Kock · 42/2 · 5.6"
+      },
+      "bytes": 298
+    },
+    {
+      "id": "02-06-06-over_end",
+      "t": 240.15,
+      "sport": "cricket",
+      "type": "over_end",
+      "importance": 2,
+      "score": {
+        "runs": 42,
+        "wkts": 2,
+        "overs": "6.0"
+      },
+      "players": [
+        "Q de Kock",
+        "T Stubbs",
+        "Kuldeep Yadav"
+      ],
+      "text": {
+        "en": "SA · OVER END · 6.0 · FINAL BALL 5.6 · 42/2 · 6.0",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · ओवर समाप्त · 6.0 · अंतिम गेंद 5.6 · 42/2 · 6.0"
+      },
+      "bytes": 339
+    },
+    {
+      "id": "02-07-01-ball",
+      "t": 241.65,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 43,
+        "wkts": 2,
+        "overs": "6.1"
+      },
+      "players": [
+        "T Stubbs",
+        "Q de Kock",
+        "AR Patel"
+      ],
+      "text": {
+        "en": "SA · 6.1 · +1 RUN · T Stubbs · 43/2 · 6.1",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 6.1 · 1 रन · T Stubbs · 43/2 · 6.1"
+      },
+      "bytes": 306
+    },
+    {
+      "id": "02-07-02-ball",
+      "t": 243.25,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 44,
+        "wkts": 2,
+        "overs": "6.2"
+      },
+      "players": [
+        "Q de Kock",
+        "T Stubbs",
+        "AR Patel"
+      ],
+      "text": {
+        "en": "SA · 6.2 · +1 RUN · Q de Kock · 44/2 · 6.2",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 6.2 · 1 रन · Q de Kock · 44/2 · 6.2"
+      },
+      "bytes": 308
+    },
+    {
+      "id": "02-07-03-four",
+      "t": 244.45,
+      "sport": "cricket",
+      "type": "four",
+      "importance": 2,
+      "score": {
+        "runs": 48,
+        "wkts": 2,
+        "overs": "6.3"
+      },
+      "players": [
+        "T Stubbs",
+        "Q de Kock",
+        "AR Patel"
+      ],
+      "text": {
+        "en": "SA · FOUR · T Stubbs · 48/2 · 6.3",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · चौका · T Stubbs · 48/2 · 6.3"
+      },
+      "bytes": 292
+    },
+    {
+      "id": "02-07-04-ball",
+      "t": 245.75,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 49,
+        "wkts": 2,
+        "overs": "6.4"
+      },
+      "players": [
+        "T Stubbs",
+        "Q de Kock",
+        "AR Patel"
+      ],
+      "text": {
+        "en": "SA · 6.4 · +1 RUN · T Stubbs · 49/2 · 6.4",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 6.4 · 1 रन · T Stubbs · 49/2 · 6.4"
+      },
+      "bytes": 306
+    },
+    {
+      "id": "02-07-05-ball",
+      "t": 247.15,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 49,
+        "wkts": 2,
+        "overs": "6.5"
+      },
+      "players": [
+        "Q de Kock",
+        "T Stubbs",
+        "AR Patel"
+      ],
+      "text": {
+        "en": "SA · 6.5 · DOT · Q de Kock · 49/2 · 6.5",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 6.5 · खाली गेंद · Q de Kock · 49/2 · 6.5"
+      },
+      "bytes": 310
+    },
+    {
+      "id": "02-07-06-ball",
+      "t": 248.65,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 49,
+        "wkts": 2,
+        "overs": "6.6"
+      },
+      "players": [
+        "Q de Kock",
+        "T Stubbs",
+        "AR Patel"
+      ],
+      "text": {
+        "en": "SA · 6.6 · DOT · Q de Kock · 49/2 · 6.6",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 6.6 · खाली गेंद · Q de Kock · 49/2 · 6.6"
+      },
+      "bytes": 310
+    },
+    {
+      "id": "02-07-06-over_end",
+      "t": 249,
+      "sport": "cricket",
+      "type": "over_end",
+      "importance": 2,
+      "score": {
+        "runs": 49,
+        "wkts": 2,
+        "overs": "7.0"
+      },
+      "players": [
+        "Q de Kock",
+        "T Stubbs",
+        "AR Patel"
+      ],
+      "text": {
+        "en": "SA · OVER END · 7.0 · FINAL BALL 6.6 · 49/2 · 7.0",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · ओवर समाप्त · 7.0 · अंतिम गेंद 6.6 · 49/2 · 7.0"
+      },
+      "bytes": 331
+    },
+    {
+      "id": "02-08-01-four",
+      "t": 250.6,
+      "sport": "cricket",
+      "type": "four",
+      "importance": 2,
+      "score": {
+        "runs": 53,
+        "wkts": 2,
+        "overs": "7.1"
+      },
+      "players": [
+        "T Stubbs",
+        "Q de Kock",
+        "Kuldeep Yadav"
+      ],
+      "text": {
+        "en": "SA · FOUR · T Stubbs · 53/2 · 7.1",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · चौका · T Stubbs · 53/2 · 7.1"
+      },
+      "bytes": 296
+    },
+    {
+      "id": "02-08-01-milestone-team-50",
+      "t": 250.6,
+      "sport": "cricket",
+      "type": "milestone",
+      "importance": 2,
+      "score": {
+        "runs": 53,
+        "wkts": 2,
+        "overs": "7.1"
+      },
+      "players": [
+        "T Stubbs"
+      ],
+      "text": {
+        "en": "SA · MILESTONE · 50 UP · 53/2 · 7.1",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · उपलब्धि · 50 रन पूरे · 53/2 · 7.1"
+      },
+      "bytes": 293
+    },
+    {
+      "id": "02-08-02-ball",
+      "t": 251.8,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 54,
+        "wkts": 2,
+        "overs": "7.2"
+      },
+      "players": [
+        "T Stubbs",
+        "Q de Kock",
+        "Kuldeep Yadav"
+      ],
+      "text": {
+        "en": "SA · 7.2 · +1 RUN · T Stubbs · 54/2 · 7.2",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 7.2 · 1 रन · T Stubbs · 54/2 · 7.2"
+      },
+      "bytes": 310
+    },
+    {
+      "id": "02-08-03-ball",
+      "t": 253.1,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 55,
+        "wkts": 2,
+        "overs": "7.3"
+      },
+      "players": [
+        "Q de Kock",
+        "T Stubbs",
+        "Kuldeep Yadav"
+      ],
+      "text": {
+        "en": "SA · 7.3 · +1 RUN · Q de Kock · 55/2 · 7.3",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 7.3 · 1 रन · Q de Kock · 55/2 · 7.3"
+      },
+      "bytes": 312
+    },
+    {
+      "id": "02-08-04-ball",
+      "t": 254.5,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 56,
+        "wkts": 2,
+        "overs": "7.4"
+      },
+      "players": [
+        "T Stubbs",
+        "Q de Kock",
+        "Kuldeep Yadav"
+      ],
+      "text": {
+        "en": "SA · 7.4 · +1 RUN · T Stubbs · 56/2 · 7.4",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 7.4 · 1 रन · T Stubbs · 56/2 · 7.4"
+      },
+      "bytes": 310
+    },
+    {
+      "id": "02-08-05-ball",
+      "t": 256,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 56,
+        "wkts": 2,
+        "overs": "7.5"
+      },
+      "players": [
+        "Q de Kock",
+        "T Stubbs",
+        "Kuldeep Yadav"
+      ],
+      "text": {
+        "en": "SA · 7.5 · DOT · Q de Kock · 56/2 · 7.5",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 7.5 · खाली गेंद · Q de Kock · 56/2 · 7.5"
+      },
+      "bytes": 312
+    },
+    {
+      "id": "02-08-06-six",
+      "t": 257.6,
+      "sport": "cricket",
+      "type": "six",
+      "importance": 3,
+      "score": {
+        "runs": 62,
+        "wkts": 2,
+        "overs": "7.6"
+      },
+      "players": [
+        "Q de Kock",
+        "T Stubbs",
+        "Kuldeep Yadav"
+      ],
+      "text": {
+        "en": "SA · SIX · Q de Kock · 62/2 · 7.6",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · छक्का · Q de Kock · 62/2 · 7.6"
+      },
+      "bytes": 296
+    },
+    {
+      "id": "02-08-06-over_end",
+      "t": 257.95,
+      "sport": "cricket",
+      "type": "over_end",
+      "importance": 2,
+      "score": {
+        "runs": 62,
+        "wkts": 2,
+        "overs": "8.0"
+      },
+      "players": [
+        "Q de Kock",
+        "T Stubbs",
+        "Kuldeep Yadav"
+      ],
+      "text": {
+        "en": "SA · OVER END · 8.0 · FINAL BALL 7.6 · 62/2 · 8.0",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · ओवर समाप्त · 8.0 · अंतिम गेंद 7.6 · 62/2 · 8.0"
+      },
+      "bytes": 339
+    },
+    {
+      "id": "02-09-01-six",
+      "t": 259.15,
+      "sport": "cricket",
+      "type": "six",
+      "importance": 3,
+      "score": {
+        "runs": 68,
+        "wkts": 2,
+        "overs": "8.1"
+      },
+      "players": [
+        "T Stubbs",
+        "Q de Kock",
+        "AR Patel"
+      ],
+      "text": {
+        "en": "SA · SIX · T Stubbs · 68/2 · 8.1",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · छक्का · T Stubbs · 68/2 · 8.1"
+      },
+      "bytes": 290
+    },
+    {
+      "id": "02-09-02-ball",
+      "t": 260.45,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 69,
+        "wkts": 2,
+        "overs": "8.2"
+      },
+      "players": [
+        "T Stubbs",
+        "Q de Kock",
+        "AR Patel"
+      ],
+      "text": {
+        "en": "SA · 8.2 · +1 RUN · T Stubbs · 69/2 · 8.2",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 8.2 · 1 रन · T Stubbs · 69/2 · 8.2"
+      },
+      "bytes": 306
+    },
+    {
+      "id": "02-09-03-ball",
+      "t": 261.85,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 70,
+        "wkts": 2,
+        "overs": "8.3"
+      },
+      "players": [
+        "Q de Kock",
+        "T Stubbs",
+        "AR Patel"
+      ],
+      "text": {
+        "en": "SA · 8.3 · +1 RUN · Q de Kock · 70/2 · 8.3",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 8.3 · 1 रन · Q de Kock · 70/2 · 8.3"
+      },
+      "bytes": 308
+    },
+    {
+      "id": "02-09-04-ball",
+      "t": 263.35,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 70,
+        "wkts": 2,
+        "overs": "8.4"
+      },
+      "players": [
+        "T Stubbs",
+        "Q de Kock",
+        "AR Patel"
+      ],
+      "text": {
+        "en": "SA · 8.4 · DOT · T Stubbs · 70/2 · 8.4",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 8.4 · खाली गेंद · T Stubbs · 70/2 · 8.4"
+      },
+      "bytes": 308
+    },
+    {
+      "id": "02-09-05-wicket",
+      "t": 264.95,
+      "sport": "cricket",
+      "type": "wicket",
+      "importance": 3,
+      "score": {
+        "runs": 70,
+        "wkts": 3,
+        "overs": "8.5"
+      },
+      "players": [
+        "T Stubbs",
+        "Q de Kock",
+        "AR Patel"
+      ],
+      "text": {
+        "en": "SA · WICKET · T Stubbs · bowled · 70/3 · 8.5",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · विकेट · T Stubbs आउट · bowled · 70/3 · 8.5"
+      },
+      "bytes": 321
+    },
+    {
+      "id": "02-09-06-ball",
+      "t": 266.5,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 71,
+        "wkts": 3,
+        "overs": "8.6"
+      },
+      "players": [
+        "H Klaasen",
+        "Q de Kock",
+        "AR Patel"
+      ],
+      "text": {
+        "en": "SA · 8.6 · +1 RUN · H Klaasen · 71/3 · 8.6",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 8.6 · 1 रन · H Klaasen · 71/3 · 8.6"
+      },
+      "bytes": 308
+    },
+    {
+      "id": "02-09-06-over_end",
+      "t": 266.85,
+      "sport": "cricket",
+      "type": "over_end",
+      "importance": 2,
+      "score": {
+        "runs": 71,
+        "wkts": 3,
+        "overs": "9.0"
+      },
+      "players": [
+        "H Klaasen",
+        "Q de Kock",
+        "AR Patel"
+      ],
+      "text": {
+        "en": "SA · OVER END · 9.0 · FINAL BALL 8.6 · 71/3 · 9.0",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · ओवर समाप्त · 9.0 · अंतिम गेंद 8.6 · 71/3 · 9.0"
+      },
+      "bytes": 335
+    },
+    {
+      "id": "02-10-01-ball",
+      "t": 268.15,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 71,
+        "wkts": 3,
+        "overs": "9.1"
+      },
+      "players": [
+        "H Klaasen",
+        "Q de Kock",
+        "HH Pandya"
+      ],
+      "text": {
+        "en": "SA · 9.1 · DOT · H Klaasen · 71/3 · 9.1",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 9.1 · खाली गेंद · H Klaasen · 71/3 · 9.1"
+      },
+      "bytes": 312
+    },
+    {
+      "id": "02-10-02-ball",
+      "t": 269.55,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 71,
+        "wkts": 3,
+        "overs": "9.2"
+      },
+      "players": [
+        "H Klaasen",
+        "Q de Kock",
+        "HH Pandya"
+      ],
+      "text": {
+        "en": "SA · 9.2 · DOT · H Klaasen · 71/3 · 9.2",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 9.2 · खाली गेंद · H Klaasen · 71/3 · 9.2"
+      },
+      "bytes": 312
+    },
+    {
+      "id": "02-10-03-ball",
+      "t": 271.05,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 71,
+        "wkts": 3,
+        "overs": "9.3"
+      },
+      "players": [
+        "H Klaasen",
+        "Q de Kock",
+        "HH Pandya"
+      ],
+      "text": {
+        "en": "SA · 9.3 · DOT · H Klaasen · 71/3 · 9.3",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 9.3 · खाली गेंद · H Klaasen · 71/3 · 9.3"
+      },
+      "bytes": 312
+    },
+    {
+      "id": "02-10-04-six",
+      "t": 272.65,
+      "sport": "cricket",
+      "type": "six",
+      "importance": 3,
+      "score": {
+        "runs": 77,
+        "wkts": 3,
+        "overs": "9.4"
+      },
+      "players": [
+        "H Klaasen",
+        "Q de Kock",
+        "HH Pandya"
+      ],
+      "text": {
+        "en": "SA · SIX · H Klaasen · 77/3 · 9.4",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · छक्का · H Klaasen · 77/3 · 9.4"
+      },
+      "bytes": 294
+    },
+    {
+      "id": "02-10-05-ball",
+      "t": 273.85,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 79,
+        "wkts": 3,
+        "overs": "9.5"
+      },
+      "players": [
+        "H Klaasen",
+        "Q de Kock",
+        "HH Pandya"
+      ],
+      "text": {
+        "en": "SA · 9.5 · +2 RUNS · H Klaasen · 79/3 · 9.5",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 9.5 · 2 रन · H Klaasen · 79/3 · 9.5"
+      },
+      "bytes": 311
+    },
+    {
+      "id": "02-10-06-ball",
+      "t": 275.15,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 80,
+        "wkts": 3,
+        "overs": "9.5"
+      },
+      "players": [
+        "Q de Kock",
+        "H Klaasen",
+        "HH Pandya"
+      ],
+      "text": {
+        "en": "SA · 9.5 · +1 RUN · Q de Kock · 80/3 · 9.5",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 9.5 · 1 रन · Q de Kock · 80/3 · 9.5"
+      },
+      "bytes": 310
+    },
+    {
+      "id": "02-10-07-ball",
+      "t": 276.55,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 81,
+        "wkts": 3,
+        "overs": "9.6"
+      },
+      "players": [
+        "H Klaasen",
+        "Q de Kock",
+        "HH Pandya"
+      ],
+      "text": {
+        "en": "SA · 9.6 · +1 RUN · H Klaasen · 81/3 · 9.6",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 9.6 · 1 रन · H Klaasen · 81/3 · 9.6"
+      },
+      "bytes": 310
+    },
+    {
+      "id": "02-10-07-over_end",
+      "t": 276.9,
+      "sport": "cricket",
+      "type": "over_end",
+      "importance": 2,
+      "score": {
+        "runs": 81,
+        "wkts": 3,
+        "overs": "10.0"
+      },
+      "players": [
+        "H Klaasen",
+        "Q de Kock",
+        "HH Pandya"
+      ],
+      "text": {
+        "en": "SA · OVER END · 10.0 · FINAL BALL 9.6 · 81/3 · 10.0",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · ओवर समाप्त · 10.0 · अंतिम गेंद 9.6 · 81/3 · 10.0"
+      },
+      "bytes": 340
+    },
+    {
+      "id": "02-11-01-ball",
+      "t": 278.4,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 82,
+        "wkts": 3,
+        "overs": "10.1"
+      },
+      "players": [
+        "H Klaasen",
+        "Q de Kock",
+        "RA Jadeja"
+      ],
+      "text": {
+        "en": "SA · 10.1 · +1 RUN · H Klaasen · 82/3 · 10.1",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 10.1 · 1 रन · H Klaasen · 82/3 · 10.1"
+      },
+      "bytes": 314
+    },
+    {
+      "id": "02-11-02-ball",
+      "t": 280,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 83,
+        "wkts": 3,
+        "overs": "10.2"
+      },
+      "players": [
+        "Q de Kock",
+        "H Klaasen",
+        "RA Jadeja"
+      ],
+      "text": {
+        "en": "SA · 10.2 · +1 RUN · Q de Kock · 83/3 · 10.2",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 10.2 · 1 रन · Q de Kock · 83/3 · 10.2"
+      },
+      "bytes": 312
+    },
+    {
+      "id": "02-11-03-six",
+      "t": 281.2,
+      "sport": "cricket",
+      "type": "six",
+      "importance": 3,
+      "score": {
+        "runs": 89,
+        "wkts": 3,
+        "overs": "10.3"
+      },
+      "players": [
+        "H Klaasen",
+        "Q de Kock",
+        "RA Jadeja"
+      ],
+      "text": {
+        "en": "SA · SIX · H Klaasen · 89/3 · 10.3",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · छक्का · H Klaasen · 89/3 · 10.3"
+      },
+      "bytes": 296
+    },
+    {
+      "id": "02-11-04-ball",
+      "t": 282.5,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 90,
+        "wkts": 3,
+        "overs": "10.4"
+      },
+      "players": [
+        "H Klaasen",
+        "Q de Kock",
+        "RA Jadeja"
+      ],
+      "text": {
+        "en": "SA · 10.4 · +1 RUN · H Klaasen · 90/3 · 10.4",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 10.4 · 1 रन · H Klaasen · 90/3 · 10.4"
+      },
+      "bytes": 314
+    },
+    {
+      "id": "02-11-05-ball",
+      "t": 283.9,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 92,
+        "wkts": 3,
+        "overs": "10.5"
+      },
+      "players": [
+        "Q de Kock",
+        "H Klaasen",
+        "RA Jadeja"
+      ],
+      "text": {
+        "en": "SA · 10.5 · +2 RUNS · Q de Kock · 92/3 · 10.5",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 10.5 · 2 रन · Q de Kock · 92/3 · 10.5"
+      },
+      "bytes": 315
+    },
+    {
+      "id": "02-11-06-ball",
+      "t": 285.4,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 93,
+        "wkts": 3,
+        "overs": "10.6"
+      },
+      "players": [
+        "Q de Kock",
+        "H Klaasen",
+        "RA Jadeja"
+      ],
+      "text": {
+        "en": "SA · 10.6 · +1 RUN · Q de Kock · 93/3 · 10.6",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 10.6 · 1 रन · Q de Kock · 93/3 · 10.6"
+      },
+      "bytes": 314
+    },
+    {
+      "id": "02-11-06-over_end",
+      "t": 285.75,
+      "sport": "cricket",
+      "type": "over_end",
+      "importance": 2,
+      "score": {
+        "runs": 93,
+        "wkts": 3,
+        "overs": "11.0"
+      },
+      "players": [
+        "Q de Kock",
+        "H Klaasen",
+        "RA Jadeja"
+      ],
+      "text": {
+        "en": "SA · OVER END · 11.0 · FINAL BALL 10.6 · 93/3 · 11.0",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · ओवर समाप्त · 11.0 · अंतिम गेंद 10.6 · 93/3 · 11.0"
+      },
+      "bytes": 343
+    },
+    {
+      "id": "02-12-01-ball",
+      "t": 287.35,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 94,
+        "wkts": 3,
+        "overs": "11.1"
+      },
+      "players": [
+        "Q de Kock",
+        "H Klaasen",
+        "Kuldeep Yadav"
+      ],
+      "text": {
+        "en": "SA · 11.1 · +1 RUN · Q de Kock · 94/3 · 11.1",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 11.1 · 1 रन · Q de Kock · 94/3 · 11.1"
+      },
+      "bytes": 319
+    },
+    {
+      "id": "02-12-02-ball",
+      "t": 288.55,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 94,
+        "wkts": 3,
+        "overs": "11.2"
+      },
+      "players": [
+        "H Klaasen",
+        "Q de Kock",
+        "Kuldeep Yadav"
+      ],
+      "text": {
+        "en": "SA · 11.2 · DOT · H Klaasen · 94/3 · 11.2",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 11.2 · खाली गेंद · H Klaasen · 94/3 · 11.2"
+      },
+      "bytes": 321
+    },
+    {
+      "id": "02-12-03-six",
+      "t": 289.85,
+      "sport": "cricket",
+      "type": "six",
+      "importance": 3,
+      "score": {
+        "runs": 100,
+        "wkts": 3,
+        "overs": "11.3"
+      },
+      "players": [
+        "H Klaasen",
+        "Q de Kock",
+        "Kuldeep Yadav"
+      ],
+      "text": {
+        "en": "SA · SIX · H Klaasen · 100/3 · 11.3",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · छक्का · H Klaasen · 100/3 · 11.3"
+      },
+      "bytes": 304
+    },
+    {
+      "id": "02-12-03-milestone-team-100",
+      "t": 289.85,
+      "sport": "cricket",
+      "type": "milestone",
+      "importance": 2,
+      "score": {
+        "runs": 100,
+        "wkts": 3,
+        "overs": "11.3"
+      },
+      "players": [
+        "H Klaasen"
+      ],
+      "text": {
+        "en": "SA · MILESTONE · 100 UP · 100/3 · 11.3",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · उपलब्धि · 100 रन पूरे · 100/3 · 11.3"
+      },
+      "bytes": 304
+    },
+    {
+      "id": "02-12-04-ball",
+      "t": 291.25,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 101,
+        "wkts": 3,
+        "overs": "11.4"
+      },
+      "players": [
+        "H Klaasen",
+        "Q de Kock",
+        "Kuldeep Yadav"
+      ],
+      "text": {
+        "en": "SA · 11.4 · +1 RUN · H Klaasen · 101/3 · 11.4",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 11.4 · 1 रन · H Klaasen · 101/3 · 11.4"
+      },
+      "bytes": 322
+    },
+    {
+      "id": "02-12-05-ball",
+      "t": 292.75,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 101,
+        "wkts": 3,
+        "overs": "11.5"
+      },
+      "players": [
+        "Q de Kock",
+        "H Klaasen",
+        "Kuldeep Yadav"
+      ],
+      "text": {
+        "en": "SA · 11.5 · DOT · Q de Kock · 101/3 · 11.5",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 11.5 · खाली गेंद · Q de Kock · 101/3 · 11.5"
+      },
+      "bytes": 324
+    },
+    {
+      "id": "02-12-06-ball",
+      "t": 294.35,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 101,
+        "wkts": 3,
+        "overs": "11.6"
+      },
+      "players": [
+        "Q de Kock",
+        "H Klaasen",
+        "Kuldeep Yadav"
+      ],
+      "text": {
+        "en": "SA · 11.6 · DOT · Q de Kock · 101/3 · 11.6",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 11.6 · खाली गेंद · Q de Kock · 101/3 · 11.6"
+      },
+      "bytes": 324
+    },
+    {
+      "id": "02-12-06-over_end",
+      "t": 294.7,
+      "sport": "cricket",
+      "type": "over_end",
+      "importance": 2,
+      "score": {
+        "runs": 101,
+        "wkts": 3,
+        "overs": "12.0"
+      },
+      "players": [
+        "Q de Kock",
+        "H Klaasen",
+        "Kuldeep Yadav"
+      ],
+      "text": {
+        "en": "SA · OVER END · 12.0 · FINAL BALL 11.6 · 101/3 · 12.0",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · ओवर समाप्त · 12.0 · अंतिम गेंद 11.6 · 101/3 · 12.0"
+      },
+      "bytes": 349
+    },
+    {
+      "id": "02-13-01-ball",
+      "t": 295.9,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 102,
+        "wkts": 3,
+        "overs": "12.1"
+      },
+      "players": [
+        "H Klaasen",
+        "Q de Kock",
+        "Arshdeep Singh"
+      ],
+      "text": {
+        "en": "SA · 12.1 · +1 RUN · H Klaasen · 102/3 · 12.1",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 12.1 · 1 रन · H Klaasen · 102/3 · 12.1"
+      },
+      "bytes": 322
+    },
+    {
+      "id": "02-13-02-four",
+      "t": 297.2,
+      "sport": "cricket",
+      "type": "four",
+      "importance": 2,
+      "score": {
+        "runs": 106,
+        "wkts": 3,
+        "overs": "12.2"
+      },
+      "players": [
+        "Q de Kock",
+        "H Klaasen",
+        "Arshdeep Singh"
+      ],
+      "text": {
+        "en": "SA · FOUR · Q de Kock · 106/3 · 12.2",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · चौका · Q de Kock · 106/3 · 12.2"
+      },
+      "bytes": 306
+    },
+    {
+      "id": "02-13-03-wicket",
+      "t": 298.6,
+      "sport": "cricket",
+      "type": "wicket",
+      "importance": 3,
+      "score": {
+        "runs": 106,
+        "wkts": 4,
+        "overs": "12.3"
+      },
+      "players": [
+        "Q de Kock",
+        "H Klaasen",
+        "Arshdeep Singh",
+        "Kuldeep Yadav"
+      ],
+      "text": {
+        "en": "SA · WICKET · Q de Kock · caught · 106/4 · 12.3",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · विकेट · Q de Kock आउट · caught · 106/4 · 12.3"
+      },
+      "bytes": 351
+    },
+    {
+      "id": "02-13-04-ball",
+      "t": 300.45,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 106,
+        "wkts": 4,
+        "overs": "12.4"
+      },
+      "players": [
+        "DA Miller",
+        "H Klaasen",
+        "Arshdeep Singh"
+      ],
+      "text": {
+        "en": "SA · 12.4 · DOT · DA Miller · 106/4 · 12.4",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 12.4 · खाली गेंद · DA Miller · 106/4 · 12.4"
+      },
+      "bytes": 325
+    },
+    {
+      "id": "02-13-05-ball",
+      "t": 302.05,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 107,
+        "wkts": 4,
+        "overs": "12.5"
+      },
+      "players": [
+        "DA Miller",
+        "H Klaasen",
+        "Arshdeep Singh"
+      ],
+      "text": {
+        "en": "SA · 12.5 · +1 RUN · DA Miller · 107/4 · 12.5",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 12.5 · 1 रन · DA Miller · 107/4 · 12.5"
+      },
+      "bytes": 323
+    },
+    {
+      "id": "02-13-06-ball",
+      "t": 303.25,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 109,
+        "wkts": 4,
+        "overs": "12.6"
+      },
+      "players": [
+        "H Klaasen",
+        "DA Miller",
+        "Arshdeep Singh"
+      ],
+      "text": {
+        "en": "SA · 12.6 · +2 RUNS · H Klaasen · 109/4 · 12.6",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 12.6 · 2 रन · H Klaasen · 109/4 · 12.6"
+      },
+      "bytes": 324
+    },
+    {
+      "id": "02-13-06-over_end",
+      "t": 303.6,
+      "sport": "cricket",
+      "type": "over_end",
+      "importance": 2,
+      "score": {
+        "runs": 109,
+        "wkts": 4,
+        "overs": "13.0"
+      },
+      "players": [
+        "H Klaasen",
+        "DA Miller",
+        "Arshdeep Singh"
+      ],
+      "text": {
+        "en": "SA · OVER END · 13.0 · FINAL BALL 12.6 · 109/4 · 13.0",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · ओवर समाप्त · 13.0 · अंतिम गेंद 12.6 · 109/4 · 13.0"
+      },
+      "bytes": 350
+    },
+    {
+      "id": "02-14-01-ball",
+      "t": 304.9,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 111,
+        "wkts": 4,
+        "overs": "13.1"
+      },
+      "players": [
+        "DA Miller",
+        "H Klaasen",
+        "Kuldeep Yadav"
+      ],
+      "text": {
+        "en": "SA · 13.1 · +2 RUNS · DA Miller · 111/4 · 13.1",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 13.1 · 2 रन · DA Miller · 111/4 · 13.1"
+      },
+      "bytes": 322
+    },
+    {
+      "id": "02-14-02-ball",
+      "t": 306.3,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 111,
+        "wkts": 4,
+        "overs": "13.2"
+      },
+      "players": [
+        "DA Miller",
+        "H Klaasen",
+        "Kuldeep Yadav"
+      ],
+      "text": {
+        "en": "SA · 13.2 · DOT · DA Miller · 111/4 · 13.2",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 13.2 · खाली गेंद · DA Miller · 111/4 · 13.2"
+      },
+      "bytes": 323
+    },
+    {
+      "id": "02-14-03-ball",
+      "t": 307.8,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 112,
+        "wkts": 4,
+        "overs": "13.3"
+      },
+      "players": [
+        "DA Miller",
+        "H Klaasen",
+        "Kuldeep Yadav"
+      ],
+      "text": {
+        "en": "SA · 13.3 · +1 RUN · DA Miller · 112/4 · 13.3",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 13.3 · 1 रन · DA Miller · 112/4 · 13.3"
+      },
+      "bytes": 321
+    },
+    {
+      "id": "02-14-04-ball",
+      "t": 309.4,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 113,
+        "wkts": 4,
+        "overs": "13.4"
+      },
+      "players": [
+        "H Klaasen",
+        "DA Miller",
+        "Kuldeep Yadav"
+      ],
+      "text": {
+        "en": "SA · 13.4 · +1 RUN · H Klaasen · 113/4 · 13.4",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 13.4 · 1 रन · H Klaasen · 113/4 · 13.4"
+      },
+      "bytes": 321
+    },
+    {
+      "id": "02-14-05-four",
+      "t": 310.6,
+      "sport": "cricket",
+      "type": "four",
+      "importance": 2,
+      "score": {
+        "runs": 117,
+        "wkts": 4,
+        "overs": "13.5"
+      },
+      "players": [
+        "DA Miller",
+        "H Klaasen",
+        "Kuldeep Yadav"
+      ],
+      "text": {
+        "en": "SA · FOUR · DA Miller · 117/4 · 13.5",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · चौका · DA Miller · 117/4 · 13.5"
+      },
+      "bytes": 305
+    },
+    {
+      "id": "02-14-06-six",
+      "t": 311.9,
+      "sport": "cricket",
+      "type": "six",
+      "importance": 3,
+      "score": {
+        "runs": 123,
+        "wkts": 4,
+        "overs": "13.6"
+      },
+      "players": [
+        "DA Miller",
+        "H Klaasen",
+        "Kuldeep Yadav"
+      ],
+      "text": {
+        "en": "SA · SIX · DA Miller · 123/4 · 13.6",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · छक्का · DA Miller · 123/4 · 13.6"
+      },
+      "bytes": 303
+    },
+    {
+      "id": "02-14-06-over_end",
+      "t": 312.25,
+      "sport": "cricket",
+      "type": "over_end",
+      "importance": 2,
+      "score": {
+        "runs": 123,
+        "wkts": 4,
+        "overs": "14.0"
+      },
+      "players": [
+        "DA Miller",
+        "H Klaasen",
+        "Kuldeep Yadav"
+      ],
+      "text": {
+        "en": "SA · OVER END · 14.0 · FINAL BALL 13.6 · 123/4 · 14.0",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · ओवर समाप्त · 14.0 · अंतिम गेंद 13.6 · 123/4 · 14.0"
+      },
+      "bytes": 350
+    },
+    {
+      "id": "02-15-01-four",
+      "t": 313.65,
+      "sport": "cricket",
+      "type": "four",
+      "importance": 2,
+      "score": {
+        "runs": 127,
+        "wkts": 4,
+        "overs": "14.1"
+      },
+      "players": [
+        "H Klaasen",
+        "DA Miller",
+        "AR Patel"
+      ],
+      "text": {
+        "en": "SA · FOUR · H Klaasen · 127/4 · 14.1",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · चौका · H Klaasen · 127/4 · 14.1"
+      },
+      "bytes": 301
+    },
+    {
+      "id": "02-15-02-ball",
+      "t": 315.15,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 128,
+        "wkts": 4,
+        "overs": "14.2"
+      },
+      "players": [
+        "H Klaasen",
+        "DA Miller",
+        "AR Patel"
+      ],
+      "text": {
+        "en": "SA · 14.2 · +1 RUN · H Klaasen · 128/4 · 14.2",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 14.2 · 1 रन · H Klaasen · 128/4 · 14.2"
+      },
+      "bytes": 317
+    },
+    {
+      "id": "02-15-03-ball",
+      "t": 316.75,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 129,
+        "wkts": 4,
+        "overs": "14.2"
+      },
+      "players": [
+        "H Klaasen",
+        "DA Miller",
+        "AR Patel"
+      ],
+      "text": {
+        "en": "SA · 14.2 · +1 RUN · H Klaasen · 129/4 · 14.2",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 14.2 · 1 रन · H Klaasen · 129/4 · 14.2"
+      },
+      "bytes": 317
+    },
+    {
+      "id": "02-15-04-ball",
+      "t": 317.95,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 129,
+        "wkts": 4,
+        "overs": "14.2"
+      },
+      "players": [
+        "H Klaasen",
+        "DA Miller",
+        "AR Patel"
+      ],
+      "text": {
+        "en": "SA · 14.2 · DOT · H Klaasen · 129/4 · 14.2",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 14.2 · खाली गेंद · H Klaasen · 129/4 · 14.2"
+      },
+      "bytes": 319
+    },
+    {
+      "id": "02-15-05-six",
+      "t": 319.25,
+      "sport": "cricket",
+      "type": "six",
+      "importance": 3,
+      "score": {
+        "runs": 135,
+        "wkts": 4,
+        "overs": "14.3"
+      },
+      "players": [
+        "H Klaasen",
+        "DA Miller",
+        "AR Patel"
+      ],
+      "text": {
+        "en": "SA · SIX · H Klaasen · 135/4 · 14.3",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · छक्का · H Klaasen · 135/4 · 14.3"
+      },
+      "bytes": 299
+    },
+    {
+      "id": "02-15-06-six",
+      "t": 320.65,
+      "sport": "cricket",
+      "type": "six",
+      "importance": 3,
+      "score": {
+        "runs": 141,
+        "wkts": 4,
+        "overs": "14.4"
+      },
+      "players": [
+        "H Klaasen",
+        "DA Miller",
+        "AR Patel"
+      ],
+      "text": {
+        "en": "SA · SIX · H Klaasen · 141/4 · 14.4",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · छक्का · H Klaasen · 141/4 · 14.4"
+      },
+      "bytes": 299
+    },
+    {
+      "id": "02-15-07-four",
+      "t": 322.15,
+      "sport": "cricket",
+      "type": "four",
+      "importance": 2,
+      "score": {
+        "runs": 145,
+        "wkts": 4,
+        "overs": "14.5"
+      },
+      "players": [
+        "H Klaasen",
+        "DA Miller",
+        "AR Patel"
+      ],
+      "text": {
+        "en": "SA · FOUR · H Klaasen · 145/4 · 14.5",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · चौका · H Klaasen · 145/4 · 14.5"
+      },
+      "bytes": 301
+    },
+    {
+      "id": "02-15-08-ball",
+      "t": 323.75,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 147,
+        "wkts": 4,
+        "overs": "14.6"
+      },
+      "players": [
+        "H Klaasen",
+        "DA Miller",
+        "AR Patel"
+      ],
+      "text": {
+        "en": "SA · 14.6 · +2 RUNS · H Klaasen · 147/4 · 14.6",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 14.6 · 2 रन · H Klaasen · 147/4 · 14.6"
+      },
+      "bytes": 318
+    },
+    {
+      "id": "02-15-08-over_end",
+      "t": 324.1,
+      "sport": "cricket",
+      "type": "over_end",
+      "importance": 2,
+      "score": {
+        "runs": 147,
+        "wkts": 4,
+        "overs": "15.0"
+      },
+      "players": [
+        "H Klaasen",
+        "DA Miller",
+        "AR Patel"
+      ],
+      "text": {
+        "en": "SA · OVER END · 15.0 · FINAL BALL 14.6 · 147/4 · 15.0",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · ओवर समाप्त · 15.0 · अंतिम गेंद 14.6 · 147/4 · 15.0"
+      },
+      "bytes": 344
+    },
+    {
+      "id": "02-16-01-ball",
+      "t": 325.3,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 148,
+        "wkts": 4,
+        "overs": "15.1"
+      },
+      "players": [
+        "DA Miller",
+        "H Klaasen",
+        "JJ Bumrah"
+      ],
+      "text": {
+        "en": "SA · 15.1 · +1 RUN · DA Miller · 148/4 · 15.1",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 15.1 · 1 रन · DA Miller · 148/4 · 15.1"
+      },
+      "bytes": 317
+    },
+    {
+      "id": "02-16-02-ball",
+      "t": 326.6,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 150,
+        "wkts": 4,
+        "overs": "15.2"
+      },
+      "players": [
+        "H Klaasen",
+        "DA Miller",
+        "JJ Bumrah"
+      ],
+      "text": {
+        "en": "SA · 15.2 · +2 RUNS · H Klaasen · 150/4 · 15.2",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 15.2 · 2 रन · H Klaasen · 150/4 · 15.2"
+      },
+      "bytes": 318
+    },
+    {
+      "id": "02-16-02-milestone-batter-50",
+      "t": 326.6,
+      "sport": "cricket",
+      "type": "milestone",
+      "importance": 2,
+      "score": {
+        "runs": 150,
+        "wkts": 4,
+        "overs": "15.2"
+      },
+      "players": [
+        "H Klaasen"
+      ],
+      "text": {
+        "en": "SA · MILESTONE · H Klaasen 50 · 150/4 · 15.2",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · उपलब्धि · H Klaasen 50 · 150/4 · 15.2"
+      },
+      "bytes": 311
+    },
+    {
+      "id": "02-16-02-milestone-team-150",
+      "t": 326.6,
+      "sport": "cricket",
+      "type": "milestone",
+      "importance": 2,
+      "score": {
+        "runs": 150,
+        "wkts": 4,
+        "overs": "15.2"
+      },
+      "players": [
+        "H Klaasen"
+      ],
+      "text": {
+        "en": "SA · MILESTONE · 150 UP · 150/4 · 15.2",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · उपलब्धि · 150 रन पूरे · 150/4 · 15.2"
+      },
+      "bytes": 303
+    },
+    {
+      "id": "02-16-03-ball",
+      "t": 328,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 150,
+        "wkts": 4,
+        "overs": "15.3"
+      },
+      "players": [
+        "H Klaasen",
+        "DA Miller",
+        "JJ Bumrah"
+      ],
+      "text": {
+        "en": "SA · 15.3 · DOT · H Klaasen · 150/4 · 15.3",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 15.3 · खाली गेंद · H Klaasen · 150/4 · 15.3"
+      },
+      "bytes": 317
+    },
+    {
+      "id": "02-16-04-ball",
+      "t": 329.5,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 150,
+        "wkts": 4,
+        "overs": "15.4"
+      },
+      "players": [
+        "H Klaasen",
+        "DA Miller",
+        "JJ Bumrah"
+      ],
+      "text": {
+        "en": "SA · 15.4 · DOT · H Klaasen · 150/4 · 15.4",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 15.4 · खाली गेंद · H Klaasen · 150/4 · 15.4"
+      },
+      "bytes": 319
+    },
+    {
+      "id": "02-16-05-ball",
+      "t": 331.1,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 151,
+        "wkts": 4,
+        "overs": "15.5"
+      },
+      "players": [
+        "H Klaasen",
+        "DA Miller",
+        "JJ Bumrah"
+      ],
+      "text": {
+        "en": "SA · 15.5 · +1 RUN · H Klaasen · 151/4 · 15.5",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 15.5 · 1 रन · H Klaasen · 151/4 · 15.5"
+      },
+      "bytes": 317
+    },
+    {
+      "id": "02-16-06-ball",
+      "t": 332.3,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 151,
+        "wkts": 4,
+        "overs": "15.6"
+      },
+      "players": [
+        "DA Miller",
+        "H Klaasen",
+        "JJ Bumrah"
+      ],
+      "text": {
+        "en": "SA · 15.6 · DOT · DA Miller · 151/4 · 15.6",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 15.6 · खाली गेंद · DA Miller · 151/4 · 15.6"
+      },
+      "bytes": 319
+    },
+    {
+      "id": "02-16-06-over_end",
+      "t": 332.65,
+      "sport": "cricket",
+      "type": "over_end",
+      "importance": 2,
+      "score": {
+        "runs": 151,
+        "wkts": 4,
+        "overs": "16.0"
+      },
+      "players": [
+        "DA Miller",
+        "H Klaasen",
+        "JJ Bumrah"
+      ],
+      "text": {
+        "en": "SA · OVER END · 16.0 · FINAL BALL 15.6 · 151/4 · 16.0",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · ओवर समाप्त · 16.0 · अंतिम गेंद 15.6 · 151/4 · 16.0"
+      },
+      "bytes": 346
+    },
+    {
+      "id": "02-17-01-wicket",
+      "t": 333.95,
+      "sport": "cricket",
+      "type": "wicket",
+      "importance": 3,
+      "score": {
+        "runs": 151,
+        "wkts": 5,
+        "overs": "16.1"
+      },
+      "players": [
+        "H Klaasen",
+        "DA Miller",
+        "HH Pandya",
+        "RR Pant"
+      ],
+      "text": {
+        "en": "SA · WICKET · H Klaasen · caught · 151/5 · 16.1",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · विकेट · H Klaasen आउट · caught · 151/5 · 16.1"
+      },
+      "bytes": 341
+    },
+    {
+      "id": "02-17-02-ball",
+      "t": 335.7,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 151,
+        "wkts": 5,
+        "overs": "16.2"
+      },
+      "players": [
+        "M Jansen",
+        "DA Miller",
+        "HH Pandya"
+      ],
+      "text": {
+        "en": "SA · 16.2 · DOT · M Jansen · 151/5 · 16.2",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 16.2 · खाली गेंद · M Jansen · 151/5 · 16.2"
+      },
+      "bytes": 316
+    },
+    {
+      "id": "02-17-03-ball",
+      "t": 337.2,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 152,
+        "wkts": 5,
+        "overs": "16.3"
+      },
+      "players": [
+        "M Jansen",
+        "DA Miller",
+        "HH Pandya"
+      ],
+      "text": {
+        "en": "SA · 16.3 · +1 RUN · M Jansen · 152/5 · 16.3",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 16.3 · 1 रन · M Jansen · 152/5 · 16.3"
+      },
+      "bytes": 314
+    },
+    {
+      "id": "02-17-04-ball",
+      "t": 338.8,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 153,
+        "wkts": 5,
+        "overs": "16.4"
+      },
+      "players": [
+        "DA Miller",
+        "M Jansen",
+        "HH Pandya"
+      ],
+      "text": {
+        "en": "SA · 16.4 · +1 RUN · DA Miller · 153/5 · 16.4",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 16.4 · 1 रन · DA Miller · 153/5 · 16.4"
+      },
+      "bytes": 316
+    },
+    {
+      "id": "02-17-05-ball",
+      "t": 340,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 154,
+        "wkts": 5,
+        "overs": "16.5"
+      },
+      "players": [
+        "M Jansen",
+        "DA Miller",
+        "HH Pandya"
+      ],
+      "text": {
+        "en": "SA · 16.5 · +1 RUN · M Jansen · 154/5 · 16.5",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 16.5 · 1 रन · M Jansen · 154/5 · 16.5"
+      },
+      "bytes": 312
+    },
+    {
+      "id": "02-17-06-ball",
+      "t": 341.3,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 155,
+        "wkts": 5,
+        "overs": "16.6"
+      },
+      "players": [
+        "DA Miller",
+        "M Jansen",
+        "HH Pandya"
+      ],
+      "text": {
+        "en": "SA · 16.6 · +1 RUN · DA Miller · 155/5 · 16.6",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 16.6 · 1 रन · DA Miller · 155/5 · 16.6"
+      },
+      "bytes": 316
+    },
+    {
+      "id": "02-17-06-over_end",
+      "t": 341.65,
+      "sport": "cricket",
+      "type": "over_end",
+      "importance": 2,
+      "score": {
+        "runs": 155,
+        "wkts": 5,
+        "overs": "17.0"
+      },
+      "players": [
+        "DA Miller",
+        "M Jansen",
+        "HH Pandya"
+      ],
+      "text": {
+        "en": "SA · OVER END · 17.0 · FINAL BALL 16.6 · 155/5 · 17.0",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · ओवर समाप्त · 17.0 · अंतिम गेंद 16.6 · 155/5 · 17.0"
+      },
+      "bytes": 345
+    },
+    {
+      "id": "02-18-01-ball",
+      "t": 343.05,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 155,
+        "wkts": 5,
+        "overs": "17.1"
+      },
+      "players": [
+        "DA Miller",
+        "M Jansen",
+        "JJ Bumrah"
+      ],
+      "text": {
+        "en": "SA · 17.1 · DOT · DA Miller · 155/5 · 17.1",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 17.1 · खाली गेंद · DA Miller · 155/5 · 17.1"
+      },
+      "bytes": 319
+    },
+    {
+      "id": "02-18-02-ball",
+      "t": 344.55,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 155,
+        "wkts": 5,
+        "overs": "17.2"
+      },
+      "players": [
+        "DA Miller",
+        "M Jansen",
+        "JJ Bumrah"
+      ],
+      "text": {
+        "en": "SA · 17.2 · DOT · DA Miller · 155/5 · 17.2",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 17.2 · खाली गेंद · DA Miller · 155/5 · 17.2"
+      },
+      "bytes": 319
+    },
+    {
+      "id": "02-18-03-ball",
+      "t": 346.15,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 156,
+        "wkts": 5,
+        "overs": "17.3"
+      },
+      "players": [
+        "DA Miller",
+        "M Jansen",
+        "JJ Bumrah"
+      ],
+      "text": {
+        "en": "SA · 17.3 · +1 RUN · DA Miller · 156/5 · 17.3",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 17.3 · 1 रन · DA Miller · 156/5 · 17.3"
+      },
+      "bytes": 317
+    },
+    {
+      "id": "02-18-04-wicket",
+      "t": 347.35,
+      "sport": "cricket",
+      "type": "wicket",
+      "importance": 3,
+      "score": {
+        "runs": 156,
+        "wkts": 6,
+        "overs": "17.4"
+      },
+      "players": [
+        "M Jansen",
+        "DA Miller",
+        "JJ Bumrah"
+      ],
+      "text": {
+        "en": "SA · WICKET · M Jansen · bowled · 156/6 · 17.4",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · विकेट · M Jansen आउट · bowled · 156/6 · 17.4"
+      },
+      "bytes": 328
+    },
+    {
+      "id": "02-18-05-ball",
+      "t": 349,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 156,
+        "wkts": 6,
+        "overs": "17.5"
+      },
+      "players": [
+        "KA Maharaj",
+        "DA Miller",
+        "JJ Bumrah"
+      ],
+      "text": {
+        "en": "SA · 17.5 · DOT · KA Maharaj · 156/6 · 17.5",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 17.5 · खाली गेंद · KA Maharaj · 156/6 · 17.5"
+      },
+      "bytes": 320
+    },
+    {
+      "id": "02-18-06-ball",
+      "t": 350.4,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 157,
+        "wkts": 6,
+        "overs": "17.6"
+      },
+      "players": [
+        "KA Maharaj",
+        "DA Miller",
+        "JJ Bumrah"
+      ],
+      "text": {
+        "en": "SA · 17.6 · +1 RUN · KA Maharaj · 157/6 · 17.6",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 17.6 · 1 रन · KA Maharaj · 157/6 · 17.6"
+      },
+      "bytes": 320
+    },
+    {
+      "id": "02-18-06-over_end",
+      "t": 350.75,
+      "sport": "cricket",
+      "type": "over_end",
+      "importance": 2,
+      "score": {
+        "runs": 157,
+        "wkts": 6,
+        "overs": "18.0"
+      },
+      "players": [
+        "KA Maharaj",
+        "DA Miller",
+        "JJ Bumrah"
+      ],
+      "text": {
+        "en": "SA · OVER END · 18.0 · FINAL BALL 17.6 · 157/6 · 18.0",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · ओवर समाप्त · 18.0 · अंतिम गेंद 17.6 · 157/6 · 18.0"
+      },
+      "bytes": 347
+    },
+    {
+      "id": "02-19-01-ball",
+      "t": 352.25,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 157,
+        "wkts": 6,
+        "overs": "18.1"
+      },
+      "players": [
+        "KA Maharaj",
+        "DA Miller",
+        "Arshdeep Singh"
+      ],
+      "text": {
+        "en": "SA · 18.1 · DOT · KA Maharaj · 157/6 · 18.1",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 18.1 · खाली गेंद · KA Maharaj · 157/6 · 18.1"
+      },
+      "bytes": 328
+    },
+    {
+      "id": "02-19-02-ball",
+      "t": 353.85,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 157,
+        "wkts": 6,
+        "overs": "18.2"
+      },
+      "players": [
+        "KA Maharaj",
+        "DA Miller",
+        "Arshdeep Singh"
+      ],
+      "text": {
+        "en": "SA · 18.2 · DOT · KA Maharaj · 157/6 · 18.2",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 18.2 · खाली गेंद · KA Maharaj · 157/6 · 18.2"
+      },
+      "bytes": 328
+    },
+    {
+      "id": "02-19-03-ball",
+      "t": 355.05,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 158,
+        "wkts": 6,
+        "overs": "18.3"
+      },
+      "players": [
+        "KA Maharaj",
+        "DA Miller",
+        "Arshdeep Singh"
+      ],
+      "text": {
+        "en": "SA · 18.3 · +1 RUN · KA Maharaj · 158/6 · 18.3",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 18.3 · 1 रन · KA Maharaj · 158/6 · 18.3"
+      },
+      "bytes": 326
+    },
+    {
+      "id": "02-19-04-ball",
+      "t": 356.35,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 160,
+        "wkts": 6,
+        "overs": "18.4"
+      },
+      "players": [
+        "DA Miller",
+        "KA Maharaj",
+        "Arshdeep Singh"
+      ],
+      "text": {
+        "en": "SA · 18.4 · +2 RUNS · DA Miller · 160/6 · 18.4",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 18.4 · 2 रन · DA Miller · 160/6 · 18.4"
+      },
+      "bytes": 325
+    },
+    {
+      "id": "02-19-05-ball",
+      "t": 357.75,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 161,
+        "wkts": 6,
+        "overs": "18.5"
+      },
+      "players": [
+        "DA Miller",
+        "KA Maharaj",
+        "Arshdeep Singh"
+      ],
+      "text": {
+        "en": "SA · 18.5 · +1 RUN · DA Miller · 161/6 · 18.5",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 18.5 · 1 रन · DA Miller · 161/6 · 18.5"
+      },
+      "bytes": 324
+    },
+    {
+      "id": "02-19-06-ball",
+      "t": 359.25,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 161,
+        "wkts": 6,
+        "overs": "18.6"
+      },
+      "players": [
+        "KA Maharaj",
+        "DA Miller",
+        "Arshdeep Singh"
+      ],
+      "text": {
+        "en": "SA · 18.6 · DOT · KA Maharaj · 161/6 · 18.6",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 18.6 · खाली गेंद · KA Maharaj · 161/6 · 18.6"
+      },
+      "bytes": 328
+    },
+    {
+      "id": "02-19-06-over_end",
+      "t": 359.6,
+      "sport": "cricket",
+      "type": "over_end",
+      "importance": 2,
+      "score": {
+        "runs": 161,
+        "wkts": 6,
+        "overs": "19.0"
+      },
+      "players": [
+        "KA Maharaj",
+        "DA Miller",
+        "Arshdeep Singh"
+      ],
+      "text": {
+        "en": "SA · OVER END · 19.0 · FINAL BALL 18.6 · 161/6 · 19.0",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · ओवर समाप्त · 19.0 · अंतिम गेंद 18.6 · 161/6 · 19.0"
+      },
+      "bytes": 351
+    },
+    {
+      "id": "02-20-01-wicket",
+      "t": 361.2,
+      "sport": "cricket",
+      "type": "wicket",
+      "importance": 3,
+      "score": {
+        "runs": 161,
+        "wkts": 7,
+        "overs": "19.1"
+      },
+      "players": [
+        "DA Miller",
+        "KA Maharaj",
+        "HH Pandya",
+        "SA Yadav"
+      ],
+      "text": {
+        "en": "SA · WICKET · DA Miller · caught · 161/7 · 19.1",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · विकेट · DA Miller आउट · caught · 161/7 · 19.1"
+      },
+      "bytes": 342
+    },
+    {
+      "id": "02-20-02-four",
+      "t": 362.75,
+      "sport": "cricket",
+      "type": "four",
+      "importance": 2,
+      "score": {
+        "runs": 165,
+        "wkts": 7,
+        "overs": "19.2"
+      },
+      "players": [
+        "K Rabada",
+        "KA Maharaj",
+        "HH Pandya"
+      ],
+      "text": {
+        "en": "SA · FOUR · K Rabada · 165/7 · 19.2",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · चौका · K Rabada · 165/7 · 19.2"
+      },
+      "bytes": 300
+    },
+    {
+      "id": "02-20-03-ball",
+      "t": 364.05,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 166,
+        "wkts": 7,
+        "overs": "19.3"
+      },
+      "players": [
+        "K Rabada",
+        "KA Maharaj",
+        "HH Pandya"
+      ],
+      "text": {
+        "en": "SA · 19.3 · +1 RUN · K Rabada · 166/7 · 19.3",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 19.3 · 1 रन · K Rabada · 166/7 · 19.3"
+      },
+      "bytes": 316
+    },
+    {
+      "id": "02-20-04-ball",
+      "t": 365.45,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 167,
+        "wkts": 7,
+        "overs": "19.4"
+      },
+      "players": [
+        "KA Maharaj",
+        "K Rabada",
+        "HH Pandya"
+      ],
+      "text": {
+        "en": "SA · 19.4 · +1 RUN · KA Maharaj · 167/7 · 19.4",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 19.4 · 1 रन · KA Maharaj · 167/7 · 19.4"
+      },
+      "bytes": 320
+    },
+    {
+      "id": "02-20-05-ball",
+      "t": 366.95,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 168,
+        "wkts": 7,
+        "overs": "19.5"
+      },
+      "players": [
+        "K Rabada",
+        "KA Maharaj",
+        "HH Pandya"
+      ],
+      "text": {
+        "en": "SA · 19.5 · +1 RUN · K Rabada · 168/7 · 19.5",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 19.5 · 1 रन · K Rabada · 168/7 · 19.5"
+      },
+      "bytes": 316
+    },
+    {
+      "id": "02-20-06-wicket",
+      "t": 368.55,
+      "sport": "cricket",
+      "type": "wicket",
+      "importance": 3,
+      "score": {
+        "runs": 168,
+        "wkts": 8,
+        "overs": "19.5"
+      },
+      "players": [
+        "K Rabada",
+        "KA Maharaj",
+        "HH Pandya",
+        "SA Yadav"
+      ],
+      "text": {
+        "en": "SA · WICKET · K Rabada · caught · 168/8 · 19.5",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · विकेट · K Rabada आउट · caught · 168/8 · 19.5"
+      },
+      "bytes": 340
+    },
+    {
+      "id": "02-20-07-ball",
+      "t": 370.1,
+      "sport": "cricket",
+      "type": "ball",
+      "importance": 1,
+      "score": {
+        "runs": 169,
+        "wkts": 8,
+        "overs": "19.6"
+      },
+      "players": [
+        "A Nortje",
+        "KA Maharaj",
+        "HH Pandya"
+      ],
+      "text": {
+        "en": "SA · 19.6 · +1 RUN · A Nortje · 169/8 · 19.6",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · 19.6 · 1 रन · A Nortje · 169/8 · 19.6"
+      },
+      "bytes": 315
+    },
+    {
+      "id": "02-20-07-over_end",
+      "t": 370.45,
+      "sport": "cricket",
+      "type": "over_end",
+      "importance": 2,
+      "score": {
+        "runs": 169,
+        "wkts": 8,
+        "overs": "20.0"
+      },
+      "players": [
+        "A Nortje",
+        "KA Maharaj",
+        "HH Pandya"
+      ],
+      "text": {
+        "en": "SA · OVER END · 20.0 · FINAL BALL 19.6 · 169/8 · 20.0",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SA · ओवर समाप्त · 20.0 · अंतिम गेंद 19.6 · 169/8 · 20.0"
+      },
+      "bytes": 346
+    }
+  ]
+}
