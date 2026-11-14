@@ -79,7 +79,7 @@ export default function App() {
   });
   const [followed, setFollowed] = useState<string[]>([]);
   const [sport, setSport] = useState<'cricket' | 'football' | 'f1'>('cricket');
-  const [directorOpen, setDirectorOpen] = useState(true);
+  const [directorOpen, setDirectorOpen] = useState(() => typeof window === 'undefined' || window.innerWidth > 760);
   const [stallsThisMatch, setStallsThisMatch] = useState(0);
   const [totalMissedWickets, setTotalMissedWickets] = useState(0);
   const [simulatedOpen, setSimulatedOpen] = useState(false);
@@ -334,7 +334,7 @@ export default function App() {
 
     <aside className="director" aria-label="Director’s panel">
       <details className="director-details" open={directorOpen} onToggle={event => setDirectorOpen(event.currentTarget.open)}>
-        <summary><span className="director-mark"><Icon name="signal" size={16}/></span><span><span className="director-label">TETHER / LAB</span><strong>Director’s panel</strong></span></summary>
+        <summary><span className="director-mark"><Icon name="signal" size={16}/></span><span className="director-summary-copy"><span className="director-label">DEMO CONTROLS</span><strong>Director’s panel</strong><small>Network · replay · data</small></span></summary>
         <div className="director-content">
           <div className="guide"><span>1</span><p>Press play.</p><span>2</span><p>Hit “Break the network” (or toggle Offline in DevTools).</p><span>3</span><p>Watch the feed take over, then restore.</p></div>
           <div className="control-block"><div className="control-caption"><span>VIDEO SIGNAL</span><span className={`control-state ${status}`}>{status === 'stalled' ? 'STALLED' : status.toUpperCase()}</span></div><button className="primary-control" onClick={() => status === 'stalled' ? restore() : beginBreak()} disabled={!controller}><span className="control-icon"><Icon name={status === 'stalled' ? 'rotate' : 'pause'} size={16}/></span><span>{status === 'stalled' ? 'Restore' : 'Break the network'}</span></button><div className="lag-readout"><span>LIVE / VIDEO LAG</span><strong className={clocks.lag > 0.5 ? 'lagging' : ''}>{clocks.lag.toFixed(1)}s</strong></div></div>

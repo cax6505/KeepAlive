@@ -9,6 +9,7 @@ async function startAndSetLongRestore(page: import('@playwright/test').Page) {
   const video = page.locator('video');
   await expect.poll(() => video.evaluate(element => element.currentTime), { timeout: 10_000 }).toBeGreaterThan(0.4);
   await expect(video).toHaveJSProperty('muted', true);
+  await page.locator('.director-details > summary').evaluate(summary => (summary as HTMLElement).click());
   await page.locator('.secondary-control').filter({ hasText: '20s' }).evaluate(button => (button as HTMLButtonElement).click());
   await page.waitForFunction(() => {
     const video = document.querySelector('video');
