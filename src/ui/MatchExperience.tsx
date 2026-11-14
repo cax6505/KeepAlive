@@ -16,6 +16,7 @@ type Props = {
   liveScore: MatchEvent['score'];
   recapLiveClock?: number;
   recapVideoClock?: number;
+  stallStartClock?: number;
   sport: Sport;
   renderEvent: (event: MatchEvent) => RenderedEvent;
   offline: boolean;
@@ -33,11 +34,12 @@ type Props = {
 
 export function MatchExperience(props: Props) {
   const {
-    phase, events, missed, elapsedSeconds, gapSeconds, runsMissed, liveScore, offline, language,
+    phase, events, missed, elapsedSeconds, gapSeconds, runsMissed, liveScore, offline, language, stallStartClock,
     followed, collapsed, players, onLanguage, onDismiss, onFollow, onJump, onKeepWatching, onExpand, sport, renderEvent, recapLiveClock, recapVideoClock,
   } = props;
   const [mode, setMode] = useState<Mode>('everything');
   const latest = events[events.length - 1];
+  const latestIsPreStall = latest !== undefined && stallStartClock !== undefined && latest.t < stallStartClock;
   const recent = events.slice(0, -1).slice(-5).reverse();
   const eventLabel = (event: MatchEvent) => event.text[language];
   const userPlayers = players.filter(player => followed.includes(player));
@@ -70,9 +72,9 @@ export function MatchExperience(props: Props) {
       {phase === 'recovering' && <p className="quiet-catchup recovering-note">Picture back · confirming signal.</p>}
       <div className="experience-feed">
         {latest ? <article key={latest.id} className={`latest-event ${latest.type}`}>
-          <div className="latest-event-top"><span>{latest.score.overs} · {latest.type.toUpperCase().replace('_', ' ')}</span>{userPlayers.some(player => latest.players.includes(player)) && <b>Your player</b>}</div>
+          <div className="latest-event-top"><span>{latestIsPreStall ? 'LAST KEY EVENT · BEFORE STALL' : `${latest.score.overs} · ${latest.type.toUpperCase().replace('_', ' ')}`}</span>{userPlayers.some(player => latest.players.includes(player)) && <b>Your player</b>}</div>
           <strong><EventGlyph icon={renderEvent(latest).icon}/>{eventLabel(latest)}</strong>
-        </article> : <div className="experience-waiting">Feed connected · waiting for next event</div>}
+        </article> : <div className="experience-waiting">Local replay · waiting for next key event</div>}
         {recent.length > 0 && <div className="recent-events" aria-label="Recent match events">
           {recent.map(event => <article className={`recent-event ${event.type}`} key={event.id}>
             <span className="recent-over">{event.score.overs}</span>

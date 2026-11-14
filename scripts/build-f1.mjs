@@ -1,6 +1,7 @@
 import { readFile, writeFile } from 'node:fs/promises';
 import { resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { paceEvents } from './pacing.mjs';
 
 const root = resolve(fileURLToPath(new URL('..', import.meta.url)));
 const rawDir = resolve(process.argv[2] || `${root}/src/data/raw/f1-9126`);
@@ -100,10 +101,8 @@ for (const [number, finalLap] of lapsByDriver) {
   }
 }
 
-const eventEnd = Math.max(...candidate.map(event => event.t), 1);
-for (const event of candidate) event.t = Number((event.t / eventEnd * 360).toFixed(2));
-candidate.sort((a, b) => a.t - b.t || a.id.localeCompare(b.id));
-const events = candidate.map((event, index) => ({ ...event, id: `f1-${String(index + 1).padStart(3, '0')}-${event.id.slice(3)}` }));
+const pacedEvents = paceEvents(candidate);
+const events = pacedEvents.map((event, index) => ({ ...event, id: `f1-${String(index + 1).padStart(3, '0')}-${event.id.slice(3)}` }));
 for (const event of events) {
   for (let tries = 0; tries < 8; tries += 1) {
     const size = JSON.stringify(event).length;
@@ -117,4 +116,4 @@ const demo = {
   events,
 };
 await writeFile(outputPath, `${JSON.stringify(demo, null, 2)}\n`);
-console.log(`Normalized ${events.length} OpenF1 events to a 360s replay timeline. Wrote ${outputPath}`);
+console.log(`Normalized ${events.length} OpenF1 events to a paced 360s replay timeline. Wrote ${outputPath}`);

@@ -19,7 +19,7 @@
   "events": [
     {
       "id": "545c2c84-018f-4570-a01c-753823feaeac",
-      "t": 13.34,
+      "t": 0,
       "sport": "football",
       "type": "shot_saved",
       "importance": 2,
@@ -41,11 +41,11 @@
         "en": "SHOT SAVED · Alexis Mac Allister (Argentina) 4'",
         "hi": "⟦हिंदी · प्रूफ़रीड⟧ SHOT SAVED · Alexis Mac Allister (Argentina) 4'"
       },
-      "bytes": 407
+      "bytes": 403
     },
     {
       "id": "6d527ebc-a948-4cd8-ac82-daced35bb715",
-      "t": 64.03,
+      "t": 8.78,
       "sport": "football",
       "type": "penalty",
       "importance": 3,
@@ -67,11 +67,11 @@
         "en": "PENALTY GOAL · Lionel Andrés Messi Cuccittini (Argentina) 22'",
         "hi": "⟦हिंदी · प्रूफ़रीड⟧ PENALTY GOAL · Lionel Andrés Messi Cuccittini (Argentina) 22'"
       },
-      "bytes": 445
+      "bytes": 444
     },
     {
       "id": "ef86f4d9-7acd-4ed0-a5ec-9129079e8fbe",
-      "t": 101.09,
+      "t": 17.56,
       "sport": "football",
       "type": "goal",
       "importance": 3,
@@ -93,11 +93,11 @@
         "en": "GOAL · Ángel Fabián Di María Hernández (Argentina) 35'",
         "hi": "⟦हिंदी · प्रूफ़रीड⟧ GOAL · Ángel Fabián Di María Hernández (Argentina) 35'"
       },
-      "bytes": 430
+      "bytes": 429
     },
     {
       "id": "df245155-92fc-4123-8bcf-66ba2ee77870",
-      "t": 115.86,
+      "t": 26.34,
       "sport": "football",
       "type": "substitution",
       "importance": 2,
@@ -120,11 +120,11 @@
         "en": "SUB · Ousmane Dembélé → Randal Kolo Muani (France) 40'",
         "hi": "⟦हिंदी · प्रूफ़रीड⟧ SUB · Ousmane Dembélé → Randal Kolo Muani (France) 40'"
       },
-      "bytes": 439
+      "bytes": 438
     },
     {
       "id": "bae6c6ee-59b6-419e-992d-7567437736f5",
-      "t": 117.24,
+      "t": 35.12,
       "sport": "football",
       "type": "substitution",
       "importance": 2,
@@ -147,37 +147,11 @@
         "en": "SUB · Olivier Giroud → Marcus Thuram (France) 41'",
         "hi": "⟦हिंदी · प्रूफ़रीड⟧ SUB · Olivier Giroud → Marcus Thuram (France) 41'"
       },
-      "bytes": 424
-    },
-    {
-      "id": "af8c7775-091a-4905-aeb3-484b9a99de81",
-      "t": 146.77,
-      "sport": "football",
-      "type": "card",
-      "importance": 2,
-      "score": {
-        "runs": 2,
-        "wkts": 0,
-        "overs": "51",
-        "display": {
-          "label": "ARG V FRA",
-          "value": "2–0",
-          "context": "51'"
-        }
-      },
-      "players": [
-        "Enzo Fernandez",
-        "Argentina"
-      ],
-      "text": {
-        "en": "YELLOW CARD · Enzo Fernandez (Argentina) 51'",
-        "hi": "⟦हिंदी · प्रूफ़रीड⟧ YELLOW CARD · Enzo Fernandez (Argentina) 51'"
-      },
-      "bytes": 393
+      "bytes": 423
     },
     {
       "id": "13a4889d-ad08-41be-9125-24c4c7d7879a",
-      "t": 139.53,
+      "t": 43.9,
       "sport": "football",
       "type": "shot_saved",
       "importance": 2,
@@ -199,11 +173,37 @@
         "en": "SHOT SAVED · Rodrigo Javier De Paul (Argentina) 48'",
         "hi": "⟦हिंदी · प्रूफ़रीड⟧ SHOT SAVED · Rodrigo Javier De Paul (Argentina) 48'"
       },
-      "bytes": 421
+      "bytes": 419
+    },
+    {
+      "id": "af8c7775-091a-4905-aeb3-484b9a99de81",
+      "t": 52.68,
+      "sport": "football",
+      "type": "card",
+      "importance": 2,
+      "score": {
+        "runs": 2,
+        "wkts": 0,
+        "overs": "51",
+        "display": {
+          "label": "ARG V FRA",
+          "value": "2–0",
+          "context": "51'"
+        }
+      },
+      "players": [
+        "Enzo Fernandez",
+        "Argentina"
+      ],
+      "text": {
+        "en": "YELLOW CARD · Enzo Fernandez (Argentina) 51'",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ YELLOW CARD · Enzo Fernandez (Argentina) 51'"
+      },
+      "bytes": 392
     },
     {
       "id": "5683007d-fde4-40ee-aa5e-c1624424b24e",
-      "t": 154.92,
+      "t": 61.46,
       "sport": "football",
       "type": "card",
       "importance": 2,
@@ -225,11 +225,11 @@
         "en": "YELLOW CARD · Adrien Rabiot (France) 54'",
         "hi": "⟦हिंदी · प्रूफ़रीड⟧ YELLOW CARD · Adrien Rabiot (France) 54'"
       },
-      "bytes": 381
+      "bytes": 380
     },
     {
       "id": "43691970-1dad-4e11-bd29-48f640c55ea1",
-      "t": 166.78,
+      "t": 70.24,
       "sport": "football",
       "type": "shot_saved",
       "importance": 2,
@@ -251,11 +251,11 @@
         "en": "SHOT SAVED · Julián Álvarez (Argentina) 58'",
         "hi": "⟦हिंदी · प्रूफ़रीड⟧ SHOT SAVED · Julián Álvarez (Argentina) 58'"
       },
-      "bytes": 397
+      "bytes": 396
     },
     {
       "id": "e7e1f696-1fe2-4b3a-b2ec-aeb36b0c8258",
-      "t": 182.5,
+      "t": 79.02,
       "sport": "football",
       "type": "substitution",
       "importance": 2,
@@ -282,7 +282,7 @@
     },
     {
       "id": "3c9df00b-0b30-4548-9cd1-ceff03cc9919",
-      "t": 201.37,
+      "t": 87.8,
       "sport": "football",
       "type": "substitution",
       "importance": 2,
@@ -305,11 +305,11 @@
         "en": "SUB · Theo Bernard François Hernández → Eduardo Camavinga (France) 70'",
         "hi": "⟦हिंदी · प्रूफ़रीड⟧ SUB · Theo Bernard François Hernández → Eduardo Camavinga (France) 70'"
       },
-      "bytes": 487
+      "bytes": 485
     },
     {
       "id": "43fe1865-0aa9-4bb1-bf33-a2871df4589b",
-      "t": 201.46,
+      "t": 96.59,
       "sport": "football",
       "type": "substitution",
       "importance": 2,
@@ -332,11 +332,11 @@
         "en": "SUB · Antoine Griezmann → Kingsley Coman (France) 70'",
         "hi": "⟦हिंदी · प्रूफ़रीड⟧ SUB · Antoine Griezmann → Kingsley Coman (France) 70'"
       },
-      "bytes": 436
+      "bytes": 435
     },
     {
       "id": "43b2d123-6945-4a7c-8292-f7792af341f9",
-      "t": 204.41,
+      "t": 105.37,
       "sport": "football",
       "type": "shot_saved",
       "importance": 2,
@@ -362,7 +362,7 @@
     },
     {
       "id": "6cc0d5e2-6999-4006-8a7a-34de4cbe3ffd",
-      "t": 226.95,
+      "t": 114.15,
       "sport": "football",
       "type": "penalty",
       "importance": 3,
@@ -388,7 +388,7 @@
     },
     {
       "id": "03fb2918-e1e7-4ec8-89ff-7bc5531e853d",
-      "t": 231.47,
+      "t": 122.93,
       "sport": "football",
       "type": "goal",
       "importance": 3,
@@ -414,7 +414,7 @@
     },
     {
       "id": "8f75db1a-1ee2-4ff8-b211-1c46d9a76a69",
-      "t": 246.96,
+      "t": 131.71,
       "sport": "football",
       "type": "card",
       "importance": 2,
@@ -439,86 +439,8 @@
       "bytes": 381
     },
     {
-      "id": "8d2a6599-cc25-41a2-acde-41d10194b5bd",
-      "t": 267.96,
-      "sport": "football",
-      "type": "shot_saved",
-      "importance": 2,
-      "score": {
-        "runs": 2,
-        "wkts": 2,
-        "overs": "93",
-        "display": {
-          "label": "ARG V FRA",
-          "value": "2–2",
-          "context": "93'"
-        }
-      },
-      "players": [
-        "Adrien Rabiot",
-        "France"
-      ],
-      "text": {
-        "en": "SHOT SAVED · Adrien Rabiot (France) 93'",
-        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SHOT SAVED · Adrien Rabiot (France) 93'"
-      },
-      "bytes": 385
-    },
-    {
-      "id": "867b8791-49c0-4d98-a976-c0b4cfc1cb5a",
-      "t": 276.16,
-      "sport": "football",
-      "type": "shot_saved",
-      "importance": 2,
-      "score": {
-        "runs": 2,
-        "wkts": 2,
-        "overs": "96",
-        "display": {
-          "label": "ARG V FRA",
-          "value": "2–2",
-          "context": "96'"
-        }
-      },
-      "players": [
-        "Lionel Andrés Messi Cuccittini",
-        "Argentina"
-      ],
-      "text": {
-        "en": "SHOT SAVED · Lionel Andrés Messi Cuccittini (Argentina) 96'",
-        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SHOT SAVED · Lionel Andrés Messi Cuccittini (Argentina) 96'"
-      },
-      "bytes": 445
-    },
-    {
-      "id": "4b295434-7285-4337-95b4-26395b799643",
-      "t": 278.82,
-      "sport": "football",
-      "type": "card",
-      "importance": 2,
-      "score": {
-        "runs": 2,
-        "wkts": 2,
-        "overs": "97",
-        "display": {
-          "label": "ARG V FRA",
-          "value": "2–2",
-          "context": "97'"
-        }
-      },
-      "players": [
-        "Marcos Javier Acuña",
-        "Argentina"
-      ],
-      "text": {
-        "en": "YELLOW CARD · Marcos Javier Acuña (Argentina) 97'",
-        "hi": "⟦हिंदी · प्रूफ़रीड⟧ YELLOW CARD · Marcos Javier Acuña (Argentina) 97'"
-      },
-      "bytes": 408
-    },
-    {
       "id": "c7266755-5003-418c-bf4f-f7da41d47840",
-      "t": 257.24,
+      "t": 140.49,
       "sport": "football",
       "type": "substitution",
       "importance": 2,
@@ -544,8 +466,34 @@
       "bytes": 475
     },
     {
+      "id": "8d2a6599-cc25-41a2-acde-41d10194b5bd",
+      "t": 149.27,
+      "sport": "football",
+      "type": "shot_saved",
+      "importance": 2,
+      "score": {
+        "runs": 2,
+        "wkts": 2,
+        "overs": "93",
+        "display": {
+          "label": "ARG V FRA",
+          "value": "2–2",
+          "context": "93'"
+        }
+      },
+      "players": [
+        "Adrien Rabiot",
+        "France"
+      ],
+      "text": {
+        "en": "SHOT SAVED · Adrien Rabiot (France) 93'",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SHOT SAVED · Adrien Rabiot (France) 93'"
+      },
+      "bytes": 385
+    },
+    {
       "id": "5688fcf1-1b7a-4938-8d14-92b87c198d95",
-      "t": 272.01,
+      "t": 158.05,
       "sport": "football",
       "type": "substitution",
       "importance": 2,
@@ -571,8 +519,60 @@
       "bytes": 427
     },
     {
+      "id": "867b8791-49c0-4d98-a976-c0b4cfc1cb5a",
+      "t": 166.83,
+      "sport": "football",
+      "type": "shot_saved",
+      "importance": 2,
+      "score": {
+        "runs": 2,
+        "wkts": 2,
+        "overs": "96",
+        "display": {
+          "label": "ARG V FRA",
+          "value": "2–2",
+          "context": "96'"
+        }
+      },
+      "players": [
+        "Lionel Andrés Messi Cuccittini",
+        "Argentina"
+      ],
+      "text": {
+        "en": "SHOT SAVED · Lionel Andrés Messi Cuccittini (Argentina) 96'",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SHOT SAVED · Lionel Andrés Messi Cuccittini (Argentina) 96'"
+      },
+      "bytes": 445
+    },
+    {
+      "id": "4b295434-7285-4337-95b4-26395b799643",
+      "t": 175.61,
+      "sport": "football",
+      "type": "card",
+      "importance": 2,
+      "score": {
+        "runs": 2,
+        "wkts": 2,
+        "overs": "97",
+        "display": {
+          "label": "ARG V FRA",
+          "value": "2–2",
+          "context": "97'"
+        }
+      },
+      "players": [
+        "Marcos Javier Acuña",
+        "Argentina"
+      ],
+      "text": {
+        "en": "YELLOW CARD · Marcos Javier Acuña (Argentina) 97'",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ YELLOW CARD · Marcos Javier Acuña (Argentina) 97'"
+      },
+      "bytes": 408
+    },
+    {
       "id": "8939a18c-593c-41fc-b86d-308cd189fca1",
-      "t": 290.45,
+      "t": 184.39,
       "sport": "football",
       "type": "substitution",
       "importance": 2,
@@ -599,7 +599,7 @@
     },
     {
       "id": "1e6477ea-098a-41d5-96d1-d2944e38f46c",
-      "t": 291.02,
+      "t": 193.17,
       "sport": "football",
       "type": "substitution",
       "importance": 2,
@@ -626,7 +626,7 @@
     },
     {
       "id": "8bb8c7b5-9c14-4dfa-9279-0548ee8076db",
-      "t": 305.6,
+      "t": 201.95,
       "sport": "football",
       "type": "shot_saved",
       "importance": 2,
@@ -648,11 +648,11 @@
         "en": "SHOT SAVED · Lionel Andrés Messi Cuccittini (Argentina) 106'",
         "hi": "⟦हिंदी · प्रूफ़रीड⟧ SHOT SAVED · Lionel Andrés Messi Cuccittini (Argentina) 106'"
       },
-      "bytes": 448
+      "bytes": 449
     },
     {
       "id": "40cbfd91-87d9-4df8-a575-533b5c26767f",
-      "t": 308.55,
+      "t": 210.73,
       "sport": "football",
       "type": "shot_saved",
       "importance": 2,
@@ -678,7 +678,7 @@
     },
     {
       "id": "54b889ec-6026-49ea-a913-e883dbe6e301",
-      "t": 308.6,
+      "t": 219.51,
       "sport": "football",
       "type": "goal",
       "importance": 3,
@@ -700,11 +700,11 @@
         "en": "GOAL · Lionel Andrés Messi Cuccittini (Argentina) 107'",
         "hi": "⟦हिंदी · प्रूफ़रीड⟧ GOAL · Lionel Andrés Messi Cuccittini (Argentina) 107'"
       },
-      "bytes": 430
+      "bytes": 431
     },
     {
       "id": "c001d49f-247b-40d8-b247-38c7adcdebe4",
-      "t": 321.46,
+      "t": 228.29,
       "sport": "football",
       "type": "substitution",
       "importance": 2,
@@ -731,7 +731,7 @@
     },
     {
       "id": "19e301d2-38dd-4cbd-8bc2-61d2b46b9951",
-      "t": 324.27,
+      "t": 237.07,
       "sport": "football",
       "type": "card",
       "importance": 2,
@@ -757,7 +757,7 @@
     },
     {
       "id": "6e81c350-5788-4f84-891a-92db9bfbf0db",
-      "t": 329.75,
+      "t": 245.85,
       "sport": "football",
       "type": "substitution",
       "importance": 2,
@@ -784,7 +784,7 @@
     },
     {
       "id": "dcbf6fe6-7b7f-4066-978e-de1a3d6d70ff",
-      "t": 330.56,
+      "t": 254.63,
       "sport": "football",
       "type": "card",
       "importance": 2,
@@ -810,7 +810,7 @@
     },
     {
       "id": "d9b92dbd-4fea-4f48-b2fb-d7222eab2dbd",
-      "t": 334.66,
+      "t": 263.41,
       "sport": "football",
       "type": "penalty",
       "importance": 3,
@@ -835,8 +835,34 @@
       "bytes": 411
     },
     {
+      "id": "d0f76056-0d67-4aae-b44a-83bef0b1cf27",
+      "t": 272.2,
+      "sport": "football",
+      "type": "penalty",
+      "importance": 3,
+      "score": {
+        "runs": 3,
+        "wkts": 4,
+        "overs": "120",
+        "display": {
+          "label": "ARG V FRA",
+          "value": "3–4",
+          "context": "120'"
+        }
+      },
+      "players": [
+        "Kylian Mbappé Lottin",
+        "France"
+      ],
+      "text": {
+        "en": "PENALTY GOAL · Kylian Mbappé Lottin (France) 120'",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ PENALTY GOAL · Kylian Mbappé Lottin (France) 120'"
+      },
+      "bytes": 410
+    },
+    {
       "id": "838765c8-45c7-4379-857c-f103770acbfc",
-      "t": 344.66,
+      "t": 280.98,
       "sport": "football",
       "type": "substitution",
       "importance": 2,
@@ -863,7 +889,7 @@
     },
     {
       "id": "27c68f97-cc44-4fb8-9703-0a4de1c9f6ed",
-      "t": 345.18,
+      "t": 289.76,
       "sport": "football",
       "type": "substitution",
       "importance": 2,
@@ -889,60 +915,8 @@
       "bytes": 521
     },
     {
-      "id": "959edead-09fb-40b0-b6a3-72e73bd30d5a",
-      "t": 350.81,
-      "sport": "football",
-      "type": "shot_saved",
-      "importance": 2,
-      "score": {
-        "runs": 3,
-        "wkts": 3,
-        "overs": "122",
-        "display": {
-          "label": "ARG V FRA",
-          "value": "3–3",
-          "context": "122'"
-        }
-      },
-      "players": [
-        "Randal Kolo Muani",
-        "France"
-      ],
-      "text": {
-        "en": "SHOT SAVED · Randal Kolo Muani (France) 122'",
-        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SHOT SAVED · Randal Kolo Muani (France) 122'"
-      },
-      "bytes": 401
-    },
-    {
-      "id": "d0f76056-0d67-4aae-b44a-83bef0b1cf27",
-      "t": 343.61,
-      "sport": "football",
-      "type": "penalty",
-      "importance": 3,
-      "score": {
-        "runs": 3,
-        "wkts": 4,
-        "overs": "120",
-        "display": {
-          "label": "ARG V FRA",
-          "value": "3–4",
-          "context": "120'"
-        }
-      },
-      "players": [
-        "Kylian Mbappé Lottin",
-        "France"
-      ],
-      "text": {
-        "en": "PENALTY GOAL · Kylian Mbappé Lottin (France) 120'",
-        "hi": "⟦हिंदी · प्रूफ़रीड⟧ PENALTY GOAL · Kylian Mbappé Lottin (France) 120'"
-      },
-      "bytes": 411
-    },
-    {
       "id": "2a15edb5-2a54-41d5-afe9-87e447389b18",
-      "t": 345.95,
+      "t": 298.54,
       "sport": "football",
       "type": "penalty",
       "importance": 3,
@@ -968,7 +942,7 @@
     },
     {
       "id": "97439112-dfb5-4bd5-9967-554095296096",
-      "t": 347.85,
+      "t": 307.32,
       "sport": "football",
       "type": "shot_saved",
       "importance": 2,
@@ -994,7 +968,7 @@
     },
     {
       "id": "50dcde1a-faa3-4eec-a0cd-3f09a7cf763a",
-      "t": 350,
+      "t": 316.1,
       "sport": "football",
       "type": "penalty",
       "importance": 3,
@@ -1016,11 +990,37 @@
         "en": "PENALTY GOAL · Paulo Bruno Exequiel Dybala (Argentina) 122'",
         "hi": "⟦हिंदी · प्रूफ़रीड⟧ PENALTY GOAL · Paulo Bruno Exequiel Dybala (Argentina) 122'"
       },
-      "bytes": 438
+      "bytes": 440
+    },
+    {
+      "id": "959edead-09fb-40b0-b6a3-72e73bd30d5a",
+      "t": 324.88,
+      "sport": "football",
+      "type": "shot_saved",
+      "importance": 2,
+      "score": {
+        "runs": 3,
+        "wkts": 3,
+        "overs": "122",
+        "display": {
+          "label": "ARG V FRA",
+          "value": "3–3",
+          "context": "122'"
+        }
+      },
+      "players": [
+        "Randal Kolo Muani",
+        "France"
+      ],
+      "text": {
+        "en": "SHOT SAVED · Randal Kolo Muani (France) 122'",
+        "hi": "⟦हिंदी · प्रूफ़रीड⟧ SHOT SAVED · Randal Kolo Muani (France) 122'"
+      },
+      "bytes": 401
     },
     {
       "id": "54e27ba9-b9ae-44a3-ac8d-fc91e76a1b91",
-      "t": 352.95,
+      "t": 333.66,
       "sport": "football",
       "type": "penalty",
       "importance": 3,
@@ -1046,7 +1046,7 @@
     },
     {
       "id": "bcc6d4ae-f71c-4566-bf2d-c12f910eb526",
-      "t": 355.19,
+      "t": 342.44,
       "sport": "football",
       "type": "penalty",
       "importance": 3,
@@ -1072,7 +1072,7 @@
     },
     {
       "id": "59ebe83e-616a-4288-89fd-a0246b53d48f",
-      "t": 357.71,
+      "t": 351.22,
       "sport": "football",
       "type": "penalty",
       "importance": 3,

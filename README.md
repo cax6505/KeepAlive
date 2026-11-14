@@ -184,7 +184,10 @@ strings are marked for proofreading.
 
 The OpenF1 downloader is an **optional one-time snapshot refresh**. The
 browser loads generated static JSON only; it never calls Cricsheet, StatsBomb,
-or OpenF1.
+or OpenF1. Football and F1 preserve source-event order and match clocks in
+their copy, while their demo timestamps are evenly paced across six minutes so
+the feed has visible activity during a short injected stall. Those demo times
+are not claimed as the events’ original spacing.
 
 ### Data and media credits
 
@@ -226,7 +229,7 @@ Open the Vite URL printed in the terminal. If browser autoplay is blocked, press
 1. Start playback. The sport switcher and controls sit directly above and
    below the video; the Director’s panel is beside it on desktop and below the
    match on a phone.
-2. Optionally set auto-restore to 5s, 10s, or 20s.
+2. Optionally set auto-restore to 5s, 10s, or 20s (10s by default).
 3. Press the player-adjacent **Break the network** action (or the same control
    in the Director’s panel). The buffer drains; then the stall sheet appears
    while the local event replay advances.

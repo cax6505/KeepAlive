@@ -1,6 +1,7 @@
 import { readFile, writeFile } from 'node:fs/promises';
 import { resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { paceEvents } from './pacing.mjs';
 
 const root = resolve(fileURLToPath(new URL('..', import.meta.url)));
 const rawPath = resolve(process.argv[2] || `${root}/src/data/raw/statsbomb-3869685.json`);
@@ -62,9 +63,8 @@ for (const event of input) {
   selected.push(item);
 }
 
-const endSeconds = Math.max(...selected.map(event => event.t), 1);
-for (const event of selected) event.t = Number((event.t / endSeconds * 360).toFixed(2));
-for (const event of selected) {
+const pacedEvents = paceEvents(selected);
+for (const event of pacedEvents) {
   for (let tries = 0; tries < 8; tries += 1) {
     const size = JSON.stringify(event).length;
     if (size === event.bytes) break;
@@ -74,7 +74,7 @@ for (const event of selected) {
 const demo = {
   source: { provider: 'StatsBomb Open Data', id: '3869685', attribution: 'StatsBomb Open Data; StatsBomb logo included per logo-use guidance.' },
   match: { teams: teamNames, date: '2022-12-18', venue: 'Lusail Stadium', event: 'FIFA World Cup Final', outcome: { result: 'Argentina 3–3 France (Argentina won on penalties)' } },
-  events: selected,
+  events: pacedEvents,
 };
 await writeFile(outputPath, `${JSON.stringify(demo, null, 2)}\n`);
-console.log(`Normalized ${selected.length} StatsBomb events to a 360s replay timeline (from ${endSeconds.toFixed(0)}s of match time). Wrote ${outputPath}`);
+console.log(`Normalized ${pacedEvents.length} StatsBomb events to a paced 360s replay timeline. Wrote ${outputPath}`);

@@ -11,6 +11,10 @@ async function startAndSetLongRestore(page: import('@playwright/test').Page) {
   await expect(video).toHaveJSProperty('muted', true);
   await page.locator('.director-details > summary').evaluate(summary => (summary as HTMLElement).click());
   await page.locator('.secondary-control').filter({ hasText: '20s' }).evaluate(button => (button as HTMLButtonElement).click());
+  await waitForThinBuffer(page);
+}
+
+async function waitForThinBuffer(page: import('@playwright/test').Page) {
   await page.waitForFunction(() => {
     const video = document.querySelector('video');
     if (!video || video.paused || !video.buffered.length) return false;
@@ -88,6 +92,27 @@ test('each sport loads its own local match footage', async ({ page }) => {
   await expect.poll(() => page.locator('video').evaluate(element => element.currentTime), { timeout: 10_000 }).toBeGreaterThan(0.4);
   await expect(page.locator('.video-scorebug')).toContainText(/GRID|P[1-9]/);
   await expect(page.locator('.app-credit')).toContainText('CC BY-SA 4.0');
+});
+
+test('Football and F1 replay events continue arriving during network stalls', async ({ page }) => {
+  test.setTimeout(90_000);
+  for (const sport of [
+    { label: 'Football', source: '/media/football/index.m3u8' },
+    { label: 'F1', source: '/media/f1/index.m3u8' },
+  ]) {
+    await startAndSetLongRestore(page);
+    await page.getByRole('button', { name: sport.label, exact: true }).click();
+    await expect(page.locator('.player-shell')).toHaveAttribute('data-video-source', sport.source);
+    await expect.poll(() => page.locator('video').evaluate(video => video.currentTime), { timeout: 10_000 }).toBeGreaterThan(0.4);
+    await waitForThinBuffer(page);
+
+    const beforeStall = await page.locator('.event-counter').evaluate(element => Number(element.textContent?.trim().split(/\s+/)[0]));
+    await breakUntilStalled(page, 4_500);
+    await expect(page.locator('.latest-event')).toBeVisible();
+    await expect.poll(() => page.locator('.event-counter').evaluate(element => Number(element.textContent?.trim().split(/\s+/)[0])), { timeout: 12_000 }).toBeGreaterThan(beforeStall);
+    await page.getByRole('button', { name: 'Restore', exact: true }).evaluate(button => (button as HTMLButtonElement).click());
+    await expect(page.locator('.recap-title')).toBeVisible({ timeout: 7_000 });
+  }
 });
 
 test('a 1.5 second stutter does not open the stall sheet', async ({ page }) => {

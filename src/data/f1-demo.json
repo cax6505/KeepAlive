@@ -16,7 +16,7 @@
   "events": [
     {
       "id": "f1-001-position-1-2023-07-09T14:03:20.875000+00:00-1-2",
-      "t": 0.84,
+      "t": 0,
       "sport": "f1",
       "type": "position_change",
       "importance": 2,
@@ -37,11 +37,11 @@
         "en": "Verstappen P1->P2 · LAP 1",
         "hi": "⟦हिंदी · प्रूफ़रीड⟧ Verstappen P1->P2 · LAP 1"
       },
-      "bytes": 365
+      "bytes": 362
     },
     {
       "id": "f1-002-position-4-2023-07-09T14:03:20.875000+00:00-2-1",
-      "t": 0.84,
+      "t": 5.37,
       "sport": "f1",
       "type": "position_change",
       "importance": 2,
@@ -66,7 +66,7 @@
     },
     {
       "id": "f1-003-position-55-2023-07-09T14:03:21.672000+00:00-5-6",
-      "t": 0.91,
+      "t": 10.75,
       "sport": "f1",
       "type": "position_change",
       "importance": 2,
@@ -87,11 +87,11 @@
         "en": "Sainz P5->P6 · LAP 1",
         "hi": "⟦हिंदी · प्रूफ़रीड⟧ Sainz P5->P6 · LAP 1"
       },
-      "bytes": 346
+      "bytes": 347
     },
     {
       "id": "f1-004-position-63-2023-07-09T14:03:21.672000+00:00-6-5",
-      "t": 0.91,
+      "t": 16.12,
       "sport": "f1",
       "type": "position_change",
       "importance": 2,
@@ -112,11 +112,11 @@
         "en": "Russell P6->P5 · LAP 1",
         "hi": "⟦हिंदी · प्रूफ़रीड⟧ Russell P6->P5 · LAP 1"
       },
-      "bytes": 354
+      "bytes": 355
     },
     {
       "id": "f1-005-position-1-2023-07-09T14:10:01.274000+00:00-2-1",
-      "t": 31.25,
+      "t": 21.49,
       "sport": "f1",
       "type": "position_change",
       "importance": 2,
@@ -141,7 +141,7 @@
     },
     {
       "id": "f1-006-position-4-2023-07-09T14:10:01.274000+00:00-1-2",
-      "t": 31.25,
+      "t": 26.87,
       "sport": "f1",
       "type": "position_change",
       "importance": 2,
@@ -166,7 +166,7 @@
     },
     {
       "id": "f1-007-pit-27-7-2023-07-09T14:14:59.362000+00:00",
-      "t": 53.89,
+      "t": 32.24,
       "sport": "f1",
       "type": "pit_stop",
       "importance": 2,
@@ -191,7 +191,7 @@
     },
     {
       "id": "f1-008-fastest-lap-31-10",
-      "t": 65.06,
+      "t": 37.61,
       "sport": "f1",
       "type": "fastest_lap",
       "importance": 3,
@@ -216,7 +216,7 @@
     },
     {
       "id": "f1-009-retirement-31-10",
-      "t": 65.06,
+      "t": 42.99,
       "sport": "f1",
       "type": "retirement",
       "importance": 3,
@@ -241,7 +241,7 @@
     },
     {
       "id": "f1-010-pit-22-14-2023-07-09T14:25:44.273000+00:00",
-      "t": 102.87,
+      "t": 48.36,
       "sport": "f1",
       "type": "pit_stop",
       "importance": 2,
@@ -262,11 +262,11 @@
         "en": "PIT STOP · Tsunoda · LAP 14",
         "hi": "⟦हिंदी · प्रूफ़रीड⟧ PIT STOP · Tsunoda · LAP 14"
       },
-      "bytes": 359
+      "bytes": 358
     },
     {
       "id": "f1-011-position-16-2023-07-09T14:31:21.157000+00:00-4-5",
-      "t": 128.45,
+      "t": 53.73,
       "sport": "f1",
       "type": "position_change",
       "importance": 2,
@@ -287,11 +287,11 @@
         "en": "Leclerc P4->P5 · LAP 19",
         "hi": "⟦हिंदी · प्रूफ़रीड⟧ Leclerc P4->P5 · LAP 19"
       },
-      "bytes": 360
+      "bytes": 359
     },
     {
       "id": "f1-012-position-63-2023-07-09T14:31:21.157000+00:00-5-4",
-      "t": 128.45,
+      "t": 59.1,
       "sport": "f1",
       "type": "position_change",
       "importance": 2,
@@ -312,11 +312,11 @@
         "en": "Russell P5->P4 · LAP 19",
         "hi": "⟦हिंदी · प्रूफ़रीड⟧ Russell P5->P4 · LAP 19"
       },
-      "bytes": 360
+      "bytes": 358
     },
     {
       "id": "f1-013-position-16-2023-07-09T14:31:23.392000+00:00-5-6",
-      "t": 128.63,
+      "t": 64.48,
       "sport": "f1",
       "type": "position_change",
       "importance": 2,
@@ -337,11 +337,11 @@
         "en": "Leclerc P5->P6 · LAP 19",
         "hi": "⟦हिंदी · प्रूफ़रीड⟧ Leclerc P5->P6 · LAP 19"
       },
-      "bytes": 360
+      "bytes": 359
     },
     {
       "id": "f1-014-position-55-2023-07-09T14:31:23.392000+00:00-6-5",
-      "t": 128.63,
+      "t": 69.85,
       "sport": "f1",
       "type": "position_change",
       "importance": 2,
@@ -362,11 +362,11 @@
         "en": "Sainz P6->P5 · LAP 19",
         "hi": "⟦हिंदी · प्रूफ़रीड⟧ Sainz P6->P5 · LAP 19"
       },
-      "bytes": 352
+      "bytes": 351
     },
     {
       "id": "f1-015-pit-16-18-2023-07-09T14:31:37.391000+00:00",
-      "t": 129.68,
+      "t": 75.22,
       "sport": "f1",
       "type": "pit_stop",
       "importance": 2,
@@ -387,11 +387,11 @@
         "en": "PIT STOP · Leclerc · LAP 18",
         "hi": "⟦हिंदी · प्रूफ़रीड⟧ PIT STOP · Leclerc · LAP 18"
       },
-      "bytes": 359
+      "bytes": 358
     },
     {
       "id": "f1-016-pit-24-24-2023-07-09T14:41:26.225000+00:00",
-      "t": 174.41,
+      "t": 80.6,
       "sport": "f1",
       "type": "pit_stop",
       "importance": 2,
@@ -412,11 +412,11 @@
         "en": "PIT STOP · Zhou · LAP 24",
         "hi": "⟦हिंदी · प्रूफ़रीड⟧ PIT STOP · Zhou · LAP 24"
       },
-      "bytes": 347
+      "bytes": 345
     },
     {
       "id": "f1-017-position-44-2023-07-09T14:43:48.476000+00:00-6-5",
-      "t": 185.2,
+      "t": 85.97,
       "sport": "f1",
       "type": "position_change",
       "importance": 2,
@@ -441,7 +441,7 @@
     },
     {
       "id": "f1-018-position-55-2023-07-09T14:43:48.476000+00:00-5-6",
-      "t": 185.2,
+      "t": 91.34,
       "sport": "f1",
       "type": "position_change",
       "importance": 2,
@@ -466,7 +466,7 @@
     },
     {
       "id": "f1-019-pit-55-26-2023-07-09T14:44:05.366000+00:00",
-      "t": 186.49,
+      "t": 96.72,
       "sport": "f1",
       "type": "pit_stop",
       "importance": 2,
@@ -487,11 +487,11 @@
         "en": "PIT STOP · Sainz · LAP 26",
         "hi": "⟦हिंदी · प्रूफ़रीड⟧ PIT STOP · Sainz · LAP 26"
       },
-      "bytes": 351
+      "bytes": 350
     },
     {
       "id": "f1-020-pit-21-27-2023-07-09T14:46:03.349000+00:00",
-      "t": 195.45,
+      "t": 102.09,
       "sport": "f1",
       "type": "pit_stop",
       "importance": 2,
@@ -516,7 +516,7 @@
     },
     {
       "id": "f1-021-position-44-2023-07-09T14:46:53.520000+00:00-5-4",
-      "t": 199.26,
+      "t": 107.46,
       "sport": "f1",
       "type": "position_change",
       "importance": 2,
@@ -541,7 +541,7 @@
     },
     {
       "id": "f1-022-position-63-2023-07-09T14:46:53.520000+00:00-4-5",
-      "t": 199.26,
+      "t": 112.84,
       "sport": "f1",
       "type": "position_change",
       "importance": 2,
@@ -566,7 +566,7 @@
     },
     {
       "id": "f1-023-position-14-2023-07-09T14:46:59.895000+00:00-6-5",
-      "t": 199.74,
+      "t": 118.21,
       "sport": "f1",
       "type": "position_change",
       "importance": 2,
@@ -591,7 +591,7 @@
     },
     {
       "id": "f1-024-position-63-2023-07-09T14:46:59.895000+00:00-5-6",
-      "t": 199.74,
+      "t": 123.58,
       "sport": "f1",
       "type": "position_change",
       "importance": 2,
@@ -616,7 +616,7 @@
     },
     {
       "id": "f1-025-pit-63-28-2023-07-09T14:47:07.832000+00:00",
-      "t": 200.35,
+      "t": 128.96,
       "sport": "f1",
       "type": "pit_stop",
       "importance": 2,
@@ -641,7 +641,7 @@
     },
     {
       "id": "f1-026-pit-11-28-2023-07-09T14:47:18.879000+00:00",
-      "t": 201.19,
+      "t": 134.33,
       "sport": "f1",
       "type": "pit_stop",
       "importance": 2,
@@ -666,7 +666,7 @@
     },
     {
       "id": "f1-027-position-44-2023-07-09T14:48:25.690000+00:00-4-3",
-      "t": 206.26,
+      "t": 139.7,
       "sport": "f1",
       "type": "position_change",
       "importance": 2,
@@ -687,11 +687,11 @@
         "en": "Hamilton P4->P3 · LAP 30",
         "hi": "⟦हिंदी · प्रूफ़रीड⟧ Hamilton P4->P3 · LAP 30"
       },
-      "bytes": 364
+      "bytes": 363
     },
     {
       "id": "f1-028-position-81-2023-07-09T14:48:25.690000+00:00-3-4",
-      "t": 206.26,
+      "t": 145.07,
       "sport": "f1",
       "type": "position_change",
       "importance": 2,
@@ -716,7 +716,7 @@
     },
     {
       "id": "f1-029-position-14-2023-07-09T14:48:32.580000+00:00-5-4",
-      "t": 206.78,
+      "t": 150.45,
       "sport": "f1",
       "type": "position_change",
       "importance": 2,
@@ -741,7 +741,7 @@
     },
     {
       "id": "f1-030-position-81-2023-07-09T14:48:32.580000+00:00-4-5",
-      "t": 206.78,
+      "t": 155.82,
       "sport": "f1",
       "type": "position_change",
       "importance": 2,
@@ -766,7 +766,7 @@
     },
     {
       "id": "f1-031-pit-81-29-2023-07-09T14:48:34.502000+00:00",
-      "t": 206.93,
+      "t": 161.19,
       "sport": "f1",
       "type": "pit_stop",
       "importance": 2,
@@ -791,7 +791,7 @@
     },
     {
       "id": "f1-032-position-10-2023-07-09T14:48:37.862000+00:00-6-5",
-      "t": 207.18,
+      "t": 166.57,
       "sport": "f1",
       "type": "position_change",
       "importance": 2,
@@ -816,7 +816,7 @@
     },
     {
       "id": "f1-033-position-81-2023-07-09T14:48:37.862000+00:00-5-6",
-      "t": 207.18,
+      "t": 171.94,
       "sport": "f1",
       "type": "position_change",
       "importance": 2,
@@ -841,7 +841,7 @@
     },
     {
       "id": "f1-034-pit-2-29-2023-07-09T14:49:06.924000+00:00",
-      "t": 209.4,
+      "t": 177.31,
       "sport": "f1",
       "type": "pit_stop",
       "importance": 2,
@@ -862,11 +862,11 @@
         "en": "PIT STOP · Sargeant · LAP 29",
         "hi": "⟦हिंदी · प्रूफ़रीड⟧ PIT STOP · Sargeant · LAP 29"
       },
-      "bytes": 361
+      "bytes": 362
     },
     {
       "id": "f1-035-position-10-2023-07-09T14:51:17.265000+00:00-5-6",
-      "t": 219.29,
+      "t": 182.69,
       "sport": "f1",
       "type": "position_change",
       "importance": 2,
@@ -891,7 +891,7 @@
     },
     {
       "id": "f1-036-position-81-2023-07-09T14:51:17.265000+00:00-6-5",
-      "t": 219.29,
+      "t": 188.06,
       "sport": "f1",
       "type": "position_change",
       "importance": 2,
@@ -916,7 +916,7 @@
     },
     {
       "id": "f1-037-pit-10-31-2023-07-09T14:51:59.061000+00:00",
-      "t": 222.47,
+      "t": 193.43,
       "sport": "f1",
       "type": "pit_stop",
       "importance": 2,
@@ -941,7 +941,7 @@
     },
     {
       "id": "f1-038-retirement-20-32",
-      "t": 223,
+      "t": 198.81,
       "sport": "f1",
       "type": "retirement",
       "importance": 3,
@@ -962,11 +962,11 @@
         "en": "RETIRED · Magnussen · LAP 32",
         "hi": "⟦हिंदी · प्रूफ़रीड⟧ RETIRED · Magnussen · LAP 32"
       },
-      "bytes": 335
+      "bytes": 338
     },
     {
       "id": "f1-039-pit-18-31-2023-07-09T14:52:09.014000+00:00",
-      "t": 223.22,
+      "t": 204.18,
       "sport": "f1",
       "type": "pit_stop",
       "importance": 2,
@@ -991,7 +991,7 @@
     },
     {
       "id": "f1-040-flag-2023-07-09T14:52:47+00:00-YELLOW-6",
-      "t": 226.11,
+      "t": 209.55,
       "sport": "f1",
       "type": "flag",
       "importance": 2,
@@ -1014,7 +1014,7 @@
     },
     {
       "id": "f1-041-flag-2023-07-09T14:52:49+00:00-DOUBLE YELLOW-6",
-      "t": 226.26,
+      "t": 214.93,
       "sport": "f1",
       "type": "flag",
       "importance": 2,
@@ -1037,7 +1037,7 @@
     },
     {
       "id": "f1-042-race-control-2023-07-09T14:52:54+00:00-VIRTUAL SAFETY CAR DEPLOYED",
-      "t": 226.64,
+      "t": 220.3,
       "sport": "f1",
       "type": "safety_car",
       "importance": 3,
@@ -1056,11 +1056,11 @@
         "en": "VIRTUAL SAFETY CAR · LAP 33",
         "hi": "⟦हिंदी · प्रूफ़रीड⟧ VIRTUAL SAFETY CAR · LAP 33"
       },
-      "bytes": 383
+      "bytes": 382
     },
     {
       "id": "f1-043-flag-2023-07-09T14:53:20+00:00-YELLOW-5",
-      "t": 228.61,
+      "t": 225.67,
       "sport": "f1",
       "type": "flag",
       "importance": 2,
@@ -1083,7 +1083,7 @@
     },
     {
       "id": "f1-044-pit-23-32-2023-07-09T14:53:40.184000+00:00",
-      "t": 230.14,
+      "t": 231.04,
       "sport": "f1",
       "type": "pit_stop",
       "importance": 2,
@@ -1108,7 +1108,7 @@
     },
     {
       "id": "f1-045-pit-16-32-2023-07-09T14:53:40.559000+00:00",
-      "t": 230.18,
+      "t": 236.42,
       "sport": "f1",
       "type": "pit_stop",
       "importance": 2,
@@ -1133,7 +1133,7 @@
     },
     {
       "id": "f1-046-pit-77-32-2023-07-09T14:54:08.949000+00:00",
-      "t": 232.34,
+      "t": 241.79,
       "sport": "f1",
       "type": "pit_stop",
       "importance": 2,
@@ -1158,7 +1158,7 @@
     },
     {
       "id": "f1-047-pit-22-32-2023-07-09T14:54:17.418000+00:00",
-      "t": 232.97,
+      "t": 247.16,
       "sport": "f1",
       "type": "pit_stop",
       "importance": 2,
@@ -1183,7 +1183,7 @@
     },
     {
       "id": "f1-048-race-control-2023-07-09T14:54:18+00:00-SAFETY CAR DEPLOYED",
-      "t": 233.02,
+      "t": 252.54,
       "sport": "f1",
       "type": "safety_car",
       "importance": 3,
@@ -1206,7 +1206,7 @@
     },
     {
       "id": "f1-049-pit-21-32-2023-07-09T14:54:24.543000+00:00",
-      "t": 233.51,
+      "t": 257.91,
       "sport": "f1",
       "type": "pit_stop",
       "importance": 2,
@@ -1231,7 +1231,7 @@
     },
     {
       "id": "f1-050-pit-27-32-2023-07-09T14:54:41.464000+00:00",
-      "t": 234.8,
+      "t": 263.28,
       "sport": "f1",
       "type": "pit_stop",
       "importance": 2,
@@ -1252,11 +1252,11 @@
         "en": "PIT STOP · Hulkenberg · LAP 32",
         "hi": "⟦हिंदी · प्रूफ़रीड⟧ PIT STOP · Hulkenberg · LAP 32"
       },
-      "bytes": 370
+      "bytes": 371
     },
     {
       "id": "f1-051-pit-1-33-2023-07-09T14:54:58.871000+00:00",
-      "t": 236.12,
+      "t": 268.66,
       "sport": "f1",
       "type": "pit_stop",
       "importance": 2,
@@ -1281,7 +1281,7 @@
     },
     {
       "id": "f1-052-pit-4-33-2023-07-09T14:55:12.183000+00:00",
-      "t": 237.13,
+      "t": 274.03,
       "sport": "f1",
       "type": "pit_stop",
       "importance": 2,
@@ -1306,7 +1306,7 @@
     },
     {
       "id": "f1-053-pit-44-33-2023-07-09T14:55:27.761000+00:00",
-      "t": 238.32,
+      "t": 279.4,
       "sport": "f1",
       "type": "pit_stop",
       "importance": 2,
@@ -1327,11 +1327,11 @@
         "en": "PIT STOP · Hamilton · LAP 33",
         "hi": "⟦हिंदी · प्रूफ़रीड⟧ PIT STOP · Hamilton · LAP 33"
       },
-      "bytes": 363
+      "bytes": 362
     },
     {
       "id": "f1-054-position-14-2023-07-09T14:55:29.854000+00:00-4-5",
-      "t": 238.48,
+      "t": 284.78,
       "sport": "f1",
       "type": "position_change",
       "importance": 2,
@@ -1356,7 +1356,7 @@
     },
     {
       "id": "f1-055-position-81-2023-07-09T14:55:29.854000+00:00-5-4",
-      "t": 238.48,
+      "t": 290.15,
       "sport": "f1",
       "type": "position_change",
       "importance": 2,
@@ -1381,7 +1381,7 @@
     },
     {
       "id": "f1-056-position-14-2023-07-09T14:55:36.167000+00:00-5-6",
-      "t": 238.95,
+      "t": 295.52,
       "sport": "f1",
       "type": "position_change",
       "importance": 2,
@@ -1406,7 +1406,7 @@
     },
     {
       "id": "f1-057-position-63-2023-07-09T14:55:36.167000+00:00-6-5",
-      "t": 238.95,
+      "t": 300.9,
       "sport": "f1",
       "type": "position_change",
       "importance": 2,
@@ -1427,11 +1427,11 @@
         "en": "Russell P6->P5 · LAP 34",
         "hi": "⟦हिंदी · प्रूफ़रीड⟧ Russell P6->P5 · LAP 34"
       },
-      "bytes": 360
+      "bytes": 359
     },
     {
       "id": "f1-058-pit-14-33-2023-07-09T14:55:38.635000+00:00",
-      "t": 239.14,
+      "t": 306.27,
       "sport": "f1",
       "type": "pit_stop",
       "importance": 2,
@@ -1456,7 +1456,7 @@
     },
     {
       "id": "f1-059-pit-24-33-2023-07-09T14:56:37.462000+00:00",
-      "t": 243.61,
+      "t": 311.64,
       "sport": "f1",
       "type": "pit_stop",
       "importance": 2,
@@ -1481,7 +1481,7 @@
     },
     {
       "id": "f1-060-pit-24-36-2023-07-09T15:03:13.908000+00:00",
-      "t": 273.71,
+      "t": 317.01,
       "sport": "f1",
       "type": "pit_stop",
       "importance": 2,
@@ -1506,7 +1506,7 @@
     },
     {
       "id": "f1-061-flag-2023-07-09T15:04:08+00:00-CLEAR-5",
-      "t": 277.83,
+      "t": 322.39,
       "sport": "f1",
       "type": "flag",
       "importance": 2,
@@ -1529,7 +1529,7 @@
     },
     {
       "id": "f1-062-flag-2023-07-09T15:04:10+00:00-CLEAR-6",
-      "t": 277.98,
+      "t": 327.76,
       "sport": "f1",
       "type": "flag",
       "importance": 2,
@@ -1552,7 +1552,7 @@
     },
     {
       "id": "f1-063-race-control-2023-07-09T15:05:22+00:00-SAFETY CAR IN THIS LAP",
-      "t": 283.44,
+      "t": 333.13,
       "sport": "f1",
       "type": "safety_car",
       "importance": 3,
@@ -1575,7 +1575,7 @@
     },
     {
       "id": "f1-064-flag-2023-07-09T15:06:52+00:00-CLEAR-",
-      "t": 290.28,
+      "t": 338.51,
       "sport": "f1",
       "type": "flag",
       "importance": 2,
@@ -1598,7 +1598,7 @@
     },
     {
       "id": "f1-065-flag-2023-07-09T15:14:00+00:00-BLACK AND WHITE-",
-      "t": 322.79,
+      "t": 343.88,
       "sport": "f1",
       "type": "flag",
       "importance": 2,
@@ -1621,7 +1621,7 @@
     },
     {
       "id": "f1-066-retirement-10-47",
-      "t": 353.61,
+      "t": 349.25,
       "sport": "f1",
       "type": "retirement",
       "importance": 3,
@@ -1646,7 +1646,7 @@
     },
     {
       "id": "f1-067-flag-2023-07-09T15:21:19+00:00-BLACK AND WHITE-",
-      "t": 356.12,
+      "t": 354.63,
       "sport": "f1",
       "type": "flag",
       "importance": 2,

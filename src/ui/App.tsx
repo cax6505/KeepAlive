@@ -80,7 +80,7 @@ export default function App() {
   const [pulseLive, setPulseLive] = useState(false);
   const [autoLabel, setAutoLabel] = useState(false);
   const [autoSeconds, setAutoSeconds] = useState(25);
-  const [autoRestoreSeconds, setAutoRestoreSeconds] = useState(5);
+  const [autoRestoreSeconds, setAutoRestoreSeconds] = useState(10);
   const [offline, setOffline] = useState(typeof navigator !== 'undefined' && !navigator.onLine);
   const [language, setLanguage] = useState<Language>(() => {
     try { return localStorage.getItem('keepalive-language') === 'hi' ? 'hi' : 'en'; } catch { return 'en'; }
@@ -204,6 +204,10 @@ export default function App() {
     const fromClock = activeStallClock.current;
     return popupEvents.filter(event => event.t >= fromClock);
   }, [popupEvents]);
+  const stallSheetEvents = useMemo(() => {
+    const context = popupEvents.filter(event => event.t < activeStallClock.current).slice(-5);
+    return [...context, ...currentStallEvents];
+  }, [popupEvents, currentStallEvents]);
   const liveScoreEvent = feedAtLive[feedAtLive.length - 1];
   const videoScoreEvent = videoEvents[videoEvents.length - 1];
   const liveScore = liveScoreEvent?.score || { runs: 0, wkts: 0, overs: '0.0' };
@@ -305,7 +309,7 @@ export default function App() {
   const bandwidthRatio = feedRateKBps > 0 ? Math.max(1, Math.round(videoRateKBps / feedRateKBps)) : 0;
   const followPlayers = useMemo(() => [...new Set(matchEvents.flatMap(event => event.players))].sort(), [matchEvents]);
   const playerExperience = (freezeState === 'stalled' || freezeState === 'recovering') && sheetVisible
-      ? <MatchExperience phase={freezeState === 'recovering' ? 'recovering' : 'stalled'} events={currentStallEvents} missed={missed} elapsedSeconds={stallElapsed} gapSeconds={clocks.lag} runsMissed={0} liveScore={liveScore} sport={sport} renderEvent={event => activeAdapter.render(event)} offline={offline && freezeState !== 'recovering'} language={language} followed={followed} collapsed={false} players={followPlayers} onLanguage={changeLanguage} onDismiss={() => setSheetVisible(false)} onFollow={toggleFollow} onJump={jumpToLive} onKeepWatching={keepWatching} onExpand={() => setRecapCollapsed(false)} />
+      ? <MatchExperience phase={freezeState === 'recovering' ? 'recovering' : 'stalled'} events={stallSheetEvents} stallStartClock={activeStallClock.current} missed={missed} elapsedSeconds={stallElapsed} gapSeconds={clocks.lag} runsMissed={0} liveScore={liveScore} sport={sport} renderEvent={event => activeAdapter.render(event)} offline={offline && freezeState !== 'recovering'} language={language} followed={followed} collapsed={false} players={followPlayers} onLanguage={changeLanguage} onDismiss={() => setSheetVisible(false)} onFollow={toggleFollow} onJump={jumpToLive} onKeepWatching={keepWatching} onExpand={() => setRecapCollapsed(false)} />
     : recap && freezeState !== 'stalled' && freezeState !== 'recovering'
       ? <MatchExperience phase="recap" events={[]} missed={recap.events} elapsedSeconds={0} gapSeconds={recap.gapSeconds} runsMissed={recap.runs} liveScore={recap.liveScore} recapLiveClock={recap.liveClock} recapVideoClock={recap.videoClock} sport={sport} renderEvent={event => activeAdapter.render(event)} offline={false} language={language} followed={followed} collapsed={recapCollapsed} players={followPlayers} onLanguage={changeLanguage} onDismiss={() => setRecap(null)} onFollow={toggleFollow} onJump={jumpToLive} onKeepWatching={keepWatching} onExpand={() => setRecapCollapsed(false)} />
       : null;
@@ -362,7 +366,7 @@ export default function App() {
       </div>
       <div className="assertive-announcement" role="alert" aria-live="assertive" aria-atomic="true">{assertiveText ? `Wicket. ${assertiveText}` : ''}</div>
       <Player key={sport} sourceUrl={video.source} posterUrl={video.poster} sportLabel={video.label} onPlayerReady={playerReady} onCanBreakNetworkChange={setCanBreakNetwork} onStatusChange={statusChanged} onMetricsChange={playerMetrics} onFreezeEvent={onFreezeEvent} freezeState={freezeState} offline={offline} scorebug={recap ? undefined : scorebug} getLiveClock={readLiveClock} experience={playerExperience} behindLabel={behindLabel} pulseLive={pulseLive} onFirstInteraction={firstInteraction}/>
-      <div className="demo-rail"><span className="demo-rail-copy">ILLUSTRATIVE VIDEO · HISTORICAL EVENTS NOT SYNCED</span><button className="demo-quick-control" type="button" disabled={!controller || (status !== 'stalled' && !canBreakNetwork)} onClick={() => status === 'stalled' ? restore() : beginBreak()}><Icon name={status === 'stalled' ? 'rotate' : 'pause'} size={16}/><span>{status === 'stalled' ? 'Restore network' : canBreakNetwork ? 'Break the network' : 'Start playback to test a stall'}</span></button></div>
+      <div className="demo-rail"><span className="demo-rail-copy">ILLUSTRATIVE VIDEO · HISTORICAL EVENTS · PACED</span><button className="demo-quick-control" type="button" disabled={!controller || (status !== 'stalled' && !canBreakNetwork)} onClick={() => status === 'stalled' ? restore() : beginBreak()}><Icon name={status === 'stalled' ? 'rotate' : 'pause'} size={16}/><span>{status === 'stalled' ? 'Restore network' : canBreakNetwork ? 'Break the network' : 'Start playback to test a stall'}</span></button></div>
       {autoLabel && <div className="demo-auto-label"><span>DEMO STALL IN {String(autoSeconds).padStart(2, '0')}s</span><button type="button" onClick={skipAutoDemo}>Skip auto stall</button></div>}
 
       <section className="two-lines" aria-label="Video and event connection traces">
@@ -390,7 +394,7 @@ export default function App() {
           <div className="control-block replay-controls"><div className="control-caption"><span>AUTO RESTORE AFTER STALL</span><span className="tiny-connected"><i/> LOCAL</span></div><div className="control-actions">{[5, 10, 20].map(seconds => <button className={`secondary-control ${autoRestoreSeconds === seconds ? 'selected' : ''}`} key={seconds} onClick={() => setAutoRestoreSeconds(seconds)}>{seconds}s</button>)}</div><div className="clock-readout"><span>LIVE <b>{formatClock(clocks.liveClock)}</b></span><span>VIDEO <b>{formatClock(clocks.videoClock)}</b></span></div><label className="speed-select">REPLAY SPEED<select value={speed} onChange={event => { lastTickRef.current = performance.now(); setSpeed(Number(event.target.value)); }} aria-label="Replay speed"><option value="1">1×</option><option value="1.5">1.5×</option><option value="2">2×</option></select></label><button className="text-control" onClick={() => restart()}><Icon name="rotate" size={16}/> Restart replay</button></div>
           {sport !== 'cricket' && <p className="adapter-next">STATIC REPLAY LOADED</p>}
           <label className="follow-director"><span>FOLLOW · UP TO 3</span><select value="" onChange={event => event.target.value && toggleFollow(event.target.value)} aria-label="Follow a player"><option value="">Choose player</option>{followPlayers.map(player => <option key={player} value={player} disabled={followed.length >= 3 && !followed.includes(player)}>{player}{followed.includes(player) ? ' · following' : ''}</option>)}</select><small>{followed.join(' · ') || 'No players pinned'}</small></label>
-          <details className="simulation-details" open={simulatedOpen} onToggle={event => setSimulatedOpen(event.currentTarget.open)}><summary>What’s simulated</summary><p>Licensed match footage loops for this demo; it is not synchronized to event timestamps.</p><p>Events replay real past-match data.</p><p>In production, the feed would ride the platform’s own lightweight channel.</p></details>
+          <details className="simulation-details" open={simulatedOpen} onToggle={event => setSimulatedOpen(event.currentTarget.open)}><summary>What’s simulated</summary><p>Licensed match footage loops for this demo; it is not synchronized to event timestamps.</p><p>Events use real past-match data on a paced demo clock.</p><p>In production, the feed would ride the platform’s own lightweight channel.</p></details>
           {stallsThisMatch > 0 && <p className="stall-totals">Stalls this match: {stallsThisMatch} · total missed: {totalMissedWickets} wickets</p>}
           <div className="match-reference"><span>DATA CREDIT</span><strong>{demo.match.teams.join(' v ')}, {demo.match.date}</strong><small>{demo.match.event} · {demo.match.venue}</small><small>Event data: {demo.source.provider}</small>{sport === 'football' && <img className="statsbomb-mark" src="/media/credits/statsbomb-mark.svg" alt="StatsBomb"/>}<small>Video: {video.credit}{sport === 'f1' && <> · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noreferrer">CC BY-SA 4.0</a></>} · not synchronized to events</small></div>
           <footer className="director-foot"><span><Icon name="clock" size={16}/> FEED EVENTS <b>{feedAtLive.length}</b></span><span>{missed.length} KEY MISSED</span></footer>
