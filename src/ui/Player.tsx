@@ -5,6 +5,9 @@ import type { FreezeState } from '../engine/freezeDetector';
 
 type Props = {
   onPlayerReady?: (player: PlayerController) => void;
+  sourceUrl: string;
+  posterUrl: string;
+  sportLabel: string;
   onStatusChange?: (status: PlayerStatus) => void;
   onMetricsChange?: (metrics: { videoTime: number; bufferedAhead: number; measuredBitrateKbps: number; loadedVideoBytes: number }) => void;
   scorebug?: { team: string; runs: number; wkts: number; overs: string; value?: string; context?: string };
@@ -30,10 +33,10 @@ function Glyph({ name }: { name: 'play' | 'pause' | 'volume' | 'mute' | 'expand'
   return <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">{paths[name]}</svg>;
 }
 
-export function Player({ onPlayerReady, onStatusChange, onMetricsChange, scorebug, getLiveClock, experience, behindLabel, pulseLive, onFirstInteraction, onFreezeEvent, freezeState = 'playing', offline = false }: Props) {
+export function Player({ onPlayerReady, sourceUrl, posterUrl, sportLabel, onStatusChange, onMetricsChange, scorebug, getLiveClock, experience, behindLabel, pulseLive, onFirstInteraction, onFreezeEvent, freezeState = 'playing', offline = false }: Props) {
   const shellRef = useRef<HTMLDivElement>(null);
   const [muted, setMuted] = useState(true);
-  const player = usePlayer(getLiveClock);
+  const player = usePlayer(getLiveClock, sourceUrl);
   const { videoRef, videoTime, bufferedAhead, status, isPaused, measuredBitrateKbps, loadedVideoBytes, hasFirstFrame, faultMode, error, freezeEvent } = player;
 
   useEffect(() => { onPlayerReady?.(player.controller); }, [onPlayerReady, player.controller]);
@@ -74,7 +77,7 @@ export function Player({ onPlayerReady, onStatusChange, onMetricsChange, scorebu
   const progress = Math.max(0, Math.min(100, videoTime / duration * 100));
   const statusText = freezeState === 'suspect' ? (offline ? 'OFFLINE' : 'CHECKING') : freezeState === 'stalled' ? 'PICTURE STALLED' : freezeState === 'recovering' ? 'RECOVERING' : status === 'ended' ? 'REPLAY ENDED' : status === 'playing' ? 'LIVE' : error ? 'NO SIGNAL' : 'CONNECTING';
 
-  return <div className={`player player-shell status-${status} freeze-${freezeState}`} data-freeze-state={freezeState} ref={shellRef} aria-label="Match video player" onPointerDown={onFirstInteraction}>
+  return <div className={`player player-shell status-${status} freeze-${freezeState}`} data-freeze-state={freezeState} data-video-source={sourceUrl} ref={shellRef} aria-label="Match video player" onPointerDown={onFirstInteraction}>
     <video
       ref={videoRef}
       className="match-video"
@@ -82,8 +85,8 @@ export function Player({ onPlayerReady, onStatusChange, onMetricsChange, scorebu
       muted
       autoPlay
       preload="auto"
-      poster="/media/poster.jpg"
-      aria-label="Cricket stadium match footage"
+      poster={posterUrl}
+      aria-label={`${sportLabel} match footage`}
     />
     <div className="player-chrome-top">
       <span className={`state-label player-state ${status} ${freezeState} ${offline && freezeState === 'suspect' ? 'offline' : ''}`}><i/>{statusText}</span>
@@ -92,7 +95,7 @@ export function Player({ onPlayerReady, onStatusChange, onMetricsChange, scorebu
     {scorebug && <div className={`video-scorebug ${stale ? 'stale' : ''}`} aria-label={`On-video score${stale ? ', stale' : ''}: ${scorebug.team} ${scorebug.value || `${scorebug.runs}/${scorebug.wkts}`} ${scorebug.context || scorebug.overs}`}><span>{scorebug.team}</span><strong>{scorebug.value || scorebug.runs}{!scorebug.value && <i className={scorebug.wkts > 0 ? 'wicket-count' : ''}>/{scorebug.wkts}</i>}</strong><small>{scorebug.context || `${scorebug.overs} OV`}</small>{stale && <em>VIDEO {scorebug.context || scorebug.overs}</em>}</div>}
     {(!hasFirstFrame || status === 'idle') && <div className="player-poster" role="status">
       <div className="poster-grid" aria-hidden="true"/><div className="signal-emblem" aria-hidden="true"><span/><span/><span/><span/><span/><span/><span/></div>
-      <p>{error ? 'BROADCAST UNAVAILABLE' : status === 'playing' ? 'ACQUIRING FIRST FRAME' : 'T20 WORLD CUP · BRIDGETOWN'}</p>
+      <p>{error ? 'BROADCAST UNAVAILABLE' : status === 'playing' ? 'ACQUIRING FIRST FRAME' : `${sportLabel.toUpperCase()} · MATCH REPLAY`}</p>
       <button className="tap-start" onClick={error ? player.retry : player.play}>{error ? <Glyph name="retry"/> : <Glyph name="play"/>}<span>{error ? 'Retry stream' : 'Tap to start'}</span></button>
     </div>}
     {error && hasFirstFrame && <div className="player-error" role="alert"><strong>Signal lost</strong><span>{error}</span><button onClick={player.retry}><Glyph name="retry"/> Retry stream</button></div>}

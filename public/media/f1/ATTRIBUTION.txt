@@ -1,0 +1,7 @@
+Formula 1 footage source: 2021 Russian Grand Prix — start for warm-up
+Original creator: Rubin16
+Original file: https://commons.wikimedia.org/wiki/File:2021_Russian_Grand_Prix_-_start_for_warm-up.webm
+License: Creative Commons Attribution-ShareAlike 4.0 International
+License URL: https://creativecommons.org/licenses/by-sa/4.0/
+Changes: looped, transcoded from VP9/Opus WebM to silent 480p H.264 MPEG-TS HLS, and split into two-second segments.
+The adapted HLS footage is distributed under CC BY-SA 4.0.

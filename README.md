@@ -6,8 +6,10 @@ freezes, a compact event feed keeps the fan in the match. When the picture
 returns, a recap shows what happened and lets the viewer catch up to the replay
 or keep watching from the frozen moment.
 
-This is a static, frontend-only prototype. The video is a local HLS loop and the
-events are deterministic replays generated from real historical match data.
+This is a static, frontend-only prototype. Each sport has its own local HLS
+match clip; events are deterministic replays generated from real historical
+match data. The video and event timelines are illustrative and are not
+synchronized to one another.
 There is no backend, runtime sports-data API, paid service, or API key.
 
 ## Product brief
@@ -42,7 +44,8 @@ then account for the gap between the match and the picture.
 
 ## What the demo does
 
-1. Plays a six-minute, 480p local HLS stadium loop.
+1. Plays a six-minute, 480p local HLS loop of cricket, football, or Formula 1
+   footage, selected with the sport switcher.
 2. Confirms sustained stalls after three seconds to avoid popup flicker.
 3. Advances the match event replay independently from video playback.
 4. Shows a docked player sheet with the live score, latest event, recent feed,
@@ -183,15 +186,21 @@ or OpenF1.
   `public/media/credits/`. See the
   [logo use guide and media pack](https://statsbomb.com/wp-content/uploads/2023/03/StatsBomb_LogoUseGuide_MediaPack-min.pdf).
 - **F1:** [OpenF1](https://openf1.org/docs/), saved as local JSON snapshots.
-- **Video:** Hindustani Lens’ royalty-free stadium clip from
+- **Cricket video:** Hindustani Lens’ royalty-free stadium clip from
   [Pexels](https://www.pexels.com/video/aerial-view-of-live-cricket-match-in-a-stadium-18148072/).
   Source media and credits are recorded in `scripts/assets/CREDITS.md`; see
   the [Pexels license](https://www.pexels.com/license/).
+- **Football video:** Tio Nazih’s [Football Match on Stadium](https://www.pexels.com/video/football-match-on-stadium-11918917/)
+  clip from Pexels; see the [Pexels license](https://www.pexels.com/license/).
+- **Formula 1 video:** Rubin16’s [2021 Russian Grand Prix warm-up start](https://commons.wikimedia.org/wiki/File:2021_Russian_Grand_Prix_-_start_for_warm-up.webm)
+  clip from Wikimedia Commons, licensed CC BY-SA 4.0. Attribution and the
+  share-alike license for the adapted HLS version are documented in
+  `scripts/assets/CREDITS.md`.
 
 ## Quick start
 
 Requirements: Node.js 18 or newer and npm. Install Playwright Chromium only to
-run browser tests. ffmpeg is needed only to regenerate the HLS video.
+run browser tests. ffmpeg and ffprobe are needed only to regenerate HLS video.
 
 ```sh
 git clone https://github.com/cax6505/KeepAlive.git
@@ -307,17 +316,25 @@ artifacts/              UI audit screenshots and Lighthouse report
 
 ## Regenerating the video
 
-The HLS playlist and segments are checked in under `public/media/`. To
-regenerate them, install ffmpeg and run:
+The HLS playlists and segments are checked in under `public/media/`. To
+regenerate the default Cricket clip, install ffmpeg/ffprobe and run:
 
 ```sh
 bash scripts/build-hls.sh
 ```
 
 By default, the script reads `scripts/assets/pexels-cricket-18148072.mp4` and
-outputs a six-minute, 480p HLS VOD loop with two-second segments. Pass another
-source file as the first argument to use a different clip. The clip is a visual
-stand-in; it is not synchronized to the historical match events.
+outputs a six-minute, 480p HLS VOD loop with two-second segments. It calculates
+the loop count from the source clip duration. Rebuild the other sports with:
+
+```sh
+bash scripts/build-hls.sh scripts/assets/pexels-football-11918917.mp4 public/media/football
+bash scripts/build-hls.sh scripts/assets/2021-russian-grand-prix-warmup.webm public/media/f1
+```
+
+The sport switcher selects the matching video. None of the clips is
+synchronized to the historical event timestamps; the app identifies them as
+illustrative replay footage.
 
 ## Deployment and offline behavior
 

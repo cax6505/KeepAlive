@@ -16,6 +16,11 @@ const cricketDemo = cricketDemoJson as unknown as CricketDemo;
 const footballDemo = footballDemoJson as unknown as SportDemo;
 const f1Demo = f1DemoJson as unknown as SportDemo;
 const demoCatalog: Record<Sport, SportDemo> = { cricket: cricketDemo, football: footballDemo, f1: f1Demo };
+const videoCatalog: Record<Sport, { source: string; poster: string; label: string; credit: string }> = {
+  cricket: { source: '/media/index.m3u8', poster: '/media/poster.jpg', label: 'Cricket', credit: 'Pexels · Hindustani Lens' },
+  football: { source: '/media/football/index.m3u8', poster: '/media/football/poster.jpg', label: 'Football', credit: 'Pexels · Tio Nazih' },
+  f1: { source: '/media/f1/index.m3u8', poster: '/media/f1/poster.jpg', label: 'Formula 1', credit: 'Wikimedia Commons · Rubin16 · 2021 Russian GP warm-up' },
+};
 const adapterCatalog: Record<Sport, Adapter> = {
   cricket: createCricketAdapter(cricketDemo.events),
   football: createFootballAdapter(footballDemo.events),
@@ -84,6 +89,7 @@ export default function App() {
   const [totalMissedWickets, setTotalMissedWickets] = useState(0);
   const [simulatedOpen, setSimulatedOpen] = useState(false);
   const demo = demoCatalog[sport];
+  const video = videoCatalog[sport];
   const activeAdapter = adapterCatalog[sport];
   const matchEvents = useMemo(() => activeAdapter.load(), [activeAdapter]);
 
@@ -201,6 +207,10 @@ export default function App() {
   const videoDisplay = videoScoreEvent?.score.display;
   const scorebug = videoDisplay
     ? { team: videoDisplay.label, runs: videoScoreEvent?.score.runs || 0, wkts: videoScoreEvent?.score.wkts || 0, overs: videoScoreEvent?.score.overs || '—', value: videoDisplay.value, context: videoDisplay.context }
+    : sport === 'football'
+      ? { team: demo.match.teams.map(team => team.slice(0, 3).toUpperCase()).join(' V '), runs: 0, wkts: 0, overs: "0'", value: '0–0', context: "0'" }
+      : sport === 'f1'
+        ? { team: 'F1', runs: 0, wkts: 0, overs: 'LAP 0', value: 'GRID', context: 'START' }
     : {
       team: teamCode(videoScoreEvent ? videoScoreEvent.text.en.split(' · ')[0] : demo.match.teams[0] || ''),
       runs: videoScoreEvent?.score.runs || 0,
@@ -274,14 +284,14 @@ export default function App() {
   const feedRateKBps = feedBytes10s / 10 / 1000;
   const videoRateKBps = bitrateKbps / 8;
   const bandwidthRatio = feedRateKBps > 0 ? Math.max(1, Math.round(videoRateKBps / feedRateKBps)) : 0;
-  const followPlayers = useMemo(() => [...new Set(matchEvents.flatMap(event => event.players))].sort(), []);
+  const followPlayers = useMemo(() => [...new Set(matchEvents.flatMap(event => event.players))].sort(), [matchEvents]);
   const playerExperience = (freezeState === 'stalled' || freezeState === 'recovering') && sheetVisible
       ? <MatchExperience phase={freezeState === 'recovering' ? 'recovering' : 'stalled'} events={currentStallEvents} missed={missed} elapsedSeconds={stallElapsed} gapSeconds={clocks.lag} runsMissed={0} liveScore={liveScore} sport={sport} renderEvent={event => activeAdapter.render(event)} offline={offline && freezeState !== 'recovering'} language={language} followed={followed} collapsed={false} players={followPlayers} onLanguage={changeLanguage} onDismiss={() => setSheetVisible(false)} onFollow={toggleFollow} onJump={jumpToLive} onKeepWatching={keepWatching} onExpand={() => setRecapCollapsed(false)} />
     : recap && freezeState !== 'stalled' && freezeState !== 'recovering'
       ? <MatchExperience phase="recap" events={[]} missed={recap.events} elapsedSeconds={0} gapSeconds={recap.gapSeconds} runsMissed={recap.runs} liveScore={recap.liveScore} recapLiveClock={recap.liveClock} recapVideoClock={recap.videoClock} sport={sport} renderEvent={event => activeAdapter.render(event)} offline={false} language={language} followed={followed} collapsed={recapCollapsed} players={followPlayers} onLanguage={changeLanguage} onDismiss={() => setRecap(null)} onFollow={toggleFollow} onJump={jumpToLive} onKeepWatching={keepWatching} onExpand={() => setRecapCollapsed(false)} />
       : null;
 
-  const restart = () => {
+  const restart = (switchingSport = false) => {
     clearTimers();
     livePositionRef.current = 0;
     lastTickRef.current = performance.now();
@@ -300,8 +310,23 @@ export default function App() {
     setStallsThisMatch(0);
     setTotalMissedWickets(0);
     setStallStartedAt(null);
+    setStallElapsed(0);
     hapticEvents.current.clear();
-    controller?.jumpToLive(0);
+    if (switchingSport) {
+      setStatus('idle');
+      setFreezeState('playing');
+      setSheetVisible(true);
+      previousPlayerStatus.current = 'idle';
+      setController(null);
+    } else {
+      controller?.jumpToLive(0);
+    }
+  };
+  const switchSport = (next: Sport) => {
+    if (next === sport) return;
+    setFollowed([]);
+    setSport(next);
+    restart(true);
   };
 
   return <main className="workspace" data-sport={sport} data-live-clock={livePosition.toFixed(2)} data-video-clock={videoPosition.toFixed(2)}>
@@ -313,7 +338,7 @@ export default function App() {
       </header>
       <div className="context-strip"><span>Replay demo</span><i/> {demo.match.teams.join(' v ')}, {demo.match.date.slice(0, 4)} <i/> data: {demo.source.provider}</div>
       <div className="assertive-announcement" role="alert" aria-live="assertive" aria-atomic="true">{assertiveText ? `Wicket. ${assertiveText}` : ''}</div>
-      <Player onPlayerReady={playerReady} onStatusChange={statusChanged} onMetricsChange={playerMetrics} onFreezeEvent={onFreezeEvent} freezeState={freezeState} offline={offline} scorebug={recap ? undefined : scorebug} getLiveClock={readLiveClock} experience={playerExperience} behindLabel={behindLabel} pulseLive={pulseLive} onFirstInteraction={firstInteraction}/>
+      <Player key={sport} sourceUrl={video.source} posterUrl={video.poster} sportLabel={video.label} onPlayerReady={playerReady} onStatusChange={statusChanged} onMetricsChange={playerMetrics} onFreezeEvent={onFreezeEvent} freezeState={freezeState} offline={offline} scorebug={recap ? undefined : scorebug} getLiveClock={readLiveClock} experience={playerExperience} behindLabel={behindLabel} pulseLive={pulseLive} onFirstInteraction={firstInteraction}/>
       {autoLabel && <div className="demo-auto-label">Demo: simulating a stall in 25s</div>}
 
       <section className="two-lines" aria-label="Video and event connection traces">
@@ -329,7 +354,7 @@ export default function App() {
         {popupEvents.length === 0 && <div className="waiting-row"><span className="waiting-signal"><i/><i/><i/></span><span>Waiting for next key event</span><span className="mono">{formatClock(clocks.liveClock)}</span></div>}
         <div className="event-list" aria-live="polite">{[...popupEvents].slice(-8).reverse().map(event => <article className={`event-row ${event.type}`} key={event.id}><div className="event-over">{event.score.display?.context || event.score.overs}<small>{sport === 'f1' ? 'F1' : sport === 'football' ? 'MIN' : 'OV'}</small></div><div className="event-copy"><strong><EventGlyph icon={activeAdapter.render(event).icon}/>{event.text.en}</strong><span>{event.players.join(' · ')}</span></div><span className="event-bytes">{event.bytes} B</span></article>)}</div>
       </section>
-      <footer className="app-credit">Video: Pexels royalty-free clip · Match data: {demo.source.provider} · Replay demo{sport === 'football' && <a className="statsbomb-credit" href="https://statsbomb.com/" target="_blank" rel="noreferrer"><img src="/media/credits/statsbomb-mark.svg" alt="StatsBomb"/> StatsBomb Open Data</a>}</footer>
+      <footer className="app-credit">Video: {video.credit}{sport === 'f1' && <> · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noreferrer">CC BY-SA 4.0</a></>} · illustrative, not synchronized · Match data: {demo.source.provider} · Replay demo{sport === 'football' && <a className="statsbomb-credit" href="https://statsbomb.com/" target="_blank" rel="noreferrer"><img src="/media/credits/statsbomb-mark.svg" alt="StatsBomb"/> StatsBomb Open Data</a>}</footer>
     </section>
 
     <aside className="director" aria-label="Director’s panel">
@@ -338,13 +363,13 @@ export default function App() {
         <div className="director-content">
           <div className="guide"><span>1</span><p>Press play.</p><span>2</span><p>Hit “Break the network” (or toggle Offline in DevTools).</p><span>3</span><p>Watch the feed take over, then restore.</p></div>
           <div className="control-block"><div className="control-caption"><span>VIDEO SIGNAL</span><span className={`control-state ${status}`}>{status === 'stalled' ? 'STALLED' : status.toUpperCase()}</span></div><button className="primary-control" onClick={() => status === 'stalled' ? restore() : beginBreak()} disabled={!controller}><span className="control-icon"><Icon name={status === 'stalled' ? 'rotate' : 'pause'} size={16}/></span><span>{status === 'stalled' ? 'Restore' : 'Break the network'}</span></button><div className="lag-readout"><span>LIVE / VIDEO LAG</span><strong className={clocks.lag > 0.5 ? 'lagging' : ''}>{clocks.lag.toFixed(1)}s</strong></div></div>
-          <div className="control-block replay-controls"><div className="control-caption"><span>AUTO RESTORE AFTER STALL</span><span className="tiny-connected"><i/> LOCAL</span></div><div className="control-actions">{[5, 10, 20].map(seconds => <button className={`secondary-control ${autoRestoreSeconds === seconds ? 'selected' : ''}`} key={seconds} onClick={() => setAutoRestoreSeconds(seconds)}>{seconds}s</button>)}</div><div className="clock-readout"><span>LIVE <b>{formatClock(clocks.liveClock)}</b></span><span>VIDEO <b>{formatClock(clocks.videoClock)}</b></span></div><label className="speed-select">REPLAY SPEED<select value={speed} onChange={event => { lastTickRef.current = performance.now(); setSpeed(Number(event.target.value)); }} aria-label="Replay speed"><option value="1">1×</option><option value="1.5">1.5×</option><option value="2">2×</option></select></label><button className="text-control" onClick={restart}><Icon name="rotate" size={16}/> Restart replay</button></div>
-          <div className="sport-select" aria-label="Sport adapter"><span>SPORT ADAPTER</span>{(['cricket', 'football', 'f1'] as const).map(item => <button key={item} className={sport === item ? 'selected' : ''} onClick={() => { if (sport !== item) { setSport(item); restart(); } }}>{item === 'f1' ? 'F1' : item[0].toUpperCase() + item.slice(1)}</button>)}</div>
+          <div className="control-block replay-controls"><div className="control-caption"><span>AUTO RESTORE AFTER STALL</span><span className="tiny-connected"><i/> LOCAL</span></div><div className="control-actions">{[5, 10, 20].map(seconds => <button className={`secondary-control ${autoRestoreSeconds === seconds ? 'selected' : ''}`} key={seconds} onClick={() => setAutoRestoreSeconds(seconds)}>{seconds}s</button>)}</div><div className="clock-readout"><span>LIVE <b>{formatClock(clocks.liveClock)}</b></span><span>VIDEO <b>{formatClock(clocks.videoClock)}</b></span></div><label className="speed-select">REPLAY SPEED<select value={speed} onChange={event => { lastTickRef.current = performance.now(); setSpeed(Number(event.target.value)); }} aria-label="Replay speed"><option value="1">1×</option><option value="1.5">1.5×</option><option value="2">2×</option></select></label><button className="text-control" onClick={() => restart()}><Icon name="rotate" size={16}/> Restart replay</button></div>
+          <div className="sport-select" aria-label="Sport adapter"><span>SPORT ADAPTER</span>{(['cricket', 'football', 'f1'] as const).map(item => <button key={item} className={sport === item ? 'selected' : ''} onClick={() => switchSport(item)}>{item === 'f1' ? 'F1' : item[0].toUpperCase() + item.slice(1)}</button>)}</div>
           {sport !== 'cricket' && <p className="adapter-next">STATIC REPLAY LOADED</p>}
           <label className="follow-director"><span>FOLLOW · UP TO 3</span><select value="" onChange={event => event.target.value && toggleFollow(event.target.value)} aria-label="Follow a player"><option value="">Choose player</option>{followPlayers.map(player => <option key={player} value={player} disabled={followed.length >= 3 && !followed.includes(player)}>{player}{followed.includes(player) ? ' · following' : ''}</option>)}</select><small>{followed.join(' · ') || 'No players pinned'}</small></label>
-          <details className="simulation-details" open={simulatedOpen} onToggle={event => setSimulatedOpen(event.currentTarget.open)}><summary>What’s simulated</summary><p>The video is a stand-in loop.</p><p>Events replay real past-match data.</p><p>In production, the feed would ride the platform’s own lightweight channel.</p></details>
+          <details className="simulation-details" open={simulatedOpen} onToggle={event => setSimulatedOpen(event.currentTarget.open)}><summary>What’s simulated</summary><p>Licensed match footage loops for this demo; it is not synchronized to event timestamps.</p><p>Events replay real past-match data.</p><p>In production, the feed would ride the platform’s own lightweight channel.</p></details>
           {stallsThisMatch > 0 && <p className="stall-totals">Stalls this match: {stallsThisMatch} · total missed: {totalMissedWickets} wickets</p>}
-          <div className="match-reference"><span>DATA CREDIT</span><strong>{demo.match.teams.join(' v ')}, {demo.match.date}</strong><small>{demo.match.event} · {demo.match.venue}</small><small>Event data: {demo.source.provider}</small>{sport === 'football' && <img className="statsbomb-mark" src="/media/credits/statsbomb-mark.svg" alt="StatsBomb"/>}<small>Video: Pexels royalty-free source clip</small></div>
+          <div className="match-reference"><span>DATA CREDIT</span><strong>{demo.match.teams.join(' v ')}, {demo.match.date}</strong><small>{demo.match.event} · {demo.match.venue}</small><small>Event data: {demo.source.provider}</small>{sport === 'football' && <img className="statsbomb-mark" src="/media/credits/statsbomb-mark.svg" alt="StatsBomb"/>}<small>Video: {video.credit}{sport === 'f1' && <> · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noreferrer">CC BY-SA 4.0</a></>} · not synchronized to events</small></div>
           <footer className="director-foot"><span><Icon name="clock" size={16}/> FEED EVENTS <b>{feedAtLive.length}</b></span><span>{missed.length} KEY MISSED</span></footer>
         </div>
       </details>

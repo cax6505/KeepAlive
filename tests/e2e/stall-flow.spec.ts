@@ -70,6 +70,27 @@ test('video starts; a real network break feeds events and recap counts match the
   await expect(page.locator('.recap-timeline article')).toHaveCount(missed.length);
 });
 
+test('each sport loads its own local match footage', async ({ page }) => {
+  await page.goto('/');
+  const video = page.locator('video');
+  await expect.poll(() => video.evaluate(element => element.currentTime), { timeout: 10_000 }).toBeGreaterThan(0.4);
+  await expect(page.locator('.player-shell')).toHaveAttribute('data-video-source', '/media/index.m3u8');
+  await page.locator('.director-details > summary').evaluate(summary => (summary as HTMLElement).click());
+
+  await page.getByRole('button', { name: 'Football' }).evaluate(button => (button as HTMLButtonElement).click());
+  await expect(page.locator('.player-shell')).toHaveAttribute('data-video-source', '/media/football/index.m3u8');
+  await expect.poll(() => page.locator('video').evaluate(element => element.currentTime), { timeout: 10_000 }).toBeGreaterThan(0.4);
+  await expect(page.locator('.video-scorebug > span')).toHaveText('ARG V FRA');
+  await expect(page.locator('.video-scorebug strong')).toHaveText('0–0');
+  await expect(page.locator('.statsbomb-credit')).toBeVisible();
+
+  await page.getByRole('button', { name: 'F1' }).evaluate(button => (button as HTMLButtonElement).click());
+  await expect(page.locator('.player-shell')).toHaveAttribute('data-video-source', '/media/f1/index.m3u8');
+  await expect.poll(() => page.locator('video').evaluate(element => element.currentTime), { timeout: 10_000 }).toBeGreaterThan(0.4);
+  await expect(page.locator('.video-scorebug')).toContainText(/GRID|P[1-9]/);
+  await expect(page.locator('.app-credit')).toContainText('CC BY-SA 4.0');
+});
+
 test('a 1.5 second stutter does not open the stall sheet', async ({ page }) => {
   await startAndSetLongRestore(page);
   await page.locator('video').evaluate(async video => {

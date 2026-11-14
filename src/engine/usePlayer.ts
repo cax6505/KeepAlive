@@ -11,9 +11,9 @@ export type PlayerController = {
   jumpToLive: (livePosition: number) => number;
 };
 
-const SOURCE = '/media/index.m3u8';
+const DEFAULT_SOURCE = '/media/index.m3u8';
 
-export function usePlayer(getLiveClock: () => number = () => Date.now() / 1000) {
+export function usePlayer(getLiveClock: () => number = () => Date.now() / 1000, source = DEFAULT_SOURCE) {
   const videoRef = useRef<HTMLVideoElement>(null);
   const hlsRef = useRef<Hls | null>(null);
   const startedRef = useRef(false);
@@ -101,12 +101,12 @@ export function usePlayer(getLiveClock: () => number = () => Date.now() / 1000) 
             instance?.stopLoad();
           }
         });
-        instance.loadSource(SOURCE);
+        instance.loadSource(source);
         instance.attachMedia(video);
         attachDetector(instance);
       } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
         setFaultMode('simulated');
-        video.src = SOURCE;
+        video.src = source;
         video.load();
         attachDetector();
       } else {
