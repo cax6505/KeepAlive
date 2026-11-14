@@ -20,9 +20,8 @@ async function startAndSetLongRestore(page: import('@playwright/test').Page) {
 
 async function breakUntilStalled(page: import('@playwright/test').Page, timeout = 4_500) {
   const start = Date.now();
-  // The director panel sits below the mobile viewport. Trigger its real DOM handler
-  // without scrolling the video offscreen (Chromium mobile pauses offscreen media).
-  await page.getByRole('button', { name: 'Break the network' }).evaluate(button => (button as HTMLButtonElement).click());
+  // Use the in-player action so the test stays on the visible mobile surface.
+  await page.getByRole('region', { name: 'KeepAlive match player' }).getByRole('button', { name: 'Break the network' }).evaluate(button => (button as HTMLButtonElement).click());
   await expect(page.locator('.match-experience.experience-stalled')).toBeVisible({ timeout });
   expect(Date.now() - start).toBeLessThanOrEqual(timeout);
 }
@@ -40,7 +39,7 @@ test('video starts; a real network break feeds events and recap counts match the
   await expect.poll(async () => page.locator('.event-counter').evaluate(element => Number(element.textContent?.trim().split(/\s+/)[0])), { timeout: 6_000 }).toBeGreaterThan(countAtStall);
   expect(countAtStall).toBeGreaterThanOrEqual(initialFeedCount);
 
-  await page.getByRole('button', { name: 'Restore' }).evaluate(button => (button as HTMLButtonElement).click());
+  await page.getByRole('button', { name: 'Restore', exact: true }).evaluate(button => (button as HTMLButtonElement).click());
   await expect(page.locator('[data-freeze-state="recovering"]')).toBeVisible({ timeout: 5_000 });
   await expect(page.locator('.recap-title')).toBeVisible({ timeout: 7_000 });
   await expect.poll(() => page.locator('video').evaluate(video => video.currentTime)).toBeGreaterThan(stalledVideoTime);

@@ -5,6 +5,7 @@ import type { FreezeState } from '../engine/freezeDetector';
 
 type Props = {
   onPlayerReady?: (player: PlayerController) => void;
+  onCanBreakNetworkChange?: (canBreak: boolean) => void;
   sourceUrl: string;
   posterUrl: string;
   sportLabel: string;
@@ -33,13 +34,14 @@ function Glyph({ name }: { name: 'play' | 'pause' | 'volume' | 'mute' | 'expand'
   return <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">{paths[name]}</svg>;
 }
 
-export function Player({ onPlayerReady, sourceUrl, posterUrl, sportLabel, onStatusChange, onMetricsChange, scorebug, getLiveClock, experience, behindLabel, pulseLive, onFirstInteraction, onFreezeEvent, freezeState = 'playing', offline = false }: Props) {
+export function Player({ onPlayerReady, onCanBreakNetworkChange, sourceUrl, posterUrl, sportLabel, onStatusChange, onMetricsChange, scorebug, getLiveClock, experience, behindLabel, pulseLive, onFirstInteraction, onFreezeEvent, freezeState = 'playing', offline = false }: Props) {
   const shellRef = useRef<HTMLDivElement>(null);
   const [muted, setMuted] = useState(true);
   const player = usePlayer(getLiveClock, sourceUrl);
   const { videoRef, videoTime, bufferedAhead, status, isPaused, measuredBitrateKbps, loadedVideoBytes, hasFirstFrame, faultMode, error, freezeEvent } = player;
 
   useEffect(() => { onPlayerReady?.(player.controller); }, [onPlayerReady, player.controller]);
+  useEffect(() => { onCanBreakNetworkChange?.(status === 'playing' && !isPaused); }, [onCanBreakNetworkChange, isPaused, status]);
   useEffect(() => { onStatusChange?.(status); }, [onStatusChange, status]);
   useEffect(() => { onMetricsChange?.({ videoTime, bufferedAhead, measuredBitrateKbps, loadedVideoBytes }); }, [onMetricsChange, videoTime, bufferedAhead, measuredBitrateKbps, loadedVideoBytes]);
   useEffect(() => { if (freezeEvent) onFreezeEvent?.(freezeEvent); }, [freezeEvent, onFreezeEvent]);

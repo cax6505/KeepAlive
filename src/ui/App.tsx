@@ -54,12 +54,14 @@ export default function App() {
   const recoveryCaptured = useRef(false);
   const activeStallClock = useRef(0);
   const autoTimer = useRef<number | null>(null);
+  const autoCountdownTimer = useRef<number | null>(null);
   const restoreTimer = useRef<number | null>(null);
   const autoScheduled = useRef(false);
   const autoUsed = useRef(false);
   const autoCancelled = useRef(false);
   const hapticEvents = useRef(new Set<string>());
   const [controller, setController] = useState<PlayerController | null>(null);
+  const [canBreakNetwork, setCanBreakNetwork] = useState(false);
   const [status, setStatus] = useState<PlayerStatus>('idle');
   const [freezeState, setFreezeState] = useState<FreezeState>('playing');
   const [speed, setSpeed] = useState(1);
@@ -77,6 +79,7 @@ export default function App() {
   const [behindLabel, setBehindLabel] = useState('');
   const [pulseLive, setPulseLive] = useState(false);
   const [autoLabel, setAutoLabel] = useState(false);
+  const [autoSeconds, setAutoSeconds] = useState(25);
   const [autoRestoreSeconds, setAutoRestoreSeconds] = useState(5);
   const [offline, setOffline] = useState(typeof navigator !== 'undefined' && !navigator.onLine);
   const [language, setLanguage] = useState<Language>(() => {
@@ -237,25 +240,41 @@ export default function App() {
     if (autoScheduled.current || autoUsed.current) return;
     autoScheduled.current = true;
     setAutoLabel(true);
+    setAutoSeconds(25);
+    autoCountdownTimer.current = window.setInterval(() => setAutoSeconds(seconds => Math.max(0, seconds - 1)), 1_000);
     autoTimer.current = window.setTimeout(() => {
       autoTimer.current = null;
+      if (autoCountdownTimer.current !== null) window.clearInterval(autoCountdownTimer.current);
+      autoCountdownTimer.current = null;
       if (autoCancelled.current || autoUsed.current || status === 'stalled') return;
       autoUsed.current = true;
       setAutoLabel(false);
       beginBreak(true);
     }, 25_000);
   };
+  const skipAutoDemo = () => {
+    if (autoTimer.current !== null) window.clearTimeout(autoTimer.current);
+    if (autoCountdownTimer.current !== null) window.clearInterval(autoCountdownTimer.current);
+    autoTimer.current = null;
+    autoCountdownTimer.current = null;
+    autoCancelled.current = true;
+    setAutoLabel(false);
+  };
   const clearTimers = () => {
     if (autoTimer.current !== null) window.clearTimeout(autoTimer.current);
+    if (autoCountdownTimer.current !== null) window.clearInterval(autoCountdownTimer.current);
     if (restoreTimer.current !== null) window.clearTimeout(restoreTimer.current);
     autoTimer.current = null;
+    autoCountdownTimer.current = null;
     restoreTimer.current = null;
     setAutoLabel(false);
   };
   const beginBreak = (automated = false) => {
     autoCancelled.current = !automated;
     if (autoTimer.current !== null) window.clearTimeout(autoTimer.current);
+    if (autoCountdownTimer.current !== null) window.clearInterval(autoCountdownTimer.current);
     autoTimer.current = null;
+    autoCountdownTimer.current = null;
     setAutoLabel(false);
     controller?.breakNetwork();
   };
@@ -334,23 +353,28 @@ export default function App() {
       <header className="appbar">
         <div className="brand"><span className="brand-mark"><i/><i/></span><span>KEEPALIVE</span></div>
         <div className="replay-tag"><span className="replay-dot"/> REPLAY DEMO</div>
-        <span className="connection"><Icon name="wifi" size={16}/></span>
+        <span className="connection" role="img" aria-label={offline ? 'Network offline; local event replay continues' : 'Network online; event replay is local'}><Icon name="wifi" size={16}/></span>
       </header>
       <div className="context-strip"><span>Replay demo</span><i/> {demo.match.teams.join(' v ')}, {demo.match.date.slice(0, 4)} <i/> data: {demo.source.provider}</div>
+      <div className="sport-switcher" role="group" aria-label="Choose sport replay">
+        <span>SPORT</span>
+        {(['cricket', 'football', 'f1'] as const).map(item => <button type="button" key={item} className={sport === item ? 'selected' : ''} aria-pressed={sport === item} onClick={() => switchSport(item)}>{item === 'f1' ? 'F1' : item[0].toUpperCase() + item.slice(1)}</button>)}
+      </div>
       <div className="assertive-announcement" role="alert" aria-live="assertive" aria-atomic="true">{assertiveText ? `Wicket. ${assertiveText}` : ''}</div>
-      <Player key={sport} sourceUrl={video.source} posterUrl={video.poster} sportLabel={video.label} onPlayerReady={playerReady} onStatusChange={statusChanged} onMetricsChange={playerMetrics} onFreezeEvent={onFreezeEvent} freezeState={freezeState} offline={offline} scorebug={recap ? undefined : scorebug} getLiveClock={readLiveClock} experience={playerExperience} behindLabel={behindLabel} pulseLive={pulseLive} onFirstInteraction={firstInteraction}/>
-      {autoLabel && <div className="demo-auto-label">Demo: simulating a stall in 25s</div>}
+      <Player key={sport} sourceUrl={video.source} posterUrl={video.poster} sportLabel={video.label} onPlayerReady={playerReady} onCanBreakNetworkChange={setCanBreakNetwork} onStatusChange={statusChanged} onMetricsChange={playerMetrics} onFreezeEvent={onFreezeEvent} freezeState={freezeState} offline={offline} scorebug={recap ? undefined : scorebug} getLiveClock={readLiveClock} experience={playerExperience} behindLabel={behindLabel} pulseLive={pulseLive} onFirstInteraction={firstInteraction}/>
+      <div className="demo-rail"><span className="demo-rail-copy">ILLUSTRATIVE VIDEO · HISTORICAL EVENTS NOT SYNCED</span><button className="demo-quick-control" type="button" disabled={!controller || (status !== 'stalled' && !canBreakNetwork)} onClick={() => status === 'stalled' ? restore() : beginBreak()}><Icon name={status === 'stalled' ? 'rotate' : 'pause'} size={16}/><span>{status === 'stalled' ? 'Restore network' : canBreakNetwork ? 'Break the network' : 'Start playback to test a stall'}</span></button></div>
+      {autoLabel && <div className="demo-auto-label"><span>DEMO STALL IN {String(autoSeconds).padStart(2, '0')}s</span><button type="button" onClick={skipAutoDemo}>Skip auto stall</button></div>}
 
       <section className="two-lines" aria-label="Video and event connection traces">
         <div className="two-lines-head"><strong>TWO LINES</strong><span>INDEPENDENT SIGNALS</span></div>
         <div className="trace-head"><div className="trace-title"><span className={`trace-state video-key ${freezeState === 'stalled' ? 'stalled' : ''}`}/><span>VIDEO</span></div><svg className="trace-chart" viewBox="0 0 180 24" preserveAspectRatio="none" aria-label={freezeState === 'stalled' ? 'Video trace flatlined' : status === 'idle' ? 'Video signal idle' : 'Video signal active'}><path className={freezeState === 'stalled' ? 'trace-path stalled-path' : status === 'idle' ? 'trace-path idle-path' : 'trace-path video-path'} d={freezeState === 'stalled' || status === 'idle' ? 'M0 12 H180' : `M0 15 L12 14 L24 15 L36 ${7 + videoTraceSeed % 5} L48 15 L60 14 L72 15 L84 ${8 + videoTraceSeed % 4} L96 15 L108 14 L120 15 L132 ${7 + videoTraceSeed % 6} L144 15 L156 14 L168 15 L180 ${7 + videoTraceSeed % 5}`}/></svg><span className="trace-count">Video ~{bitrateKbps || '—'} kbps</span></div>
         <div className="trace-head"><div className="trace-title"><span className="trace-state feed-key"/><span>FEED</span></div><svg className="trace-chart" viewBox="0 0 180 24" preserveAspectRatio="none" aria-label={`Event feed active, ${feedTraceSeed} event ticks`}><path className="trace-path feed-path" d="M0 18 H180"/><path className="feed-ticks" d={feedTickPath(feedTraceSeed)}/></svg><span className="trace-count mint-count">Feed {feedRateKBps.toFixed(1)} KB/s</span></div>
-        <div className="trace-foot"><span>VIDEO · {status === 'idle' ? 'IDLE' : freezeState.toUpperCase()}</span><span>EVENT CHANNEL · CONNECTED</span></div>
+        <div className="trace-foot"><span>VIDEO · {status === 'idle' ? 'IDLE' : freezeState.toUpperCase()}</span><span>{offline ? 'LOCAL EVENTS · NETWORK OFFLINE' : `LOCAL EVENTS · ${formatClock(clocks.liveClock)}`}</span></div>
         <p className="bandwidth-caption">{bandwidthRatio && bitrateKbps > 0 ? `Matches events use ~1/${bandwidthRatio}th of the bandwidth.` : 'Bandwidth ratio appears when both channel rates are measured.'}</p>
       </section>
 
       <section className="events-section" aria-label={`${sport} match events`}>
-        <div className="section-heading"><div><span className="feed-status-dot"/><h2>Live events</h2><span className="local-label">REPLAY DEMO</span></div><span className="event-counter">{String(feedAtLive.length).padStart(3, '0')} <span>/</span> {String(matchEvents.length).padStart(3, '0')}</span></div>
+        <div className="section-heading"><div><span className="feed-status-dot"/><h2>Match events</h2><span className="local-label">LOCAL REPLAY</span></div><span className="event-counter">{String(feedAtLive.length).padStart(3, '0')} <span>/</span> {String(matchEvents.length).padStart(3, '0')}</span></div>
         {popupEvents.length === 0 && <div className="waiting-row"><span className="waiting-signal"><i/><i/><i/></span><span>Waiting for next key event</span><span className="mono">{formatClock(clocks.liveClock)}</span></div>}
         <div className="event-list" aria-live="polite">{[...popupEvents].slice(-8).reverse().map(event => <article className={`event-row ${event.type}`} key={event.id}><div className="event-over">{event.score.display?.context || event.score.overs}<small>{sport === 'f1' ? 'F1' : sport === 'football' ? 'MIN' : 'OV'}</small></div><div className="event-copy"><strong><EventGlyph icon={activeAdapter.render(event).icon}/>{event.text.en}</strong><span>{event.players.join(' · ')}</span></div><span className="event-bytes">{event.bytes} B</span></article>)}</div>
       </section>
@@ -362,9 +386,8 @@ export default function App() {
         <summary><span className="director-mark"><Icon name="signal" size={16}/></span><span className="director-summary-copy"><span className="director-label">DEMO CONTROLS</span><strong>Director’s panel</strong><small>Network · replay · data</small></span></summary>
         <div className="director-content">
           <div className="guide"><span>1</span><p>Press play.</p><span>2</span><p>Hit “Break the network” (or toggle Offline in DevTools).</p><span>3</span><p>Watch the feed take over, then restore.</p></div>
-          <div className="control-block"><div className="control-caption"><span>VIDEO SIGNAL</span><span className={`control-state ${status}`}>{status === 'stalled' ? 'STALLED' : status.toUpperCase()}</span></div><button className="primary-control" onClick={() => status === 'stalled' ? restore() : beginBreak()} disabled={!controller}><span className="control-icon"><Icon name={status === 'stalled' ? 'rotate' : 'pause'} size={16}/></span><span>{status === 'stalled' ? 'Restore' : 'Break the network'}</span></button><div className="lag-readout"><span>LIVE / VIDEO LAG</span><strong className={clocks.lag > 0.5 ? 'lagging' : ''}>{clocks.lag.toFixed(1)}s</strong></div></div>
+          <div className="control-block"><div className="control-caption"><span>VIDEO SIGNAL</span><span className={`control-state ${status}`}>{status === 'stalled' ? 'STALLED' : status.toUpperCase()}</span></div><button className="primary-control" onClick={() => status === 'stalled' ? restore() : beginBreak()} disabled={!controller || (status !== 'stalled' && !canBreakNetwork)}><span className="control-icon"><Icon name={status === 'stalled' ? 'rotate' : 'pause'} size={16}/></span><span>{status === 'stalled' ? 'Restore' : 'Break the network'}</span></button><div className="lag-readout"><span>LIVE / VIDEO LAG</span><strong className={clocks.lag > 0.5 ? 'lagging' : ''}>{clocks.lag.toFixed(1)}s</strong></div></div>
           <div className="control-block replay-controls"><div className="control-caption"><span>AUTO RESTORE AFTER STALL</span><span className="tiny-connected"><i/> LOCAL</span></div><div className="control-actions">{[5, 10, 20].map(seconds => <button className={`secondary-control ${autoRestoreSeconds === seconds ? 'selected' : ''}`} key={seconds} onClick={() => setAutoRestoreSeconds(seconds)}>{seconds}s</button>)}</div><div className="clock-readout"><span>LIVE <b>{formatClock(clocks.liveClock)}</b></span><span>VIDEO <b>{formatClock(clocks.videoClock)}</b></span></div><label className="speed-select">REPLAY SPEED<select value={speed} onChange={event => { lastTickRef.current = performance.now(); setSpeed(Number(event.target.value)); }} aria-label="Replay speed"><option value="1">1×</option><option value="1.5">1.5×</option><option value="2">2×</option></select></label><button className="text-control" onClick={() => restart()}><Icon name="rotate" size={16}/> Restart replay</button></div>
-          <div className="sport-select" aria-label="Sport adapter"><span>SPORT ADAPTER</span>{(['cricket', 'football', 'f1'] as const).map(item => <button key={item} className={sport === item ? 'selected' : ''} onClick={() => switchSport(item)}>{item === 'f1' ? 'F1' : item[0].toUpperCase() + item.slice(1)}</button>)}</div>
           {sport !== 'cricket' && <p className="adapter-next">STATIC REPLAY LOADED</p>}
           <label className="follow-director"><span>FOLLOW · UP TO 3</span><select value="" onChange={event => event.target.value && toggleFollow(event.target.value)} aria-label="Follow a player"><option value="">Choose player</option>{followPlayers.map(player => <option key={player} value={player} disabled={followed.length >= 3 && !followed.includes(player)}>{player}{followed.includes(player) ? ' · following' : ''}</option>)}</select><small>{followed.join(' · ') || 'No players pinned'}</small></label>
           <details className="simulation-details" open={simulatedOpen} onToggle={event => setSimulatedOpen(event.currentTarget.open)}><summary>What’s simulated</summary><p>Licensed match footage loops for this demo; it is not synchronized to event timestamps.</p><p>Events replay real past-match data.</p><p>In production, the feed would ride the platform’s own lightweight channel.</p></details>

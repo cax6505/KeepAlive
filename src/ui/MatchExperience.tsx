@@ -42,6 +42,7 @@ export function MatchExperience(props: Props) {
   const eventLabel = (event: MatchEvent) => event.text[language];
   const userPlayers = players.filter(player => followed.includes(player));
   const interruption = phase !== 'recap';
+  const recapHighlight = [...missed].reverse().find(event => event.importance >= 3) || missed[missed.length - 1];
 
   if (phase === 'recap' && collapsed) {
     return <section className="match-experience recap-collapsed" aria-label="Recovery recap">
@@ -63,6 +64,7 @@ export function MatchExperience(props: Props) {
       <strong>You’re offline.</strong>
       <span>The match is still running.</span>
       <span>We’ll catch you up when you’re back.</span>
+      <small>Local replay events continue; live delivery isn’t connected in this demo.</small>
     </div> : interruption ? mode === 'back' ? <p className="quiet-catchup">{phase === 'recovering' ? 'Checking the picture is back.' : 'Catching you up when it’s back.'}</p> : <>
       <div className="experience-score"><span>LIVE {liveScore.display?.context || liveScore.overs}</span><strong>{liveScore.display?.value || <>{liveScore.runs}<i>/{liveScore.wkts}</i></>}</strong></div>
       {phase === 'recovering' && <p className="quiet-catchup recovering-note">Picture back · confirming signal.</p>}
@@ -82,6 +84,7 @@ export function MatchExperience(props: Props) {
       </div>
     </> : <>
       <div className="recap-heading"><strong className="recap-title">Back. You missed {Math.round(gapSeconds)}s.</strong>
+        <p className="recap-summary">{recapHighlight ? <>Key moment · {eventLabel(recapHighlight)}</> : 'No key events fell in this gap.'}</p>
         <div className="recap-chips">{recapChips(missed, runsMissed, sport).map(chip => <span key={chip}>{chip}</span>)}</div>
       </div>
       <details className="recap-timeline">
